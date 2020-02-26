@@ -1,0 +1,2567 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="15.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <Import Project="..\packages\EntityFramework.6.4.0\build\EntityFramework.props" Condition="Exists('..\packages\EntityFramework.6.4.0\build\EntityFramework.props')" />
+  <Import Project="$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props" Condition="Exists('$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props')" />
+  <PropertyGroup>
+    <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
+    <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
+    <ProjectGuid>{8B6A3C03-5549-4614-912C-F44CA01F2807}</ProjectGuid>
+    <OutputType>Library</OutputType>
+    <AppDesignerFolder>Properties</AppDesignerFolder>
+    <RootNamespace>CotizadorWeb.Domain</RootNamespace>
+    <AssemblyName>CotizadorWeb.Domain</AssemblyName>
+    <TargetFrameworkVersion>v4.7.2</TargetFrameworkVersion>
+    <FileAlignment>512</FileAlignment>
+    <Deterministic>true</Deterministic>
+    <NuGetPackageImportStamp>
+    </NuGetPackageImportStamp>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|AnyCPU' ">
+    <DebugSymbols>true</DebugSymbols>
+    <DebugType>full</DebugType>
+    <Optimize>false</Optimize>
+    <OutputPath>bin\Debug\</OutputPath>
+    <DefineConstants>DEBUG;TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|AnyCPU' ">
+    <DebugType>pdbonly</DebugType>
+    <Optimize>true</Optimize>
+    <OutputPath>bin\Release\</OutputPath>
+    <DefineConstants>TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <ItemGroup>
+    <Reference Include="EntityFramework, Version=6.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089, processorArchitecture=MSIL">
+      <HintPath>..\packages\EntityFramework.6.4.0\lib\net45\EntityFramework.dll</HintPath>
+    </Reference>
+    <Reference Include="EntityFramework.SqlServer, Version=6.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089, processorArchitecture=MSIL">
+      <HintPath>..\packages\EntityFramework.6.4.0\lib\net45\EntityFramework.SqlServer.dll</HintPath>
+    </Reference>
+    <Reference Include="System" />
+    <Reference Include="System.ComponentModel.DataAnnotations" />
+    <Reference Include="System.Core" />
+    <Reference Include="System.Runtime.Serialization" />
+    <Reference Include="System.Security" />
+    <Reference Include="System.Xml.Linq" />
+    <Reference Include="System.Data.DataSetExtensions" />
+    <Reference Include="Microsoft.CSharp" />
+    <Reference Include="System.Data" />
+    <Reference Include="System.Net.Http" />
+    <Reference Include="System.Xml" />
+  </ItemGroup>
+  <ItemGroup>
+    <Compile Include="Common\BusinessRuleException.cs" />
+    <Compile Include="Common\Services\IMessage.cs" />
+    <Compile Include="Common\Services\IServiceBus.cs" />
+    <Compile Include="Common\Services\IServiceInjector.cs" />
+    <Compile Include="Common\Validate.cs" />
+    <Compile Include="Conexion.cs" />
+    <Compile Include="DBContextGlobal.cs" />
+    <Compile Include="Model\Accesorio.cs">
+      <DependentUpon>EF_ERP_MSCORP.tt</DependentUpon>
+    </Compile>
+    <Compile Include="Model\AccesorioFlota.cs">
+      <DependentUpon>EF_ERP_MSCORP.tt</DependentUpon>
+    </Compile>
+    <Compile Include="Model\AccesorioOrdenTrabajo.cs">
+      <DependentUpon>EF_ERP_MSCORP.tt</DependentUpon>
+    </Compile>
+    <Compile Include="Model\Accidente.cs">
+      <DependentUpon>EF_ERP_MSCORP.tt</DependentUpon>
+    </Compile>
+    <Compile Include="Model\AcompañamientoProveedor.cs">
+      <DependentUpon>EF_ERP_MSCORP.tt</DependentUpon>
+    </Compile>
+    <Compile Include="Model\ActivacionConductor.cs">
+      <DependentUpon>EF_ERP_MSCORP.tt</DependentUpon>
+    </Compile>
+    <Compile Include="Model\ActivacionFlota.cs">
+      <DependentUpon>EF_ERP_MSCORP.tt</DependentUpon>
+    </Compile>
+    <Compile Include="Model\Adelanto.cs">
+      <DependentUpon>EF_ERP_MSCORP.tt</DependentUpon>
+    </Compile>
+    <Compile Include="Model\AlcancePuesto.cs">
+      <DependentUpon>EF_ERP_MSCORP.tt</DependentUpon>
+    </Compile>
+    <Compile Include="Model\Alimento.cs">
+      <DependentUpon>EF_ERP_MSCORP.tt</DependentUpon>
+    </Compile>
+    <Compile Include="Model\AnticipoCliente.cs">
+      <DependentUpon>EF_ERP_MSCORP.tt</DependentUpon>
+    </Compile>
+    <Compile Include="Model\AnulacionCompra.cs">
+      <DependentUpon>EF_ERP_MSCORP.tt</DependentUpon>
+    </Compile>
+    <Compile Include="Model\AnulacionFactura.cs">
+      <DependentUpon>EF_ERP_MSCORP.tt</DependentUpon>
+    </Compile>
+    <Compile Include="Model\AnulacionPrefactura.cs">
+      <DependentUpon>EF_ERP_MSCORP.tt</DependentUpon>
+    </Compile>
+    <Compile Include="Model\AnulacionReciboGeneral.cs">
+      <DependentUpon>EF_ERP_MSCORP.tt</DependentUpon>
+    </Compile>
+    <Compile Include="Model\AnulacionTraslado.cs">
+      <DependentUpon>EF_ERP_MSCORP.tt</DependentUpon>
+    </Compile>
+    <Compile Include="Model\AperturaCaja.cs">
+      <DependentUpon>EF_ERP_MSCORP.tt</DependentUpon>
+    </Compile>
+    <Compile Include="Model\AperturaDia.cs">
+      <DependentUpon>EF_ERP_MSCORP.tt</DependentUpon>
+    </Compile>
+    <Compile Include="Model\Aplicacion.cs">
+      <DependentUpon>EF_ERP_MSCORP.tt</DependentUpon>
+    </Compile>
+    <Compile Include="Model\AplicacionBusqueda.cs">
+      <DependentUpon>EF_ERP_MSCORP.tt</DependentUpon>
+    </Compile>
+    <Compile Include="Model\AplicacionEmpleado.cs">
+      <DependentUpon>EF_ERP_MSCORP.tt</DependentUpon>
+    </Compile>
+    <Compile Include="Model\AprobarCotizacionMantenimiento.cs">
+      <DependentUpon>EF_ERP_MSCORP.tt</DependentUpon>
+    </Compile>
+    <Compile Include="Model\AprobarGastosOperativos.cs">
+      <DependentUpon>EF_ERP_MSCORP.tt</DependentUpon>
+    </Compile>
+    <Compile Include="Model\AprobarPrefacturaInternaOT.cs">
+      <DependentUpon>EF_ERP_MSCORP.tt</DependentUpon>
+    </Compile>
+    <Compile Include="Model\AprobarSolicitudPaseCredito.cs">
+      <DependentUpon>EF_ERP_MSCORP.tt</DependentUpon>
+    </Compile>
+    <Compile Include="Model\ArqueoCaja.cs">
+      <DependentUpon>EF_ERP_MSCORP.tt</DependentUpon>
+    </Compile>
+    <Compile Include="Model\ArrayIntToTable_Result.cs">
+      <DependentUpon>EF_ERP_MSCORP.tt</DependentUpon>
+    </Compile>
+    <Compile Include="Model\ArrayToTable_Result.cs">
+      <DependentUpon>EF_ERP_MSCORP.tt</DependentUpon>
+    </Compile>
+    <Compile Include="Model\AsignacionCaja.cs">
+      <DependentUpon>EF_ERP_MSCORP.tt</DependentUpon>
+    </Compile>
+    <Compile Include="Model\AsignacionCajaChica.cs">
+      <DependentUpon>EF_ERP_MSCORP.tt</DependentUpon>
+    </Compile>
+    <Compile Include="Model\AsignacionTecnicoServicio.cs">
+      <DependentUpon>EF_ERP_MSCORP.tt</DependentUpon>
+    </Compile>
+    <Compile Include="Model\AsignarConductoresVehiculos.cs">
+      <DependentUpon>EF_ERP_MSCORP.tt</DependentUpon>
+    </Compile>
+    <Compile Include="Model\AsignarMontoCajaChica.cs">
+      <DependentUpon>EF_ERP_MSCORP.tt</DependentUpon>
+    </Compile>
+    <Compile Include="Model\AsignarProductos.cs">
+      <DependentUpon>EF_ERP_MSCORP.tt</DependentUpon>
+    </Compile>
+    <Compile Include="Model\AsignarTecnicosOrdenProduccion.cs">
+      <DependentUpon>EF_ERP_MSCORP.tt</DependentUpon>
+    </Compile>
+    <Compile Include="Model\Asistencia.cs">
+      <DependentUpon>EF_ERP_MSCORP.tt</DependentUpon>
+    </Compile>
+    <Compile Include="Model\BajaPersonal.cs">
+      <DependentUpon>EF_ERP_MSCORP.tt</DependentUpon>
+    </Compile>
+    <Compile Include="Model\Bancos.cs">
+      <DependentUpon>EF_ERP_MSCORP.tt</DependentUpon>
+    </Compile>
+    <Compile Include="Model\BitacoraCobranza.cs">
+      <DependentUpon>EF_ERP_MSCORP.tt</DependentUpon>
+    </Compile>
+    <Compile Include="Model\BitacoraUsuario.cs">
+      <DependentUpon>EF_ERP_MSCORP.tt</DependentUpon>
+    </Compile>
+    <Compile Include="Model\BitacoraUsuarioModulo.cs">
+      <DependentUpon>EF_ERP_MSCORP.tt</DependentUpon>
+    </Compile>
+    <Compile Include="Model\Bodega.cs">
+      <DependentUpon>EF_ERP_MSCORP.tt</DependentUpon>
+    </Compile>
+    <Compile Include="Model\BodegaSerieOT.cs">
+      <DependentUpon>EF_ERP_MSCORP.tt</DependentUpon>
+    </Compile>
+    <Compile Include="Model\Caja.cs">
+      <DependentUpon>EF_ERP_MSCORP.tt</DependentUpon>
+    </Compile>
+    <Compile Include="Model\CajaPrefactura.cs">
+      <DependentUpon>EF_ERP_MSCORP.tt</DependentUpon>
+    </Compile>
+    <Compile Include="Model\CalendarioAlimento.cs">
+      <DependentUpon>EF_ERP_MSCORP.tt</DependentUpon>
+    </Compile>
+    <Compile Include="Model\CalendarioPago.cs">
+      <DependentUpon>EF_ERP_MSCORP.tt</DependentUpon>
+    </Compile>
+    <Compile Include="Model\CarteraCliente.cs">
+      <DependentUpon>EF_ERP_MSCORP.tt</DependentUpon>
+    </Compile>
+    <Compile Include="Model\CatalogoConcepto.cs">
+      <DependentUpon>EF_ERP_MSCORP.tt</DependentUpon>
+    </Compile>
+    <Compile Include="Model\CatalogoCuenta.cs">
+      <DependentUpon>EF_ERP_MSCORP.tt</DependentUpon>
+    </Compile>
+    <Compile Include="Model\CategoriaAccesorio.cs">
+      <DependentUpon>EF_ERP_MSCORP.tt</DependentUpon>
+    </Compile>
+    <Compile Include="Model\CategoriaDescripcionConceptoCajaChica.cs">
+      <DependentUpon>EF_ERP_MSCORP.tt</DependentUpon>
+    </Compile>
+    <Compile Include="Model\CategoriaLinea.cs">
+      <DependentUpon>EF_ERP_MSCORP.tt</DependentUpon>
+    </Compile>
+    <Compile Include="Model\Celular.cs">
+      <DependentUpon>EF_ERP_MSCORP.tt</DependentUpon>
+    </Compile>
+    <Compile Include="Model\CierreCaja.cs">
+      <DependentUpon>EF_ERP_MSCORP.tt</DependentUpon>
+    </Compile>
+    <Compile Include="Model\CierreDia.cs">
+      <DependentUpon>EF_ERP_MSCORP.tt</DependentUpon>
+    </Compile>
+    <Compile Include="Model\Cliente.cs">
+      <DependentUpon>EF_ERP_MSCORP.tt</DependentUpon>
+    </Compile>
+    <Compile Include="Model\ClienteBanco.cs">
+      <DependentUpon>EF_ERP_MSCORP.tt</DependentUpon>
+    </Compile>
+    <Compile Include="Model\ClienteSeguimiento.cs">
+      <DependentUpon>EF_ERP_MSCORP.tt</DependentUpon>
+    </Compile>
+    <Compile Include="Model\CodigoAplicacion.cs">
+      <DependentUpon>EF_ERP_MSCORP.tt</DependentUpon>
+    </Compile>
+    <Compile Include="Model\CodigoOriginal.cs">
+      <DependentUpon>EF_ERP_MSCORP.tt</DependentUpon>
+    </Compile>
+    <Compile Include="Model\ComboProducto.cs">
+      <DependentUpon>EF_ERP_MSCORP.tt</DependentUpon>
+    </Compile>
+    <Compile Include="Model\Combustible.cs">
+      <DependentUpon>EF_ERP_MSCORP.tt</DependentUpon>
+    </Compile>
+    <Compile Include="Model\Compra.cs">
+      <DependentUpon>EF_ERP_MSCORP.tt</DependentUpon>
+    </Compile>
+    <Compile Include="Model\Concepto.cs">
+      <DependentUpon>EF_ERP_MSCORP.tt</DependentUpon>
+    </Compile>
+    <Compile Include="Model\ConceptoCotizacion.cs">
+      <DependentUpon>EF_ERP_MSCORP.tt</DependentUpon>
+    </Compile>
+    <Compile Include="Model\ConceptoMinutaDeposito.cs">
+      <DependentUpon>EF_ERP_MSCORP.tt</DependentUpon>
+    </Compile>
+    <Compile Include="Model\ConceptoNotaCredito.cs">
+      <DependentUpon>EF_ERP_MSCORP.tt</DependentUpon>
+    </Compile>
+    <Compile Include="Model\ConceptoNotaCreditoProveedor.cs">
+      <DependentUpon>EF_ERP_MSCORP.tt</DependentUpon>
+    </Compile>
+    <Compile Include="Model\ConceptoNotasDebitoProveedor.cs">
+      <DependentUpon>EF_ERP_MSCORP.tt</DependentUpon>
+    </Compile>
+    <Compile Include="Model\ConceptoSalidaInventario.cs">
+      <DependentUpon>EF_ERP_MSCORP.tt</DependentUpon>
+    </Compile>
+    <Compile Include="Model\ConductorCliente.cs">
+      <DependentUpon>EF_ERP_MSCORP.tt</DependentUpon>
+    </Compile>
+    <Compile Include="Model\Conductores.cs">
+      <DependentUpon>EF_ERP_MSCORP.tt</DependentUpon>
+    </Compile>
+    <Compile Include="Model\ConfiguracionFIN.cs">
+      <DependentUpon>EF_ERP_MSCORP.tt</DependentUpon>
+    </Compile>
+    <Compile Include="Model\ConfiguracionPV.cs">
+      <DependentUpon>EF_ERP_MSCORP.tt</DependentUpon>
+    </Compile>
+    <Compile Include="Model\ConfiguracionRRHH.cs">
+      <DependentUpon>EF_ERP_MSCORP.tt</DependentUpon>
+    </Compile>
+    <Compile Include="Model\ConfirmarCita.cs">
+      <DependentUpon>EF_ERP_MSCORP.tt</DependentUpon>
+    </Compile>
+    <Compile Include="Model\ConfirmarMantenimiento.cs">
+      <DependentUpon>EF_ERP_MSCORP.tt</DependentUpon>
+    </Compile>
+    <Compile Include="Model\ConfirmarPago.cs">
+      <DependentUpon>EF_ERP_MSCORP.tt</DependentUpon>
+    </Compile>
+    <Compile Include="Model\ConsecutivoCotizacionCompra.cs">
+      <DependentUpon>EF_ERP_MSCORP.tt</DependentUpon>
+    </Compile>
+    <Compile Include="Model\Consignacion.cs">
+      <DependentUpon>EF_ERP_MSCORP.tt</DependentUpon>
+    </Compile>
+    <Compile Include="Model\Contacto.cs">
+      <DependentUpon>EF_ERP_MSCORP.tt</DependentUpon>
+    </Compile>
+    <Compile Include="Model\ContactoEmpresa.cs">
+      <DependentUpon>EF_ERP_MSCORP.tt</DependentUpon>
+    </Compile>
+    <Compile Include="Model\ContratoLaboral.cs">
+      <DependentUpon>EF_ERP_MSCORP.tt</DependentUpon>
+    </Compile>
+    <Compile Include="Model\CorreoCarteraYCobro.cs">
+      <DependentUpon>EF_ERP_MSCORP.tt</DependentUpon>
+    </Compile>
+    <Compile Include="Model\CorreoDepartamento.cs">
+      <DependentUpon>EF_ERP_MSCORP.tt</DependentUpon>
+    </Compile>
+    <Compile Include="Model\CosteoPEPS.cs">
+      <DependentUpon>EF_ERP_MSCORP.tt</DependentUpon>
+    </Compile>
+    <Compile Include="Model\CosteoPromedio.cs">
+      <DependentUpon>EF_ERP_MSCORP.tt</DependentUpon>
+    </Compile>
+    <Compile Include="Model\CosteoPromedioPonderado.cs">
+      <DependentUpon>EF_ERP_MSCORP.tt</DependentUpon>
+    </Compile>
+    <Compile Include="Model\CotizacionCompra.cs">
+      <DependentUpon>EF_ERP_MSCORP.tt</DependentUpon>
+    </Compile>
+    <Compile Include="Model\CotizacionOT.cs">
+      <DependentUpon>EF_ERP_MSCORP.tt</DependentUpon>
+    </Compile>
+    <Compile Include="Model\CotizacionVenta.cs">
+      <DependentUpon>EF_ERP_MSCORP.tt</DependentUpon>
+    </Compile>
+    <Compile Include="Model\CotizarMantenimiento.cs">
+      <DependentUpon>EF_ERP_MSCORP.tt</DependentUpon>
+    </Compile>
+    <Compile Include="Model\Criterio_Cobranza.cs">
+      <DependentUpon>EF_ERP_MSCORP.tt</DependentUpon>
+    </Compile>
+    <Compile Include="Model\Criterio_Proveedor.cs">
+      <DependentUpon>EF_ERP_MSCORP.tt</DependentUpon>
+    </Compile>
+    <Compile Include="Model\CuentaBancaria.cs">
+      <DependentUpon>EF_ERP_MSCORP.tt</DependentUpon>
+    </Compile>
+    <Compile Include="Model\CuentaBanco.cs">
+      <DependentUpon>EF_ERP_MSCORP.tt</DependentUpon>
+    </Compile>
+    <Compile Include="Model\CuentaEmpleado.cs">
+      <DependentUpon>EF_ERP_MSCORP.tt</DependentUpon>
+    </Compile>
+    <Compile Include="Model\DatosBancariosCliente.cs">
+      <DependentUpon>EF_ERP_MSCORP.tt</DependentUpon>
+    </Compile>
+    <Compile Include="Model\DatosBancariosProveedor.cs">
+      <DependentUpon>EF_ERP_MSCORP.tt</DependentUpon>
+    </Compile>
+    <Compile Include="Model\Departamento.cs">
+      <DependentUpon>EF_ERP_MSCORP.tt</DependentUpon>
+    </Compile>
+    <Compile Include="Model\DescripcionConceptoCaja.cs">
+      <DependentUpon>EF_ERP_MSCORP.tt</DependentUpon>
+    </Compile>
+    <Compile Include="Model\DescuentoxProntoPago.cs">
+      <DependentUpon>EF_ERP_MSCORP.tt</DependentUpon>
+    </Compile>
+    <Compile Include="Model\DespachoFactura.cs">
+      <DependentUpon>EF_ERP_MSCORP.tt</DependentUpon>
+    </Compile>
+    <Compile Include="Model\DespachoTraslado.cs">
+      <DependentUpon>EF_ERP_MSCORP.tt</DependentUpon>
+    </Compile>
+    <Compile Include="Model\DesvinculacionPersonal.cs">
+      <DependentUpon>EF_ERP_MSCORP.tt</DependentUpon>
+    </Compile>
+    <Compile Include="Model\DetalleActivacionConductor.cs">
+      <DependentUpon>EF_ERP_MSCORP.tt</DependentUpon>
+    </Compile>
+    <Compile Include="Model\DetalleActivacionFlota.cs">
+      <DependentUpon>EF_ERP_MSCORP.tt</DependentUpon>
+    </Compile>
+    <Compile Include="Model\DetalleAnticipoCliente.cs">
+      <DependentUpon>EF_ERP_MSCORP.tt</DependentUpon>
+    </Compile>
+    <Compile Include="Model\DetalleAsignacionTecnicoServicio.cs">
+      <DependentUpon>EF_ERP_MSCORP.tt</DependentUpon>
+    </Compile>
+    <Compile Include="Model\DetalleAsignarProductos.cs">
+      <DependentUpon>EF_ERP_MSCORP.tt</DependentUpon>
+    </Compile>
+    <Compile Include="Model\DetalleAsignarTecnicosOrdenProduccion.cs">
+      <DependentUpon>EF_ERP_MSCORP.tt</DependentUpon>
+    </Compile>
+    <Compile Include="Model\DetalleCheque.cs">
+      <DependentUpon>EF_ERP_MSCORP.tt</DependentUpon>
+    </Compile>
+    <Compile Include="Model\DetalleComboProducto.cs">
+      <DependentUpon>EF_ERP_MSCORP.tt</DependentUpon>
+    </Compile>
+    <Compile Include="Model\DetalleCombosProducto.cs">
+      <DependentUpon>EF_ERP_MSCORP.tt</DependentUpon>
+    </Compile>
+    <Compile Include="Model\DetalleCompra.cs">
+      <DependentUpon>EF_ERP_MSCORP.tt</DependentUpon>
+    </Compile>
+    <Compile Include="Model\DetalleCompraEliminados.cs">
+      <DependentUpon>EF_ERP_MSCORP.tt</DependentUpon>
+    </Compile>
+    <Compile Include="Model\DetalleCorreoCarteraYCobro.cs">
+      <DependentUpon>EF_ERP_MSCORP.tt</DependentUpon>
+    </Compile>
+    <Compile Include="Model\DetalleCotizacionCompra.cs">
+      <DependentUpon>EF_ERP_MSCORP.tt</DependentUpon>
+    </Compile>
+    <Compile Include="Model\DetalleCotizacionInsumo.cs">
+      <DependentUpon>EF_ERP_MSCORP.tt</DependentUpon>
+    </Compile>
+    <Compile Include="Model\DetalleCotizacionV.cs">
+      <DependentUpon>EF_ERP_MSCORP.tt</DependentUpon>
+    </Compile>
+    <Compile Include="Model\DetalleCotizarMantemiento.cs">
+      <DependentUpon>EF_ERP_MSCORP.tt</DependentUpon>
+    </Compile>
+    <Compile Include="Model\DetalleDescuentoXProntoPAgo.cs">
+      <DependentUpon>EF_ERP_MSCORP.tt</DependentUpon>
+    </Compile>
+    <Compile Include="Model\DetalleDevolucionCompra.cs">
+      <DependentUpon>EF_ERP_MSCORP.tt</DependentUpon>
+    </Compile>
+    <Compile Include="Model\DetalleDevolucionFactura.cs">
+      <DependentUpon>EF_ERP_MSCORP.tt</DependentUpon>
+    </Compile>
+    <Compile Include="Model\DetalleEfectivo.cs">
+      <DependentUpon>EF_ERP_MSCORP.tt</DependentUpon>
+    </Compile>
+    <Compile Include="Model\DetalleEquipos.cs">
+      <DependentUpon>EF_ERP_MSCORP.tt</DependentUpon>
+    </Compile>
+    <Compile Include="Model\DetalleExcento.cs">
+      <DependentUpon>EF_ERP_MSCORP.tt</DependentUpon>
+    </Compile>
+    <Compile Include="Model\DetalleFactura.cs">
+      <DependentUpon>EF_ERP_MSCORP.tt</DependentUpon>
+    </Compile>
+    <Compile Include="Model\DetalleFacturaOP.cs">
+      <DependentUpon>EF_ERP_MSCORP.tt</DependentUpon>
+    </Compile>
+    <Compile Include="Model\DetalleFacturaReparacion.cs">
+      <DependentUpon>EF_ERP_MSCORP.tt</DependentUpon>
+    </Compile>
+    <Compile Include="Model\DetalleMantenimiento.cs">
+      <DependentUpon>EF_ERP_MSCORP.tt</DependentUpon>
+    </Compile>
+    <Compile Include="Model\DetalleMantenimientoFlota.cs">
+      <DependentUpon>EF_ERP_MSCORP.tt</DependentUpon>
+    </Compile>
+    <Compile Include="Model\DetalleMantenimientoOperacion.cs">
+      <DependentUpon>EF_ERP_MSCORP.tt</DependentUpon>
+    </Compile>
+    <Compile Include="Model\DetalleNotaCreditoProveedor.cs">
+      <DependentUpon>EF_ERP_MSCORP.tt</DependentUpon>
+    </Compile>
+    <Compile Include="Model\DetalleNotaDebitoRetencion.cs">
+      <DependentUpon>EF_ERP_MSCORP.tt</DependentUpon>
+    </Compile>
+    <Compile Include="Model\DetalleNotasDebito.cs">
+      <DependentUpon>EF_ERP_MSCORP.tt</DependentUpon>
+    </Compile>
+    <Compile Include="Model\DetalleNotasDebitoCredito.cs">
+      <DependentUpon>EF_ERP_MSCORP.tt</DependentUpon>
+    </Compile>
+    <Compile Include="Model\DetalleNotasDebitoProveedor.cs">
+      <DependentUpon>EF_ERP_MSCORP.tt</DependentUpon>
+    </Compile>
+    <Compile Include="Model\DetallePago.cs">
+      <DependentUpon>EF_ERP_MSCORP.tt</DependentUpon>
+    </Compile>
+    <Compile Include="Model\DetallePagoProveedor.cs">
+      <DependentUpon>EF_ERP_MSCORP.tt</DependentUpon>
+    </Compile>
+    <Compile Include="Model\DetallePagoRealizadoTesoreria.cs">
+      <DependentUpon>EF_ERP_MSCORP.tt</DependentUpon>
+    </Compile>
+    <Compile Include="Model\DetallePedido.cs">
+      <DependentUpon>EF_ERP_MSCORP.tt</DependentUpon>
+    </Compile>
+    <Compile Include="Model\DetallePeticionCompra.cs">
+      <DependentUpon>EF_ERP_MSCORP.tt</DependentUpon>
+    </Compile>
+    <Compile Include="Model\DetallePreFacturaInternaOT.cs">
+      <DependentUpon>EF_ERP_MSCORP.tt</DependentUpon>
+    </Compile>
+    <Compile Include="Model\DetallePreFacturaOT.cs">
+      <DependentUpon>EF_ERP_MSCORP.tt</DependentUpon>
+    </Compile>
+    <Compile Include="Model\DetallePrefacturaV.cs">
+      <DependentUpon>EF_ERP_MSCORP.tt</DependentUpon>
+    </Compile>
+    <Compile Include="Model\DetalleProductoDevolucionCompra.cs">
+      <DependentUpon>EF_ERP_MSCORP.tt</DependentUpon>
+    </Compile>
+    <Compile Include="Model\DetalleProductoMaloOP.cs">
+      <DependentUpon>EF_ERP_MSCORP.tt</DependentUpon>
+    </Compile>
+    <Compile Include="Model\DetalleProductosCotizacionOT.cs">
+      <DependentUpon>EF_ERP_MSCORP.tt</DependentUpon>
+    </Compile>
+    <Compile Include="Model\DetalleProductosPrefacturaPV.cs">
+      <DependentUpon>EF_ERP_MSCORP.tt</DependentUpon>
+    </Compile>
+    <Compile Include="Model\DetalleProductosSalidaInventario.cs">
+      <DependentUpon>EF_ERP_MSCORP.tt</DependentUpon>
+    </Compile>
+    <Compile Include="Model\DetalleReciboCajaChica.cs">
+      <DependentUpon>EF_ERP_MSCORP.tt</DependentUpon>
+    </Compile>
+    <Compile Include="Model\DetalleReciboCajaGeneral.cs">
+      <DependentUpon>EF_ERP_MSCORP.tt</DependentUpon>
+    </Compile>
+    <Compile Include="Model\DetalleReciboCajaGeneralNota.cs">
+      <DependentUpon>EF_ERP_MSCORP.tt</DependentUpon>
+    </Compile>
+    <Compile Include="Model\DetalleReciboRetencion.cs">
+      <DependentUpon>EF_ERP_MSCORP.tt</DependentUpon>
+    </Compile>
+    <Compile Include="Model\DetalleRetencionesProveedor.cs">
+      <DependentUpon>EF_ERP_MSCORP.tt</DependentUpon>
+    </Compile>
+    <Compile Include="Model\DetalleReversionDocumento.cs">
+      <DependentUpon>EF_ERP_MSCORP.tt</DependentUpon>
+    </Compile>
+    <Compile Include="Model\DetalleRevisarCotizacion.cs">
+      <DependentUpon>EF_ERP_MSCORP.tt</DependentUpon>
+    </Compile>
+    <Compile Include="Model\DetalleSalidaInventario.cs">
+      <DependentUpon>EF_ERP_MSCORP.tt</DependentUpon>
+    </Compile>
+    <Compile Include="Model\DetalleServicioCotizacionOT.cs">
+      <DependentUpon>EF_ERP_MSCORP.tt</DependentUpon>
+    </Compile>
+    <Compile Include="Model\DetalleServiciosImportacion.cs">
+      <DependentUpon>EF_ERP_MSCORP.tt</DependentUpon>
+    </Compile>
+    <Compile Include="Model\DetallesImpuestos.cs">
+      <DependentUpon>EF_ERP_MSCORP.tt</DependentUpon>
+    </Compile>
+    <Compile Include="Model\DetalleSolicitudCheque.cs">
+      <DependentUpon>EF_ERP_MSCORP.tt</DependentUpon>
+    </Compile>
+    <Compile Include="Model\DetalleSolicitudGO.cs">
+      <DependentUpon>EF_ERP_MSCORP.tt</DependentUpon>
+    </Compile>
+    <Compile Include="Model\DetalleSolicitudPagoReciboCajaChica.cs">
+      <DependentUpon>EF_ERP_MSCORP.tt</DependentUpon>
+    </Compile>
+    <Compile Include="Model\DetallesRutas.cs">
+      <DependentUpon>EF_ERP_MSCORP.tt</DependentUpon>
+    </Compile>
+    <Compile Include="Model\DetalleTarjeta.cs">
+      <DependentUpon>EF_ERP_MSCORP.tt</DependentUpon>
+    </Compile>
+    <Compile Include="Model\DetalleTrabajoCliente.cs">
+      <DependentUpon>EF_ERP_MSCORP.tt</DependentUpon>
+    </Compile>
+    <Compile Include="Model\DetalleTransferencia.cs">
+      <DependentUpon>EF_ERP_MSCORP.tt</DependentUpon>
+    </Compile>
+    <Compile Include="Model\DetalleTraslado.cs">
+      <DependentUpon>EF_ERP_MSCORP.tt</DependentUpon>
+    </Compile>
+    <Compile Include="Model\DetalleTrasladoAprobado.cs">
+      <DependentUpon>EF_ERP_MSCORP.tt</DependentUpon>
+    </Compile>
+    <Compile Include="Model\DetalleTrasladoSolicitado.cs">
+      <DependentUpon>EF_ERP_MSCORP.tt</DependentUpon>
+    </Compile>
+    <Compile Include="Model\DetalleVerificacionSolicitudes.cs">
+      <DependentUpon>EF_ERP_MSCORP.tt</DependentUpon>
+    </Compile>
+    <Compile Include="Model\DevolucionCompra.cs">
+      <DependentUpon>EF_ERP_MSCORP.tt</DependentUpon>
+    </Compile>
+    <Compile Include="Model\DevolucionFactura.cs">
+      <DependentUpon>EF_ERP_MSCORP.tt</DependentUpon>
+    </Compile>
+    <Compile Include="Model\DistribucionGastosOperativos.cs">
+      <DependentUpon>EF_ERP_MSCORP.tt</DependentUpon>
+    </Compile>
+    <Compile Include="Model\Documento.cs">
+      <DependentUpon>EF_ERP_MSCORP.tt</DependentUpon>
+    </Compile>
+    <Compile Include="Model\DocumentoAccidente.cs">
+      <DependentUpon>EF_ERP_MSCORP.tt</DependentUpon>
+    </Compile>
+    <Compile Include="Model\DocumentoDesvinculacion.cs">
+      <DependentUpon>EF_ERP_MSCORP.tt</DependentUpon>
+    </Compile>
+    <Compile Include="Model\DocumentoIncidente.cs">
+      <DependentUpon>EF_ERP_MSCORP.tt</DependentUpon>
+    </Compile>
+    <Compile Include="Model\DocumentoPuesto.cs">
+      <DependentUpon>EF_ERP_MSCORP.tt</DependentUpon>
+    </Compile>
+    <Compile Include="Model\DocumentosDelVehiculo.cs">
+      <DependentUpon>EF_ERP_MSCORP.tt</DependentUpon>
+    </Compile>
+    <Compile Include="Model\DocumentoSerie.cs">
+      <DependentUpon>EF_ERP_MSCORP.tt</DependentUpon>
+    </Compile>
+    <Compile Include="Model\DocumentoSoporte.cs">
+      <DependentUpon>EF_ERP_MSCORP.tt</DependentUpon>
+    </Compile>
+    <Compile Include="Model\EF_ERP_MSCORP.Context.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>EF_ERP_MSCORP.Context.tt</DependentUpon>
+    </Compile>
+    <Compile Include="Model\EF_ERP_MSCORP.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>EF_ERP_MSCORP.tt</DependentUpon>
+    </Compile>
+    <Compile Include="Model\EF_ERP_MSCORP.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>EF_ERP_MSCORP.edmx</DependentUpon>
+    </Compile>
+    <Compile Include="Model\Emergencia.cs">
+      <DependentUpon>EF_ERP_MSCORP.tt</DependentUpon>
+    </Compile>
+    <Compile Include="Model\Empleado.cs">
+      <DependentUpon>EF_ERP_MSCORP.tt</DependentUpon>
+    </Compile>
+    <Compile Include="Model\EmpleadoPuesto.cs">
+      <DependentUpon>EF_ERP_MSCORP.tt</DependentUpon>
+    </Compile>
+    <Compile Include="Model\EmpleadosPreFacturaInternaOT.cs">
+      <DependentUpon>EF_ERP_MSCORP.tt</DependentUpon>
+    </Compile>
+    <Compile Include="Model\Empresa.cs">
+      <DependentUpon>EF_ERP_MSCORP.tt</DependentUpon>
+    </Compile>
+    <Compile Include="Model\EnfermedadPuesto.cs">
+      <DependentUpon>EF_ERP_MSCORP.tt</DependentUpon>
+    </Compile>
+    <Compile Include="Model\EntregaEquipo.cs">
+      <DependentUpon>EF_ERP_MSCORP.tt</DependentUpon>
+    </Compile>
+    <Compile Include="Model\EstacionesCombustibles.cs">
+      <DependentUpon>EF_ERP_MSCORP.tt</DependentUpon>
+    </Compile>
+    <Compile Include="Model\EstacionesProduccion.cs">
+      <DependentUpon>EF_ERP_MSCORP.tt</DependentUpon>
+    </Compile>
+    <Compile Include="Model\EstacionTrabajo.cs">
+      <DependentUpon>EF_ERP_MSCORP.tt</DependentUpon>
+    </Compile>
+    <Compile Include="Model\EstadosOT.cs">
+      <DependentUpon>EF_ERP_MSCORP.tt</DependentUpon>
+    </Compile>
+    <Compile Include="Model\EstimacionProduccion.cs">
+      <DependentUpon>EF_ERP_MSCORP.tt</DependentUpon>
+    </Compile>
+    <Compile Include="Model\EstimacionProduccionDetalles.cs">
+      <DependentUpon>EF_ERP_MSCORP.tt</DependentUpon>
+    </Compile>
+    <Compile Include="Model\EvaluacionBaja.cs">
+      <DependentUpon>EF_ERP_MSCORP.tt</DependentUpon>
+    </Compile>
+    <Compile Include="Model\Factura.cs">
+      <DependentUpon>EF_ERP_MSCORP.tt</DependentUpon>
+    </Compile>
+    <Compile Include="Model\FacturaCombustible.cs">
+      <DependentUpon>EF_ERP_MSCORP.tt</DependentUpon>
+    </Compile>
+    <Compile Include="Model\FacturaReparacion.cs">
+      <DependentUpon>EF_ERP_MSCORP.tt</DependentUpon>
+    </Compile>
+    <Compile Include="Model\FacturaRetencion.cs">
+      <DependentUpon>EF_ERP_MSCORP.tt</DependentUpon>
+    </Compile>
+    <Compile Include="Model\Familia.cs">
+      <DependentUpon>EF_ERP_MSCORP.tt</DependentUpon>
+    </Compile>
+    <Compile Include="Model\FlotaCliente.cs">
+      <DependentUpon>EF_ERP_MSCORP.tt</DependentUpon>
+    </Compile>
+    <Compile Include="Model\FlotaMarca.cs">
+      <DependentUpon>EF_ERP_MSCORP.tt</DependentUpon>
+    </Compile>
+    <Compile Include="Model\FlotaModelo.cs">
+      <DependentUpon>EF_ERP_MSCORP.tt</DependentUpon>
+    </Compile>
+    <Compile Include="Model\FlotaSucursal.cs">
+      <DependentUpon>EF_ERP_MSCORP.tt</DependentUpon>
+    </Compile>
+    <Compile Include="Model\FlotaVehicular.cs">
+      <DependentUpon>EF_ERP_MSCORP.tt</DependentUpon>
+    </Compile>
+    <Compile Include="Model\FtFacturasAnuladasXIdCliente_Result.cs">
+      <DependentUpon>EF_ERP_MSCORP.tt</DependentUpon>
+    </Compile>
+    <Compile Include="Model\ftMostrarAccionesRealizadasXEmpresa_Result.cs">
+      <DependentUpon>EF_ERP_MSCORP.tt</DependentUpon>
+    </Compile>
+    <Compile Include="Model\FtObtenerPeriodos_Result.cs">
+      <DependentUpon>EF_ERP_MSCORP.tt</DependentUpon>
+    </Compile>
+    <Compile Include="Model\Ft_CalcularLiquidacion_Result.cs">
+      <DependentUpon>EF_ERP_MSCORP.tt</DependentUpon>
+    </Compile>
+    <Compile Include="Model\Ft_EstadoCuentaGeneralCordobasXIdEmpresa_Result.cs">
+      <DependentUpon>EF_ERP_MSCORP.tt</DependentUpon>
+    </Compile>
+    <Compile Include="Model\Ft_GenerarNominaDepartamento_Result.cs">
+      <DependentUpon>EF_ERP_MSCORP.tt</DependentUpon>
+    </Compile>
+    <Compile Include="Model\Ft_GenerarNomina_Result.cs">
+      <DependentUpon>EF_ERP_MSCORP.tt</DependentUpon>
+    </Compile>
+    <Compile Include="Model\ft_MostrarFacturasXProveedor_Result.cs">
+      <DependentUpon>EF_ERP_MSCORP.tt</DependentUpon>
+    </Compile>
+    <Compile Include="Model\ft_MostrarListaCorreoEnviados_Result.cs">
+      <DependentUpon>EF_ERP_MSCORP.tt</DependentUpon>
+    </Compile>
+    <Compile Include="Model\Ft_ObtenerFechaPeriodo_Result.cs">
+      <DependentUpon>EF_ERP_MSCORP.tt</DependentUpon>
+    </Compile>
+    <Compile Include="Model\ft_ObtenerTodosProveedores_Result.cs">
+      <DependentUpon>EF_ERP_MSCORP.tt</DependentUpon>
+    </Compile>
+    <Compile Include="Model\Ft_TotalFacturasPendientesPVXIdCliente_Result.cs">
+      <DependentUpon>EF_ERP_MSCORP.tt</DependentUpon>
+    </Compile>
+    <Compile Include="Model\Ft_TotalFacturasPendientesSACXIdCliente_Result.cs">
+      <DependentUpon>EF_ERP_MSCORP.tt</DependentUpon>
+    </Compile>
+    <Compile Include="Model\GastosOperativos.cs">
+      <DependentUpon>EF_ERP_MSCORP.tt</DependentUpon>
+    </Compile>
+    <Compile Include="Model\HerramientaPuesto.cs">
+      <DependentUpon>EF_ERP_MSCORP.tt</DependentUpon>
+    </Compile>
+    <Compile Include="Model\Horario.cs">
+      <DependentUpon>EF_ERP_MSCORP.tt</DependentUpon>
+    </Compile>
+    <Compile Include="Model\IdentificadorEnCombos.cs">
+      <DependentUpon>EF_ERP_MSCORP.tt</DependentUpon>
+    </Compile>
+    <Compile Include="Model\IdentificadoresReversion.cs">
+      <DependentUpon>EF_ERP_MSCORP.tt</DependentUpon>
+    </Compile>
+    <Compile Include="Model\IdentificadorProducto.cs">
+      <DependentUpon>EF_ERP_MSCORP.tt</DependentUpon>
+    </Compile>
+    <Compile Include="Model\IdentificadorVehiculo.cs">
+      <DependentUpon>EF_ERP_MSCORP.tt</DependentUpon>
+    </Compile>
+    <Compile Include="Model\Imagen.cs">
+      <DependentUpon>EF_ERP_MSCORP.tt</DependentUpon>
+    </Compile>
+    <Compile Include="Model\ImagenesCroquis.cs">
+      <DependentUpon>EF_ERP_MSCORP.tt</DependentUpon>
+    </Compile>
+    <Compile Include="Model\ImagenesVehiculoOT.cs">
+      <DependentUpon>EF_ERP_MSCORP.tt</DependentUpon>
+    </Compile>
+    <Compile Include="Model\ImagenFlota.cs">
+      <DependentUpon>EF_ERP_MSCORP.tt</DependentUpon>
+    </Compile>
+    <Compile Include="Model\Incidente.cs">
+      <DependentUpon>EF_ERP_MSCORP.tt</DependentUpon>
+    </Compile>
+    <Compile Include="Model\IndicadorDesempeñoPuesto.cs">
+      <DependentUpon>EF_ERP_MSCORP.tt</DependentUpon>
+    </Compile>
+    <Compile Include="Model\InfoPuesto.cs">
+      <DependentUpon>EF_ERP_MSCORP.tt</DependentUpon>
+    </Compile>
+    <Compile Include="Model\IngresoOrdenProduccion.cs">
+      <DependentUpon>EF_ERP_MSCORP.tt</DependentUpon>
+    </Compile>
+    <Compile Include="Model\Insumos.cs">
+      <DependentUpon>EF_ERP_MSCORP.tt</DependentUpon>
+    </Compile>
+    <Compile Include="Model\IntervaloCredito.cs">
+      <DependentUpon>EF_ERP_MSCORP.tt</DependentUpon>
+    </Compile>
+    <Compile Include="Model\Kardex.cs">
+      <DependentUpon>EF_ERP_MSCORP.tt</DependentUpon>
+    </Compile>
+    <Compile Include="Model\KardexIdentificadorProducto.cs">
+      <DependentUpon>EF_ERP_MSCORP.tt</DependentUpon>
+    </Compile>
+    <Compile Include="Model\KardexLote.cs">
+      <DependentUpon>EF_ERP_MSCORP.tt</DependentUpon>
+    </Compile>
+    <Compile Include="Model\KardexOrdenProduccion.cs">
+      <DependentUpon>EF_ERP_MSCORP.tt</DependentUpon>
+    </Compile>
+    <Compile Include="Model\KardexOT.cs">
+      <DependentUpon>EF_ERP_MSCORP.tt</DependentUpon>
+    </Compile>
+    <Compile Include="Model\Linea.cs">
+      <DependentUpon>EF_ERP_MSCORP.tt</DependentUpon>
+    </Compile>
+    <Compile Include="Model\Liquidacion.cs">
+      <DependentUpon>EF_ERP_MSCORP.tt</DependentUpon>
+    </Compile>
+    <Compile Include="Model\ListaMac.cs">
+      <DependentUpon>EF_ERP_MSCORP.tt</DependentUpon>
+    </Compile>
+    <Compile Include="Model\ListaModulos.cs">
+      <DependentUpon>EF_ERP_MSCORP.tt</DependentUpon>
+    </Compile>
+    <Compile Include="Model\Lote.cs">
+      <DependentUpon>EF_ERP_MSCORP.tt</DependentUpon>
+    </Compile>
+    <Compile Include="Model\Mantenimiento.cs">
+      <DependentUpon>EF_ERP_MSCORP.tt</DependentUpon>
+    </Compile>
+    <Compile Include="Model\MantenimientoFLota.cs">
+      <DependentUpon>EF_ERP_MSCORP.tt</DependentUpon>
+    </Compile>
+    <Compile Include="Model\MantenimientoOperacion.cs">
+      <DependentUpon>EF_ERP_MSCORP.tt</DependentUpon>
+    </Compile>
+    <Compile Include="Model\MantenimientoOrdenTrabajo.cs">
+      <DependentUpon>EF_ERP_MSCORP.tt</DependentUpon>
+    </Compile>
+    <Compile Include="Model\Marca.cs">
+      <DependentUpon>EF_ERP_MSCORP.tt</DependentUpon>
+    </Compile>
+    <Compile Include="Model\MarcaAplicacion.cs">
+      <DependentUpon>EF_ERP_MSCORP.tt</DependentUpon>
+    </Compile>
+    <Compile Include="Model\Margen.cs">
+      <DependentUpon>EF_ERP_MSCORP.tt</DependentUpon>
+    </Compile>
+    <Compile Include="Model\Mecanicos.cs">
+      <DependentUpon>EF_ERP_MSCORP.tt</DependentUpon>
+    </Compile>
+    <Compile Include="Model\MecanicosEstacionTrabajo.cs">
+      <DependentUpon>EF_ERP_MSCORP.tt</DependentUpon>
+    </Compile>
+    <Compile Include="Model\MecanicosVehiculoProceso.cs">
+      <DependentUpon>EF_ERP_MSCORP.tt</DependentUpon>
+    </Compile>
+    <Compile Include="Model\MinutaDeposito.cs">
+      <DependentUpon>EF_ERP_MSCORP.tt</DependentUpon>
+    </Compile>
+    <Compile Include="Model\ModeloAplicacion.cs">
+      <DependentUpon>EF_ERP_MSCORP.tt</DependentUpon>
+    </Compile>
+    <Compile Include="Model\MotorAplicacion.cs">
+      <DependentUpon>EF_ERP_MSCORP.tt</DependentUpon>
+    </Compile>
+    <Compile Include="Model\MovimientoBancario.cs">
+      <DependentUpon>EF_ERP_MSCORP.tt</DependentUpon>
+    </Compile>
+    <Compile Include="Model\MovimientosEntreOrdenesTrabajo.cs">
+      <DependentUpon>EF_ERP_MSCORP.tt</DependentUpon>
+    </Compile>
+    <Compile Include="Model\MovimientosEntreOrdenesTrabajoDetalle.cs">
+      <DependentUpon>EF_ERP_MSCORP.tt</DependentUpon>
+    </Compile>
+    <Compile Include="Model\NivelAcademico.cs">
+      <DependentUpon>EF_ERP_MSCORP.tt</DependentUpon>
+    </Compile>
+    <Compile Include="Model\Nomina.cs">
+      <DependentUpon>EF_ERP_MSCORP.tt</DependentUpon>
+    </Compile>
+    <Compile Include="Model\NotaCreditoProveedor.cs">
+      <DependentUpon>EF_ERP_MSCORP.tt</DependentUpon>
+    </Compile>
+    <Compile Include="Model\NotasCredito.cs">
+      <DependentUpon>EF_ERP_MSCORP.tt</DependentUpon>
+    </Compile>
+    <Compile Include="Model\NotasCreditoAplicadas.cs">
+      <DependentUpon>EF_ERP_MSCORP.tt</DependentUpon>
+    </Compile>
+    <Compile Include="Model\NotasDebito.cs">
+      <DependentUpon>EF_ERP_MSCORP.tt</DependentUpon>
+    </Compile>
+    <Compile Include="Model\NotasDebitoCredito.cs">
+      <DependentUpon>EF_ERP_MSCORP.tt</DependentUpon>
+    </Compile>
+    <Compile Include="Model\NotasDebitoProveedor.cs">
+      <DependentUpon>EF_ERP_MSCORP.tt</DependentUpon>
+    </Compile>
+    <Compile Include="Model\Notificacion.cs">
+      <DependentUpon>EF_ERP_MSCORP.tt</DependentUpon>
+    </Compile>
+    <Compile Include="Model\NotificacionUsuario.cs">
+      <DependentUpon>EF_ERP_MSCORP.tt</DependentUpon>
+    </Compile>
+    <Compile Include="Model\OrdenProduccion.cs">
+      <DependentUpon>EF_ERP_MSCORP.tt</DependentUpon>
+    </Compile>
+    <Compile Include="Model\OrdenTrabajo.cs">
+      <DependentUpon>EF_ERP_MSCORP.tt</DependentUpon>
+    </Compile>
+    <Compile Include="Model\PagoRealizadoTesoreria.cs">
+      <DependentUpon>EF_ERP_MSCORP.tt</DependentUpon>
+    </Compile>
+    <Compile Include="Model\Pais.cs">
+      <DependentUpon>EF_ERP_MSCORP.tt</DependentUpon>
+    </Compile>
+    <Compile Include="Model\Pedido.cs">
+      <DependentUpon>EF_ERP_MSCORP.tt</DependentUpon>
+    </Compile>
+    <Compile Include="Model\Permiso.cs">
+      <DependentUpon>EF_ERP_MSCORP.tt</DependentUpon>
+    </Compile>
+    <Compile Include="Model\PermisoEmpleado.cs">
+      <DependentUpon>EF_ERP_MSCORP.tt</DependentUpon>
+    </Compile>
+    <Compile Include="Model\PermisoEmpleadoBodega.cs">
+      <DependentUpon>EF_ERP_MSCORP.tt</DependentUpon>
+    </Compile>
+    <Compile Include="Model\PeticionCompra.cs">
+      <DependentUpon>EF_ERP_MSCORP.tt</DependentUpon>
+    </Compile>
+    <Compile Include="Model\PrecioCombo.cs">
+      <DependentUpon>EF_ERP_MSCORP.tt</DependentUpon>
+    </Compile>
+    <Compile Include="Model\PrecioProducto.cs">
+      <DependentUpon>EF_ERP_MSCORP.tt</DependentUpon>
+    </Compile>
+    <Compile Include="Model\PrefacturaExcenta.cs">
+      <DependentUpon>EF_ERP_MSCORP.tt</DependentUpon>
+    </Compile>
+    <Compile Include="Model\PreFacturaInternaOT.cs">
+      <DependentUpon>EF_ERP_MSCORP.tt</DependentUpon>
+    </Compile>
+    <Compile Include="Model\PreFacturaOT.cs">
+      <DependentUpon>EF_ERP_MSCORP.tt</DependentUpon>
+    </Compile>
+    <Compile Include="Model\PrefacturaVenta.cs">
+      <DependentUpon>EF_ERP_MSCORP.tt</DependentUpon>
+    </Compile>
+    <Compile Include="Model\ProcesamientoCreditoCliente.cs">
+      <DependentUpon>EF_ERP_MSCORP.tt</DependentUpon>
+    </Compile>
+    <Compile Include="Model\ProcesarOrdenProduccion.cs">
+      <DependentUpon>EF_ERP_MSCORP.tt</DependentUpon>
+    </Compile>
+    <Compile Include="Model\ProcesarSolicitudCostosProduccion.cs">
+      <DependentUpon>EF_ERP_MSCORP.tt</DependentUpon>
+    </Compile>
+    <Compile Include="Model\Producto.cs">
+      <DependentUpon>EF_ERP_MSCORP.tt</DependentUpon>
+    </Compile>
+    <Compile Include="Model\ProductoImportacion.cs">
+      <DependentUpon>EF_ERP_MSCORP.tt</DependentUpon>
+    </Compile>
+    <Compile Include="Model\ProductoMaloOP.cs">
+      <DependentUpon>EF_ERP_MSCORP.tt</DependentUpon>
+    </Compile>
+    <Compile Include="Model\ProductosDefectuosos.cs">
+      <DependentUpon>EF_ERP_MSCORP.tt</DependentUpon>
+    </Compile>
+    <Compile Include="Model\ProgramarPago.cs">
+      <DependentUpon>EF_ERP_MSCORP.tt</DependentUpon>
+    </Compile>
+    <Compile Include="Model\Proveedor.cs">
+      <DependentUpon>EF_ERP_MSCORP.tt</DependentUpon>
+    </Compile>
+    <Compile Include="Model\ProveedorBancario.cs">
+      <DependentUpon>EF_ERP_MSCORP.tt</DependentUpon>
+    </Compile>
+    <Compile Include="Model\ProveedorContacto.cs">
+      <DependentUpon>EF_ERP_MSCORP.tt</DependentUpon>
+    </Compile>
+    <Compile Include="Model\PruebaVehiculo.cs">
+      <DependentUpon>EF_ERP_MSCORP.tt</DependentUpon>
+    </Compile>
+    <Compile Include="Model\Puesto.cs">
+      <DependentUpon>EF_ERP_MSCORP.tt</DependentUpon>
+    </Compile>
+    <Compile Include="Model\ReciboCajaChica.cs">
+      <DependentUpon>EF_ERP_MSCORP.tt</DependentUpon>
+    </Compile>
+    <Compile Include="Model\ReciboCajaGeneral.cs">
+      <DependentUpon>EF_ERP_MSCORP.tt</DependentUpon>
+    </Compile>
+    <Compile Include="Model\RequisitoCredito.cs">
+      <DependentUpon>EF_ERP_MSCORP.tt</DependentUpon>
+    </Compile>
+    <Compile Include="Model\RequisitoIntervalo.cs">
+      <DependentUpon>EF_ERP_MSCORP.tt</DependentUpon>
+    </Compile>
+    <Compile Include="Model\RequisitoPuesto.cs">
+      <DependentUpon>EF_ERP_MSCORP.tt</DependentUpon>
+    </Compile>
+    <Compile Include="Model\RequisitosProcesamiento.cs">
+      <DependentUpon>EF_ERP_MSCORP.tt</DependentUpon>
+    </Compile>
+    <Compile Include="Model\Reserva.cs">
+      <DependentUpon>EF_ERP_MSCORP.tt</DependentUpon>
+    </Compile>
+    <Compile Include="Model\Retenciones.cs">
+      <DependentUpon>EF_ERP_MSCORP.tt</DependentUpon>
+    </Compile>
+    <Compile Include="Model\RetencionesDetalle.cs">
+      <DependentUpon>EF_ERP_MSCORP.tt</DependentUpon>
+    </Compile>
+    <Compile Include="Model\RetencionesProveedor.cs">
+      <DependentUpon>EF_ERP_MSCORP.tt</DependentUpon>
+    </Compile>
+    <Compile Include="Model\ReversionDocumento.cs">
+      <DependentUpon>EF_ERP_MSCORP.tt</DependentUpon>
+    </Compile>
+    <Compile Include="Model\RevisarCotizacion.cs">
+      <DependentUpon>EF_ERP_MSCORP.tt</DependentUpon>
+    </Compile>
+    <Compile Include="Model\RiesgoPuesto.cs">
+      <DependentUpon>EF_ERP_MSCORP.tt</DependentUpon>
+    </Compile>
+    <Compile Include="Model\Rubro.cs">
+      <DependentUpon>EF_ERP_MSCORP.tt</DependentUpon>
+    </Compile>
+    <Compile Include="Model\Rutas.cs">
+      <DependentUpon>EF_ERP_MSCORP.tt</DependentUpon>
+    </Compile>
+    <Compile Include="Model\SalidaInventario.cs">
+      <DependentUpon>EF_ERP_MSCORP.tt</DependentUpon>
+    </Compile>
+    <Compile Include="Model\SectorBodega.cs">
+      <DependentUpon>EF_ERP_MSCORP.tt</DependentUpon>
+    </Compile>
+    <Compile Include="Model\SectorEspacio.cs">
+      <DependentUpon>EF_ERP_MSCORP.tt</DependentUpon>
+    </Compile>
+    <Compile Include="Model\Segmento.cs">
+      <DependentUpon>EF_ERP_MSCORP.tt</DependentUpon>
+    </Compile>
+    <Compile Include="Model\SeguimientoContacto.cs">
+      <DependentUpon>EF_ERP_MSCORP.tt</DependentUpon>
+    </Compile>
+    <Compile Include="Model\Serie.cs">
+      <DependentUpon>EF_ERP_MSCORP.tt</DependentUpon>
+    </Compile>
+    <Compile Include="Model\Servicio.cs">
+      <DependentUpon>EF_ERP_MSCORP.tt</DependentUpon>
+    </Compile>
+    <Compile Include="Model\ServiciosImportacion.cs">
+      <DependentUpon>EF_ERP_MSCORP.tt</DependentUpon>
+    </Compile>
+    <Compile Include="Model\Sistema.cs">
+      <DependentUpon>EF_ERP_MSCORP.tt</DependentUpon>
+    </Compile>
+    <Compile Include="Model\SistemaEmpresa.cs">
+      <DependentUpon>EF_ERP_MSCORP.tt</DependentUpon>
+    </Compile>
+    <Compile Include="Model\SolicitarProductosOP.cs">
+      <DependentUpon>EF_ERP_MSCORP.tt</DependentUpon>
+    </Compile>
+    <Compile Include="Model\SolicitarProductosOPDetalle.cs">
+      <DependentUpon>EF_ERP_MSCORP.tt</DependentUpon>
+    </Compile>
+    <Compile Include="Model\SolicitudAperturaOT.cs">
+      <DependentUpon>EF_ERP_MSCORP.tt</DependentUpon>
+    </Compile>
+    <Compile Include="Model\SolicitudCheque.cs">
+      <DependentUpon>EF_ERP_MSCORP.tt</DependentUpon>
+    </Compile>
+    <Compile Include="Model\SolicitudCostosProduccion.cs">
+      <DependentUpon>EF_ERP_MSCORP.tt</DependentUpon>
+    </Compile>
+    <Compile Include="Model\SolicitudCostosProduccionDetalle.cs">
+      <DependentUpon>EF_ERP_MSCORP.tt</DependentUpon>
+    </Compile>
+    <Compile Include="Model\SolicitudCredito.cs">
+      <DependentUpon>EF_ERP_MSCORP.tt</DependentUpon>
+    </Compile>
+    <Compile Include="Model\SolicitudGastosOperativos.cs">
+      <DependentUpon>EF_ERP_MSCORP.tt</DependentUpon>
+    </Compile>
+    <Compile Include="Model\SolicitudPagoCajaChica.cs">
+      <DependentUpon>EF_ERP_MSCORP.tt</DependentUpon>
+    </Compile>
+    <Compile Include="Model\SolicitudPaseCredito.cs">
+      <DependentUpon>EF_ERP_MSCORP.tt</DependentUpon>
+    </Compile>
+    <Compile Include="Model\SolicitudPermisoSistema.cs">
+      <DependentUpon>EF_ERP_MSCORP.tt</DependentUpon>
+    </Compile>
+    <Compile Include="Model\SolicitudReciboReembolso.cs">
+      <DependentUpon>EF_ERP_MSCORP.tt</DependentUpon>
+    </Compile>
+    <Compile Include="Model\SolicitudReembolsoCajaChica.cs">
+      <DependentUpon>EF_ERP_MSCORP.tt</DependentUpon>
+    </Compile>
+    <Compile Include="Model\SolicitudTraslado.cs">
+      <DependentUpon>EF_ERP_MSCORP.tt</DependentUpon>
+    </Compile>
+    <Compile Include="Model\spAnulacionPrefacturaInterna_Result.cs">
+      <DependentUpon>EF_ERP_MSCORP.tt</DependentUpon>
+    </Compile>
+    <Compile Include="Model\spArqueoReciboCajaGeneral_Result.cs">
+      <DependentUpon>EF_ERP_MSCORP.tt</DependentUpon>
+    </Compile>
+    <Compile Include="Model\SpAsignacionTecnicoServicioEditarXIdOT_Result.cs">
+      <DependentUpon>EF_ERP_MSCORP.tt</DependentUpon>
+    </Compile>
+    <Compile Include="Model\SpAsignacionTS_EditarXIdOT_Result.cs">
+      <DependentUpon>EF_ERP_MSCORP.tt</DependentUpon>
+    </Compile>
+    <Compile Include="Model\SpBitacoraModuloSistema_Result.cs">
+      <DependentUpon>EF_ERP_MSCORP.tt</DependentUpon>
+    </Compile>
+    <Compile Include="Model\SpBitacoraUsuarioXTipoCuentaXFechas_Result.cs">
+      <DependentUpon>EF_ERP_MSCORP.tt</DependentUpon>
+    </Compile>
+    <Compile Include="Model\SpBitacoraUsuarioXUsuarioXFechas_Result.cs">
+      <DependentUpon>EF_ERP_MSCORP.tt</DependentUpon>
+    </Compile>
+    <Compile Include="Model\SpBitacoraUsuario_Result.cs">
+      <DependentUpon>EF_ERP_MSCORP.tt</DependentUpon>
+    </Compile>
+    <Compile Include="Model\spCajasAperturadasReporteCierreDia_Result.cs">
+      <DependentUpon>EF_ERP_MSCORP.tt</DependentUpon>
+    </Compile>
+    <Compile Include="Model\spCajasAsignadasAperturaDiaReporte_Result.cs">
+      <DependentUpon>EF_ERP_MSCORP.tt</DependentUpon>
+    </Compile>
+    <Compile Include="Model\spCajasDisponiblesAperturaDiaReporte_Result.cs">
+      <DependentUpon>EF_ERP_MSCORP.tt</DependentUpon>
+    </Compile>
+    <Compile Include="Model\SpCantidadesDeducir_Result.cs">
+      <DependentUpon>EF_ERP_MSCORP.tt</DependentUpon>
+    </Compile>
+    <Compile Include="Model\spCantLoteExcluidosXCompra_Result.cs">
+      <DependentUpon>EF_ERP_MSCORP.tt</DependentUpon>
+    </Compile>
+    <Compile Include="Model\SpCargaFlotaXId_Result.cs">
+      <DependentUpon>EF_ERP_MSCORP.tt</DependentUpon>
+    </Compile>
+    <Compile Include="Model\SpCargaImagenxFlota_Result.cs">
+      <DependentUpon>EF_ERP_MSCORP.tt</DependentUpon>
+    </Compile>
+    <Compile Include="Model\SpCargarComprasRealizadasPorSucursal_Result.cs">
+      <DependentUpon>EF_ERP_MSCORP.tt</DependentUpon>
+    </Compile>
+    <Compile Include="Model\spCargarDatosAEditarPagoRealizadoTesoreria_Result.cs">
+      <DependentUpon>EF_ERP_MSCORP.tt</DependentUpon>
+    </Compile>
+    <Compile Include="Model\spCargarDatosMinutaDeposito_MovimientoBancarioXCuenta_Result.cs">
+      <DependentUpon>EF_ERP_MSCORP.tt</DependentUpon>
+    </Compile>
+    <Compile Include="Model\spCargarDatosMovimientoBancarioXBanco_Result.cs">
+      <DependentUpon>EF_ERP_MSCORP.tt</DependentUpon>
+    </Compile>
+    <Compile Include="Model\spCargarDatosMovimientoBancarioXCuenta_Result.cs">
+      <DependentUpon>EF_ERP_MSCORP.tt</DependentUpon>
+    </Compile>
+    <Compile Include="Model\spCargarDatosMovimientoBancarioXTipoMoneda_Result.cs">
+      <DependentUpon>EF_ERP_MSCORP.tt</DependentUpon>
+    </Compile>
+    <Compile Include="Model\spCargarDatosMovimientoBancario_General_Result.cs">
+      <DependentUpon>EF_ERP_MSCORP.tt</DependentUpon>
+    </Compile>
+    <Compile Include="Model\spCargarDatosOrdenTrabajo_Result.cs">
+      <DependentUpon>EF_ERP_MSCORP.tt</DependentUpon>
+    </Compile>
+    <Compile Include="Model\spCargarDatosPagoRealizadoTesoreria_MovimientoBancarioXCuenta_Result.cs">
+      <DependentUpon>EF_ERP_MSCORP.tt</DependentUpon>
+    </Compile>
+    <Compile Include="Model\SpCargarDetalleDePrefactura_Reporte_Result.cs">
+      <DependentUpon>EF_ERP_MSCORP.tt</DependentUpon>
+    </Compile>
+    <Compile Include="Model\SpCargarDetalleDePrefactura_Result.cs">
+      <DependentUpon>EF_ERP_MSCORP.tt</DependentUpon>
+    </Compile>
+    <Compile Include="Model\SpCargarDetalleFacturaEnDevolucion_Result.cs">
+      <DependentUpon>EF_ERP_MSCORP.tt</DependentUpon>
+    </Compile>
+    <Compile Include="Model\SpCargarDetalleFacturaInterna_Result.cs">
+      <DependentUpon>EF_ERP_MSCORP.tt</DependentUpon>
+    </Compile>
+    <Compile Include="Model\spCargarFacturasAnuladas_Result.cs">
+      <DependentUpon>EF_ERP_MSCORP.tt</DependentUpon>
+    </Compile>
+    <Compile Include="Model\spCargarFacturasCancelada_Result.cs">
+      <DependentUpon>EF_ERP_MSCORP.tt</DependentUpon>
+    </Compile>
+    <Compile Include="Model\spCargarFacturasConDevolucionesCliente_Result.cs">
+      <DependentUpon>EF_ERP_MSCORP.tt</DependentUpon>
+    </Compile>
+    <Compile Include="Model\spCargarFacturasConDevoluciones_Result.cs">
+      <DependentUpon>EF_ERP_MSCORP.tt</DependentUpon>
+    </Compile>
+    <Compile Include="Model\SpCargarFacturasRealizadasPorSucursales_Result.cs">
+      <DependentUpon>EF_ERP_MSCORP.tt</DependentUpon>
+    </Compile>
+    <Compile Include="Model\SpCargarFacturasRealizadasPorSucursal_Result.cs">
+      <DependentUpon>EF_ERP_MSCORP.tt</DependentUpon>
+    </Compile>
+    <Compile Include="Model\spCargarFacturas_Cliente_NotaDebitoCredito_Result.cs">
+      <DependentUpon>EF_ERP_MSCORP.tt</DependentUpon>
+    </Compile>
+    <Compile Include="Model\spCargarFacturas_Proveedor_NotaDebitoCredito_Result.cs">
+      <DependentUpon>EF_ERP_MSCORP.tt</DependentUpon>
+    </Compile>
+    <Compile Include="Model\SpCargarListaCriterioCobranza_Result.cs">
+      <DependentUpon>EF_ERP_MSCORP.tt</DependentUpon>
+    </Compile>
+    <Compile Include="Model\spCargarNotaCredito_ReporteXId_Result.cs">
+      <DependentUpon>EF_ERP_MSCORP.tt</DependentUpon>
+    </Compile>
+    <Compile Include="Model\spCargarNotaDebito_Cliente_NotaCreditoXIdNota_Result.cs">
+      <DependentUpon>EF_ERP_MSCORP.tt</DependentUpon>
+    </Compile>
+    <Compile Include="Model\SPCARGARNOTADEBITO_PROVEEDOR_NOTACREDITO_Result.cs">
+      <DependentUpon>EF_ERP_MSCORP.tt</DependentUpon>
+    </Compile>
+    <Compile Include="Model\SpCargarNotasDebitoEstadoCuentaXIdCliente_Result.cs">
+      <DependentUpon>EF_ERP_MSCORP.tt</DependentUpon>
+    </Compile>
+    <Compile Include="Model\spCargarNotasDebitoGlobalXIdCliente_Result.cs">
+      <DependentUpon>EF_ERP_MSCORP.tt</DependentUpon>
+    </Compile>
+    <Compile Include="Model\spCargarSL_EmisionCheque_Result.cs">
+      <DependentUpon>EF_ERP_MSCORP.tt</DependentUpon>
+    </Compile>
+    <Compile Include="Model\spCargarTasaCambioXFecha_Result.cs">
+      <DependentUpon>EF_ERP_MSCORP.tt</DependentUpon>
+    </Compile>
+    <Compile Include="Model\SpCargarTotalDeudaNDXCliente_Result.cs">
+      <DependentUpon>EF_ERP_MSCORP.tt</DependentUpon>
+    </Compile>
+    <Compile Include="Model\spCargarVistaProductosCodFam_Result.cs">
+      <DependentUpon>EF_ERP_MSCORP.tt</DependentUpon>
+    </Compile>
+    <Compile Include="Model\SpCierredeDiaXSucursal_Result.cs">
+      <DependentUpon>EF_ERP_MSCORP.tt</DependentUpon>
+    </Compile>
+    <Compile Include="Model\SpComprasTotalesXEmpresa_Result.cs">
+      <DependentUpon>EF_ERP_MSCORP.tt</DependentUpon>
+    </Compile>
+    <Compile Include="Model\spConsultaMinutaDeposito_Result.cs">
+      <DependentUpon>EF_ERP_MSCORP.tt</DependentUpon>
+    </Compile>
+    <Compile Include="Model\spCostosManoObraXOrden_Result.cs">
+      <DependentUpon>EF_ERP_MSCORP.tt</DependentUpon>
+    </Compile>
+    <Compile Include="Model\SpCotizacionDetalleVenta_Result.cs">
+      <DependentUpon>EF_ERP_MSCORP.tt</DependentUpon>
+    </Compile>
+    <Compile Include="Model\SpCotizacionesElaboradasXEmpresaXFechas_Result.cs">
+      <DependentUpon>EF_ERP_MSCORP.tt</DependentUpon>
+    </Compile>
+    <Compile Include="Model\SpCotizacionVentaTotales_Result.cs">
+      <DependentUpon>EF_ERP_MSCORP.tt</DependentUpon>
+    </Compile>
+    <Compile Include="Model\spDatosAperturaCierreDia_Result.cs">
+      <DependentUpon>EF_ERP_MSCORP.tt</DependentUpon>
+    </Compile>
+    <Compile Include="Model\SpDatosCajasParaReporteCierre_Result.cs">
+      <DependentUpon>EF_ERP_MSCORP.tt</DependentUpon>
+    </Compile>
+    <Compile Include="Model\spDatosClienteParaFacturaPV_Result.cs">
+      <DependentUpon>EF_ERP_MSCORP.tt</DependentUpon>
+    </Compile>
+    <Compile Include="Model\spDatosPrefacturaParaFacturaPV_Result.cs">
+      <DependentUpon>EF_ERP_MSCORP.tt</DependentUpon>
+    </Compile>
+    <Compile Include="Model\spDatosProductosXSegmento_Result.cs">
+      <DependentUpon>EF_ERP_MSCORP.tt</DependentUpon>
+    </Compile>
+    <Compile Include="Model\SpDatosReciboCajaGeneral_Result.cs">
+      <DependentUpon>EF_ERP_MSCORP.tt</DependentUpon>
+    </Compile>
+    <Compile Include="Model\spDatosRevisarCotizacion_Result.cs">
+      <DependentUpon>EF_ERP_MSCORP.tt</DependentUpon>
+    </Compile>
+    <Compile Include="Model\spDatosTrasladoParaReporte_Result.cs">
+      <DependentUpon>EF_ERP_MSCORP.tt</DependentUpon>
+    </Compile>
+    <Compile Include="Model\SpDatosVendedorFacturaPV_Result.cs">
+      <DependentUpon>EF_ERP_MSCORP.tt</DependentUpon>
+    </Compile>
+    <Compile Include="Model\spDetalleAperturaDiaReporte_Result.cs">
+      <DependentUpon>EF_ERP_MSCORP.tt</DependentUpon>
+    </Compile>
+    <Compile Include="Model\spDetalleCierreCaja_Result.cs">
+      <DependentUpon>EF_ERP_MSCORP.tt</DependentUpon>
+    </Compile>
+    <Compile Include="Model\SpDetalleConfirmarAsignacionProductos_Result.cs">
+      <DependentUpon>EF_ERP_MSCORP.tt</DependentUpon>
+    </Compile>
+    <Compile Include="Model\SpDetalleFacturaPV_Result.cs">
+      <DependentUpon>EF_ERP_MSCORP.tt</DependentUpon>
+    </Compile>
+    <Compile Include="Model\SpDetalleInactecGenerado_Result.cs">
+      <DependentUpon>EF_ERP_MSCORP.tt</DependentUpon>
+    </Compile>
+    <Compile Include="Model\SpDetalleInatec_Result.cs">
+      <DependentUpon>EF_ERP_MSCORP.tt</DependentUpon>
+    </Compile>
+    <Compile Include="Model\SpDetalleInssLaboralGenerado_Result.cs">
+      <DependentUpon>EF_ERP_MSCORP.tt</DependentUpon>
+    </Compile>
+    <Compile Include="Model\SpDetalleInssLaboral_Result.cs">
+      <DependentUpon>EF_ERP_MSCORP.tt</DependentUpon>
+    </Compile>
+    <Compile Include="Model\SpDetalleInssPatronalGenerado_Result.cs">
+      <DependentUpon>EF_ERP_MSCORP.tt</DependentUpon>
+    </Compile>
+    <Compile Include="Model\SpDetalleInssPatronal_Result.cs">
+      <DependentUpon>EF_ERP_MSCORP.tt</DependentUpon>
+    </Compile>
+    <Compile Include="Model\SpDetalleIRGenerado_Result.cs">
+      <DependentUpon>EF_ERP_MSCORP.tt</DependentUpon>
+    </Compile>
+    <Compile Include="Model\SpDetalleIR_Result.cs">
+      <DependentUpon>EF_ERP_MSCORP.tt</DependentUpon>
+    </Compile>
+    <Compile Include="Model\SpDetalleOtrasDeduccionesGenerado_Result.cs">
+      <DependentUpon>EF_ERP_MSCORP.tt</DependentUpon>
+    </Compile>
+    <Compile Include="Model\SpDetalleOtrasDeducciones_Result.cs">
+      <DependentUpon>EF_ERP_MSCORP.tt</DependentUpon>
+    </Compile>
+    <Compile Include="Model\SpDetalleOtrosIngresosGenerado_Result.cs">
+      <DependentUpon>EF_ERP_MSCORP.tt</DependentUpon>
+    </Compile>
+    <Compile Include="Model\SpDetalleOtrosIngresos_Result.cs">
+      <DependentUpon>EF_ERP_MSCORP.tt</DependentUpon>
+    </Compile>
+    <Compile Include="Model\spDetalleParaFacturaPV_Result.cs">
+      <DependentUpon>EF_ERP_MSCORP.tt</DependentUpon>
+    </Compile>
+    <Compile Include="Model\spDetalleParaTablaFacturaCelularPV_Result.cs">
+      <DependentUpon>EF_ERP_MSCORP.tt</DependentUpon>
+    </Compile>
+    <Compile Include="Model\spDetalleParaTablaFacturaPVModificada_Result.cs">
+      <DependentUpon>EF_ERP_MSCORP.tt</DependentUpon>
+    </Compile>
+    <Compile Include="Model\spDetalleParaTablaFacturaPV_Result.cs">
+      <DependentUpon>EF_ERP_MSCORP.tt</DependentUpon>
+    </Compile>
+    <Compile Include="Model\SpDetallePedido_Result.cs">
+      <DependentUpon>EF_ERP_MSCORP.tt</DependentUpon>
+    </Compile>
+    <Compile Include="Model\spDetallePrefacturaPVparaAnulacion_Result.cs">
+      <DependentUpon>EF_ERP_MSCORP.tt</DependentUpon>
+    </Compile>
+    <Compile Include="Model\spDetallePrefacturaPVParaDevolucion_Result.cs">
+      <DependentUpon>EF_ERP_MSCORP.tt</DependentUpon>
+    </Compile>
+    <Compile Include="Model\spDetallePrefacturaPV_ReporteUtilidades_Result.cs">
+      <DependentUpon>EF_ERP_MSCORP.tt</DependentUpon>
+    </Compile>
+    <Compile Include="Model\spDetallePrefacturaPV_Result.cs">
+      <DependentUpon>EF_ERP_MSCORP.tt</DependentUpon>
+    </Compile>
+    <Compile Include="Model\SpDetallePrefacturasOTXIdPrefacturaOT_Result.cs">
+      <DependentUpon>EF_ERP_MSCORP.tt</DependentUpon>
+    </Compile>
+    <Compile Include="Model\spDetalleProductoCelularFacturaPV_Result.cs">
+      <DependentUpon>EF_ERP_MSCORP.tt</DependentUpon>
+    </Compile>
+    <Compile Include="Model\spDetalleRevisarCotizacion_Result.cs">
+      <DependentUpon>EF_ERP_MSCORP.tt</DependentUpon>
+    </Compile>
+    <Compile Include="Model\spDetallesdeComprasXDevolicion_Result.cs">
+      <DependentUpon>EF_ERP_MSCORP.tt</DependentUpon>
+    </Compile>
+    <Compile Include="Model\spDetalleSolicitudChequeXIdSolicitud_Result.cs">
+      <DependentUpon>EF_ERP_MSCORP.tt</DependentUpon>
+    </Compile>
+    <Compile Include="Model\spDetallesProductosXIdDevolicionCompra_Result.cs">
+      <DependentUpon>EF_ERP_MSCORP.tt</DependentUpon>
+    </Compile>
+    <Compile Include="Model\SpDetallesReciboCajaChica_Result.cs">
+      <DependentUpon>EF_ERP_MSCORP.tt</DependentUpon>
+    </Compile>
+    <Compile Include="Model\SpDetalleSubsidiosGenerado_Result.cs">
+      <DependentUpon>EF_ERP_MSCORP.tt</DependentUpon>
+    </Compile>
+    <Compile Include="Model\SpDetalleSubsidios_Result.cs">
+      <DependentUpon>EF_ERP_MSCORP.tt</DependentUpon>
+    </Compile>
+    <Compile Include="Model\spDetalleTotalFacturaPVCancelado_Result.cs">
+      <DependentUpon>EF_ERP_MSCORP.tt</DependentUpon>
+    </Compile>
+    <Compile Include="Model\spDetalleTotalFacturaPV_Result.cs">
+      <DependentUpon>EF_ERP_MSCORP.tt</DependentUpon>
+    </Compile>
+    <Compile Include="Model\spDetalleTrasladoParaReporte_Result.cs">
+      <DependentUpon>EF_ERP_MSCORP.tt</DependentUpon>
+    </Compile>
+    <Compile Include="Model\spDetalleVehiculoFacturaPV_Result.cs">
+      <DependentUpon>EF_ERP_MSCORP.tt</DependentUpon>
+    </Compile>
+    <Compile Include="Model\SpDetalleXItemFacturaPV_Result.cs">
+      <DependentUpon>EF_ERP_MSCORP.tt</DependentUpon>
+    </Compile>
+    <Compile Include="Model\SpDiferenciaFacturaYCupon_Result.cs">
+      <DependentUpon>EF_ERP_MSCORP.tt</DependentUpon>
+    </Compile>
+    <Compile Include="Model\SpEmpleadoConContrato_Result.cs">
+      <DependentUpon>EF_ERP_MSCORP.tt</DependentUpon>
+    </Compile>
+    <Compile Include="Model\SpEmpleadoSinContrato_Result.cs">
+      <DependentUpon>EF_ERP_MSCORP.tt</DependentUpon>
+    </Compile>
+    <Compile Include="Model\SpEmpleadosXTipoCuenta_Result.cs">
+      <DependentUpon>EF_ERP_MSCORP.tt</DependentUpon>
+    </Compile>
+    <Compile Include="Model\SpEstadoCuentaGlobalXIdCliente_Result.cs">
+      <DependentUpon>EF_ERP_MSCORP.tt</DependentUpon>
+    </Compile>
+    <Compile Include="Model\SpFactorPrecioPrueba_Result.cs">
+      <DependentUpon>EF_ERP_MSCORP.tt</DependentUpon>
+    </Compile>
+    <Compile Include="Model\SpFactorPrecio_Result.cs">
+      <DependentUpon>EF_ERP_MSCORP.tt</DependentUpon>
+    </Compile>
+    <Compile Include="Model\spFacturaClienteCordoba_Result.cs">
+      <DependentUpon>EF_ERP_MSCORP.tt</DependentUpon>
+    </Compile>
+    <Compile Include="Model\spFacturaClienteDolar_Result.cs">
+      <DependentUpon>EF_ERP_MSCORP.tt</DependentUpon>
+    </Compile>
+    <Compile Include="Model\SpFacturasParaDespachoXEmpleado_Result.cs">
+      <DependentUpon>EF_ERP_MSCORP.tt</DependentUpon>
+    </Compile>
+    <Compile Include="Model\SpFacturasPendientePagoXCliente_Result.cs">
+      <DependentUpon>EF_ERP_MSCORP.tt</DependentUpon>
+    </Compile>
+    <Compile Include="Model\spFacturasVencidasPorClente_Result.cs">
+      <DependentUpon>EF_ERP_MSCORP.tt</DependentUpon>
+    </Compile>
+    <Compile Include="Model\spFiltroReciboCajaGeneralXEstado_Result.cs">
+      <DependentUpon>EF_ERP_MSCORP.tt</DependentUpon>
+    </Compile>
+    <Compile Include="Model\SpGastosDepartamentoGeneral_Result.cs">
+      <DependentUpon>EF_ERP_MSCORP.tt</DependentUpon>
+    </Compile>
+    <Compile Include="Model\SpGastosDePersonal_Result.cs">
+      <DependentUpon>EF_ERP_MSCORP.tt</DependentUpon>
+    </Compile>
+    <Compile Include="Model\spGastosOperativosXEstado_Result.cs">
+      <DependentUpon>EF_ERP_MSCORP.tt</DependentUpon>
+    </Compile>
+    <Compile Include="Model\spGastosOperativos_Result.cs">
+      <DependentUpon>EF_ERP_MSCORP.tt</DependentUpon>
+    </Compile>
+    <Compile Include="Model\SpGastosPersonalGenerado_Result.cs">
+      <DependentUpon>EF_ERP_MSCORP.tt</DependentUpon>
+    </Compile>
+    <Compile Include="Model\SpGastosPersonalGeneral_Result.cs">
+      <DependentUpon>EF_ERP_MSCORP.tt</DependentUpon>
+    </Compile>
+    <Compile Include="Model\SpGastosPorDepartamento_Result.cs">
+      <DependentUpon>EF_ERP_MSCORP.tt</DependentUpon>
+    </Compile>
+    <Compile Include="Model\SpGastosPorSucursal_Result.cs">
+      <DependentUpon>EF_ERP_MSCORP.tt</DependentUpon>
+    </Compile>
+    <Compile Include="Model\SpGastosSucursalGeneral_Result.cs">
+      <DependentUpon>EF_ERP_MSCORP.tt</DependentUpon>
+    </Compile>
+    <Compile Include="Model\SpGastosTotalGeneral_Result.cs">
+      <DependentUpon>EF_ERP_MSCORP.tt</DependentUpon>
+    </Compile>
+    <Compile Include="Model\SpGastosTotalPersonal_Result.cs">
+      <DependentUpon>EF_ERP_MSCORP.tt</DependentUpon>
+    </Compile>
+    <Compile Include="Model\SpGenerarNominaDepartamento_Result.cs">
+      <DependentUpon>EF_ERP_MSCORP.tt</DependentUpon>
+    </Compile>
+    <Compile Include="Model\SpGenerarNomina_Result.cs">
+      <DependentUpon>EF_ERP_MSCORP.tt</DependentUpon>
+    </Compile>
+    <Compile Include="Model\SpGetAlcancePuesto_Result.cs">
+      <DependentUpon>EF_ERP_MSCORP.tt</DependentUpon>
+    </Compile>
+    <Compile Include="Model\spgetAnulacionesPrefacturas_Result.cs">
+      <DependentUpon>EF_ERP_MSCORP.tt</DependentUpon>
+    </Compile>
+    <Compile Include="Model\spGetArqueoCaja_Result.cs">
+      <DependentUpon>EF_ERP_MSCORP.tt</DependentUpon>
+    </Compile>
+    <Compile Include="Model\spGetCajeroParaFactura_Result.cs">
+      <DependentUpon>EF_ERP_MSCORP.tt</DependentUpon>
+    </Compile>
+    <Compile Include="Model\spgetCotizacionCompra_Result.cs">
+      <DependentUpon>EF_ERP_MSCORP.tt</DependentUpon>
+    </Compile>
+    <Compile Include="Model\SPGetDatosCotizacionVenta_Result.cs">
+      <DependentUpon>EF_ERP_MSCORP.tt</DependentUpon>
+    </Compile>
+    <Compile Include="Model\SpGetDatosFlotaVehicularReciboCaja_Result.cs">
+      <DependentUpon>EF_ERP_MSCORP.tt</DependentUpon>
+    </Compile>
+    <Compile Include="Model\SpGetDatosReciboCajaChica_Result.cs">
+      <DependentUpon>EF_ERP_MSCORP.tt</DependentUpon>
+    </Compile>
+    <Compile Include="Model\SpGetEnfermedadPuesto_Result.cs">
+      <DependentUpon>EF_ERP_MSCORP.tt</DependentUpon>
+    </Compile>
+    <Compile Include="Model\spGetFacturasDeudaActualCliente_Result.cs">
+      <DependentUpon>EF_ERP_MSCORP.tt</DependentUpon>
+    </Compile>
+    <Compile Include="Model\SpGetIndicadorPuesto_Result.cs">
+      <DependentUpon>EF_ERP_MSCORP.tt</DependentUpon>
+    </Compile>
+    <Compile Include="Model\SpGetInfoPuesto_Result.cs">
+      <DependentUpon>EF_ERP_MSCORP.tt</DependentUpon>
+    </Compile>
+    <Compile Include="Model\spGetLotesParaFacturaPV_Result.cs">
+      <DependentUpon>EF_ERP_MSCORP.tt</DependentUpon>
+    </Compile>
+    <Compile Include="Model\spGetNotasDebitoDeudaActualCliente_Result.cs">
+      <DependentUpon>EF_ERP_MSCORP.tt</DependentUpon>
+    </Compile>
+    <Compile Include="Model\spGetNotasDebitoXEstadoProveedor_Result.cs">
+      <DependentUpon>EF_ERP_MSCORP.tt</DependentUpon>
+    </Compile>
+    <Compile Include="Model\spGetNotasDebitoXEstado_Result.cs">
+      <DependentUpon>EF_ERP_MSCORP.tt</DependentUpon>
+    </Compile>
+    <Compile Include="Model\SpGetPrecioProducto_Result.cs">
+      <DependentUpon>EF_ERP_MSCORP.tt</DependentUpon>
+    </Compile>
+    <Compile Include="Model\spGetPruebaVehiculoXid_Result.cs">
+      <DependentUpon>EF_ERP_MSCORP.tt</DependentUpon>
+    </Compile>
+    <Compile Include="Model\SpGetPuesto_Result.cs">
+      <DependentUpon>EF_ERP_MSCORP.tt</DependentUpon>
+    </Compile>
+    <Compile Include="Model\SpGetRecibosCajaChicaElaboradosXIdEmpleado_Result.cs">
+      <DependentUpon>EF_ERP_MSCORP.tt</DependentUpon>
+    </Compile>
+    <Compile Include="Model\spgetRecibosEmitidosXEmpresa_Result.cs">
+      <DependentUpon>EF_ERP_MSCORP.tt</DependentUpon>
+    </Compile>
+    <Compile Include="Model\SpGetReservaCotizacion_Result.cs">
+      <DependentUpon>EF_ERP_MSCORP.tt</DependentUpon>
+    </Compile>
+    <Compile Include="Model\SpGetRiesgoPuesto_Result.cs">
+      <DependentUpon>EF_ERP_MSCORP.tt</DependentUpon>
+    </Compile>
+    <Compile Include="Model\SpGetSolicitudesPagoCajaChicaXIdEmpleado_Result.cs">
+      <DependentUpon>EF_ERP_MSCORP.tt</DependentUpon>
+    </Compile>
+    <Compile Include="Model\SpGetSolicitudesPagoCajaChicaXIdEmpresa_Result.cs">
+      <DependentUpon>EF_ERP_MSCORP.tt</DependentUpon>
+    </Compile>
+    <Compile Include="Model\SpGetSolicitudPagoCajaChicaEnProcesoXIdEmpleado_Result.cs">
+      <DependentUpon>EF_ERP_MSCORP.tt</DependentUpon>
+    </Compile>
+    <Compile Include="Model\SpGetSolicitudPagoCajaChicaEnProcesoXIdEmpresa_Result.cs">
+      <DependentUpon>EF_ERP_MSCORP.tt</DependentUpon>
+    </Compile>
+    <Compile Include="Model\SpGetSolicitudPgoCajaChicaAprobadasXIdCaja_Result.cs">
+      <DependentUpon>EF_ERP_MSCORP.tt</DependentUpon>
+    </Compile>
+    <Compile Include="Model\SpGetSucursal_Result.cs">
+      <DependentUpon>EF_ERP_MSCORP.tt</DependentUpon>
+    </Compile>
+    <Compile Include="Model\SpGetTareaPuesto_Result.cs">
+      <DependentUpon>EF_ERP_MSCORP.tt</DependentUpon>
+    </Compile>
+    <Compile Include="Model\SpgetTituloReporte_Result.cs">
+      <DependentUpon>EF_ERP_MSCORP.tt</DependentUpon>
+    </Compile>
+    <Compile Include="Model\SpGetUnidadesProductoXBodega_Result.cs">
+      <DependentUpon>EF_ERP_MSCORP.tt</DependentUpon>
+    </Compile>
+    <Compile Include="Model\SpGetUnidadesProducto_Result.cs">
+      <DependentUpon>EF_ERP_MSCORP.tt</DependentUpon>
+    </Compile>
+    <Compile Include="Model\spIdentificadoresExcluidosXCompra_Result.cs">
+      <DependentUpon>EF_ERP_MSCORP.tt</DependentUpon>
+    </Compile>
+    <Compile Include="Model\spIdentificadoresExistenteXCompra_Result.cs">
+      <DependentUpon>EF_ERP_MSCORP.tt</DependentUpon>
+    </Compile>
+    <Compile Include="Model\SpImprimirMovimientoPersonal_Result.cs">
+      <DependentUpon>EF_ERP_MSCORP.tt</DependentUpon>
+    </Compile>
+    <Compile Include="Model\SpImpuestosGenerados_Result.cs">
+      <DependentUpon>EF_ERP_MSCORP.tt</DependentUpon>
+    </Compile>
+    <Compile Include="Model\SpImpuestosGeneralesInatec_Result.cs">
+      <DependentUpon>EF_ERP_MSCORP.tt</DependentUpon>
+    </Compile>
+    <Compile Include="Model\SpImpuestosGeneralesInssLaboral_Result.cs">
+      <DependentUpon>EF_ERP_MSCORP.tt</DependentUpon>
+    </Compile>
+    <Compile Include="Model\SpImpuestosGeneralesInssPatronal_Result.cs">
+      <DependentUpon>EF_ERP_MSCORP.tt</DependentUpon>
+    </Compile>
+    <Compile Include="Model\SpImpuestosGeneralesIR_Result.cs">
+      <DependentUpon>EF_ERP_MSCORP.tt</DependentUpon>
+    </Compile>
+    <Compile Include="Model\SpImpuestosGenerales_Result.cs">
+      <DependentUpon>EF_ERP_MSCORP.tt</DependentUpon>
+    </Compile>
+    <Compile Include="Model\spListaFlotaVehicularActivas_Result.cs">
+      <DependentUpon>EF_ERP_MSCORP.tt</DependentUpon>
+    </Compile>
+    <Compile Include="Model\spListaProductosCantidadDefectuosos_Result.cs">
+      <DependentUpon>EF_ERP_MSCORP.tt</DependentUpon>
+    </Compile>
+    <Compile Include="Model\spListaProductosCargadosOrdenProduccion_Result.cs">
+      <DependentUpon>EF_ERP_MSCORP.tt</DependentUpon>
+    </Compile>
+    <Compile Include="Model\spListaProductosCargadosOrdenTrabajo_Result.cs">
+      <DependentUpon>EF_ERP_MSCORP.tt</DependentUpon>
+    </Compile>
+    <Compile Include="Model\spListaProductosOrdenProduccionSinMalos_Result.cs">
+      <DependentUpon>EF_ERP_MSCORP.tt</DependentUpon>
+    </Compile>
+    <Compile Include="Model\spListaProductosOrdenProduccion_Result.cs">
+      <DependentUpon>EF_ERP_MSCORP.tt</DependentUpon>
+    </Compile>
+    <Compile Include="Model\spLoteExistenteXCompra_Result.cs">
+      <DependentUpon>EF_ERP_MSCORP.tt</DependentUpon>
+    </Compile>
+    <Compile Include="Model\SpMostarCotizacionMantenimientoxId_Result.cs">
+      <DependentUpon>EF_ERP_MSCORP.tt</DependentUpon>
+    </Compile>
+    <Compile Include="Model\SpMostrarAccesoriosGeneralFlota_Result.cs">
+      <DependentUpon>EF_ERP_MSCORP.tt</DependentUpon>
+    </Compile>
+    <Compile Include="Model\spMostrarAperturaDiaXIdSucursal_FechaCierre_MinutaDeposito_Result.cs">
+      <DependentUpon>EF_ERP_MSCORP.tt</DependentUpon>
+    </Compile>
+    <Compile Include="Model\spMostrarAperturaDia_CierreDiaXIdSucursal_MinutaDeposito_Result.cs">
+      <DependentUpon>EF_ERP_MSCORP.tt</DependentUpon>
+    </Compile>
+    <Compile Include="Model\SpMostrarCierreDiaXIdSucursal_MinutaDeposito_Result.cs">
+      <DependentUpon>EF_ERP_MSCORP.tt</DependentUpon>
+    </Compile>
+    <Compile Include="Model\SpMostrarConductor_Result.cs">
+      <DependentUpon>EF_ERP_MSCORP.tt</DependentUpon>
+    </Compile>
+    <Compile Include="Model\spMostrarCotizacionesRevisadasPV_Result.cs">
+      <DependentUpon>EF_ERP_MSCORP.tt</DependentUpon>
+    </Compile>
+    <Compile Include="Model\spMostrarCuentasBancariasXIdBancoXTtitular_Result.cs">
+      <DependentUpon>EF_ERP_MSCORP.tt</DependentUpon>
+    </Compile>
+    <Compile Include="Model\spMostrarCuentasBancariasXIdBanco_Result.cs">
+      <DependentUpon>EF_ERP_MSCORP.tt</DependentUpon>
+    </Compile>
+    <Compile Include="Model\spMostrarDatosChequeReporte_Result.cs">
+      <DependentUpon>EF_ERP_MSCORP.tt</DependentUpon>
+    </Compile>
+    <Compile Include="Model\SpMostrarDeduccionAlimentos_Result.cs">
+      <DependentUpon>EF_ERP_MSCORP.tt</DependentUpon>
+    </Compile>
+    <Compile Include="Model\SpMostrarDepartamentos_Result.cs">
+      <DependentUpon>EF_ERP_MSCORP.tt</DependentUpon>
+    </Compile>
+    <Compile Include="Model\SpMostrarDetalleCotizacionMantenimientoXId_Result.cs">
+      <DependentUpon>EF_ERP_MSCORP.tt</DependentUpon>
+    </Compile>
+    <Compile Include="Model\spMostrarDetalleDevolucionFacturaParcialXCliente_Result.cs">
+      <DependentUpon>EF_ERP_MSCORP.tt</DependentUpon>
+    </Compile>
+    <Compile Include="Model\spMostrarDetalleDevolucionFacturasAnuladasXCliente_Result.cs">
+      <DependentUpon>EF_ERP_MSCORP.tt</DependentUpon>
+    </Compile>
+    <Compile Include="Model\spMostrarDetalleFacturasClienteXId_NoSolicitada_Result.cs">
+      <DependentUpon>EF_ERP_MSCORP.tt</DependentUpon>
+    </Compile>
+    <Compile Include="Model\spMostrarDetalleFacturasClientexId_Result.cs">
+      <DependentUpon>EF_ERP_MSCORP.tt</DependentUpon>
+    </Compile>
+    <Compile Include="Model\SpMostrarEmpleadosPorEmpresa_Result.cs">
+      <DependentUpon>EF_ERP_MSCORP.tt</DependentUpon>
+    </Compile>
+    <Compile Include="Model\SpMostrarEmpleado_Result.cs">
+      <DependentUpon>EF_ERP_MSCORP.tt</DependentUpon>
+    </Compile>
+    <Compile Include="Model\SpMostrarEmpresa_Result.cs">
+      <DependentUpon>EF_ERP_MSCORP.tt</DependentUpon>
+    </Compile>
+    <Compile Include="Model\spMostrarFacturasContado_Proveedor_Result.cs">
+      <DependentUpon>EF_ERP_MSCORP.tt</DependentUpon>
+    </Compile>
+    <Compile Include="Model\spMostrarFacturasGlobalXIdCliente_NotaCredito_Result.cs">
+      <DependentUpon>EF_ERP_MSCORP.tt</DependentUpon>
+    </Compile>
+    <Compile Include="Model\spMostrarFacturasGlobalXIdCliente_Result.cs">
+      <DependentUpon>EF_ERP_MSCORP.tt</DependentUpon>
+    </Compile>
+    <Compile Include="Model\spMostrarFacturasSLCheque_Result.cs">
+      <DependentUpon>EF_ERP_MSCORP.tt</DependentUpon>
+    </Compile>
+    <Compile Include="Model\SpMostrarListaConductor_Result.cs">
+      <DependentUpon>EF_ERP_MSCORP.tt</DependentUpon>
+    </Compile>
+    <Compile Include="Model\SpMostrarNominaEmpleado_Result.cs">
+      <DependentUpon>EF_ERP_MSCORP.tt</DependentUpon>
+    </Compile>
+    <Compile Include="Model\spMostrarNotificacionesCreadasxIdRemitente_Result.cs">
+      <DependentUpon>EF_ERP_MSCORP.tt</DependentUpon>
+    </Compile>
+    <Compile Include="Model\SpMostrarOtrasDeducciones_Result.cs">
+      <DependentUpon>EF_ERP_MSCORP.tt</DependentUpon>
+    </Compile>
+    <Compile Include="Model\SpMostrarOtrosIngresosSinRetencion_Result.cs">
+      <DependentUpon>EF_ERP_MSCORP.tt</DependentUpon>
+    </Compile>
+    <Compile Include="Model\SpMostrarOtrosIngresos_Result.cs">
+      <DependentUpon>EF_ERP_MSCORP.tt</DependentUpon>
+    </Compile>
+    <Compile Include="Model\SpMostrarPuesto_Result.cs">
+      <DependentUpon>EF_ERP_MSCORP.tt</DependentUpon>
+    </Compile>
+    <Compile Include="Model\SpMostrarUsuario_Result.cs">
+      <DependentUpon>EF_ERP_MSCORP.tt</DependentUpon>
+    </Compile>
+    <Compile Include="Model\SpMovimientoConfirmado_Result.cs">
+      <DependentUpon>EF_ERP_MSCORP.tt</DependentUpon>
+    </Compile>
+    <Compile Include="Model\SpMovimientoDenegado_Result.cs">
+      <DependentUpon>EF_ERP_MSCORP.tt</DependentUpon>
+    </Compile>
+    <Compile Include="Model\SpMovimientoEmpleado_Result.cs">
+      <DependentUpon>EF_ERP_MSCORP.tt</DependentUpon>
+    </Compile>
+    <Compile Include="Model\spNotasCreditoDebitoxIdCliente_Result.cs">
+      <DependentUpon>EF_ERP_MSCORP.tt</DependentUpon>
+    </Compile>
+    <Compile Include="Model\spObtenerCostosHorasEstacionXOrden_Result.cs">
+      <DependentUpon>EF_ERP_MSCORP.tt</DependentUpon>
+    </Compile>
+    <Compile Include="Model\SpObtenerFlotaAsignada_Result.cs">
+      <DependentUpon>EF_ERP_MSCORP.tt</DependentUpon>
+    </Compile>
+    <Compile Include="Model\SpObtenerPeriodos_Result.cs">
+      <DependentUpon>EF_ERP_MSCORP.tt</DependentUpon>
+    </Compile>
+    <Compile Include="Model\spObtenerPrefacturasEmitidasCredito_Result.cs">
+      <DependentUpon>EF_ERP_MSCORP.tt</DependentUpon>
+    </Compile>
+    <Compile Include="Model\spObtenerPrefacturasEmitidas_Result.cs">
+      <DependentUpon>EF_ERP_MSCORP.tt</DependentUpon>
+    </Compile>
+    <Compile Include="Model\spObtenerProductosParaImportacion_Result.cs">
+      <DependentUpon>EF_ERP_MSCORP.tt</DependentUpon>
+    </Compile>
+    <Compile Include="Model\spOrdenesProduccionXEstado_Result.cs">
+      <DependentUpon>EF_ERP_MSCORP.tt</DependentUpon>
+    </Compile>
+    <Compile Include="Model\SpOrdenesTrabajoTecnicoServicios_Result.cs">
+      <DependentUpon>EF_ERP_MSCORP.tt</DependentUpon>
+    </Compile>
+    <Compile Include="Model\SpOrdenesTrabajoXEmpresaXEstados_Result.cs">
+      <DependentUpon>EF_ERP_MSCORP.tt</DependentUpon>
+    </Compile>
+    <Compile Include="Model\SpOrdenTrabajoTerminadoXEmpresaSinAsignacion_Result.cs">
+      <DependentUpon>EF_ERP_MSCORP.tt</DependentUpon>
+    </Compile>
+    <Compile Include="Model\SpOrdenTrabajoTerminadoXEmpresa_Result.cs">
+      <DependentUpon>EF_ERP_MSCORP.tt</DependentUpon>
+    </Compile>
+    <Compile Include="Model\SpPermisosXCuenta_Result.cs">
+      <DependentUpon>EF_ERP_MSCORP.tt</DependentUpon>
+    </Compile>
+    <Compile Include="Model\SpPrefacturasOTXEmpresaXEstado_Result.cs">
+      <DependentUpon>EF_ERP_MSCORP.tt</DependentUpon>
+    </Compile>
+    <Compile Include="Model\spProductosCompraInternacional_Result.cs">
+      <DependentUpon>EF_ERP_MSCORP.tt</DependentUpon>
+    </Compile>
+    <Compile Include="Model\spProductosMalosOrdenProduccion_Result.cs">
+      <DependentUpon>EF_ERP_MSCORP.tt</DependentUpon>
+    </Compile>
+    <Compile Include="Model\SpProductosOrdenTrabajo_Result.cs">
+      <DependentUpon>EF_ERP_MSCORP.tt</DependentUpon>
+    </Compile>
+    <Compile Include="Model\spRecibosCajaGeneralAnulados_Result.cs">
+      <DependentUpon>EF_ERP_MSCORP.tt</DependentUpon>
+    </Compile>
+    <Compile Include="Model\spRecibosCajaGeneral_Result.cs">
+      <DependentUpon>EF_ERP_MSCORP.tt</DependentUpon>
+    </Compile>
+    <Compile Include="Model\spReimprimirAperturaCaja_Result.cs">
+      <DependentUpon>EF_ERP_MSCORP.tt</DependentUpon>
+    </Compile>
+    <Compile Include="Model\SpReporteAnulacionComprasXEmpresa_Result.cs">
+      <DependentUpon>EF_ERP_MSCORP.tt</DependentUpon>
+    </Compile>
+    <Compile Include="Model\SpReporteAnulacionFacturasXEmpresa_Result.cs">
+      <DependentUpon>EF_ERP_MSCORP.tt</DependentUpon>
+    </Compile>
+    <Compile Include="Model\SpReporteAnulacionFactura_Result.cs">
+      <DependentUpon>EF_ERP_MSCORP.tt</DependentUpon>
+    </Compile>
+    <Compile Include="Model\SpReporteCierreCaja_Result.cs">
+      <DependentUpon>EF_ERP_MSCORP.tt</DependentUpon>
+    </Compile>
+    <Compile Include="Model\SpReporteComprasConIVA_Result.cs">
+      <DependentUpon>EF_ERP_MSCORP.tt</DependentUpon>
+    </Compile>
+    <Compile Include="Model\SpReporteConsolidadoGastoCajaChica_Result.cs">
+      <DependentUpon>EF_ERP_MSCORP.tt</DependentUpon>
+    </Compile>
+    <Compile Include="Model\SpReporteDetalleDevolucionFactura_Result.cs">
+      <DependentUpon>EF_ERP_MSCORP.tt</DependentUpon>
+    </Compile>
+    <Compile Include="Model\SpReporteDetalleGastoCajaChica_Result.cs">
+      <DependentUpon>EF_ERP_MSCORP.tt</DependentUpon>
+    </Compile>
+    <Compile Include="Model\SpReporteDetalleIngresoCompra_Result.cs">
+      <DependentUpon>EF_ERP_MSCORP.tt</DependentUpon>
+    </Compile>
+    <Compile Include="Model\SpReporteDevolcionesXEmpresa_Result.cs">
+      <DependentUpon>EF_ERP_MSCORP.tt</DependentUpon>
+    </Compile>
+    <Compile Include="Model\SpReporteDevolucionComprasXEmpresa_Result.cs">
+      <DependentUpon>EF_ERP_MSCORP.tt</DependentUpon>
+    </Compile>
+    <Compile Include="Model\SpReporteDevolucionFactura_Result.cs">
+      <DependentUpon>EF_ERP_MSCORP.tt</DependentUpon>
+    </Compile>
+    <Compile Include="Model\SpReporteGeneralVentasDolares_Result.cs">
+      <DependentUpon>EF_ERP_MSCORP.tt</DependentUpon>
+    </Compile>
+    <Compile Include="Model\spReporteOrdenSalida_Result.cs">
+      <DependentUpon>EF_ERP_MSCORP.tt</DependentUpon>
+    </Compile>
+    <Compile Include="Model\spReportePaseCredito_Result.cs">
+      <DependentUpon>EF_ERP_MSCORP.tt</DependentUpon>
+    </Compile>
+    <Compile Include="Model\SpReportePreFacturasInternasXFecha_Result.cs">
+      <DependentUpon>EF_ERP_MSCORP.tt</DependentUpon>
+    </Compile>
+    <Compile Include="Model\SpReporteProduccionXEmpresaXFechas_Result.cs">
+      <DependentUpon>EF_ERP_MSCORP.tt</DependentUpon>
+    </Compile>
+    <Compile Include="Model\SpReporteProduccionXMecanicoXFechas_Result.cs">
+      <DependentUpon>EF_ERP_MSCORP.tt</DependentUpon>
+    </Compile>
+    <Compile Include="Model\SpReporteTotalDevolucionFactura_Result.cs">
+      <DependentUpon>EF_ERP_MSCORP.tt</DependentUpon>
+    </Compile>
+    <Compile Include="Model\SpReporteVentasConIVA_Result.cs">
+      <DependentUpon>EF_ERP_MSCORP.tt</DependentUpon>
+    </Compile>
+    <Compile Include="Model\SpReporteVentasFacturasExoneradasXEmpresa_Result.cs">
+      <DependentUpon>EF_ERP_MSCORP.tt</DependentUpon>
+    </Compile>
+    <Compile Include="Model\SpReporteVentasXDetalleXEmpresa_Result.cs">
+      <DependentUpon>EF_ERP_MSCORP.tt</DependentUpon>
+    </Compile>
+    <Compile Include="Model\SpReporteVentasXSegmento_Result.cs">
+      <DependentUpon>EF_ERP_MSCORP.tt</DependentUpon>
+    </Compile>
+    <Compile Include="Model\SpReporteVentasXSucursalXSegmento_Result.cs">
+      <DependentUpon>EF_ERP_MSCORP.tt</DependentUpon>
+    </Compile>
+    <Compile Include="Model\SpReporteVentasXSucursal_Result.cs">
+      <DependentUpon>EF_ERP_MSCORP.tt</DependentUpon>
+    </Compile>
+    <Compile Include="Model\SpRevertirAprobado_Result.cs">
+      <DependentUpon>EF_ERP_MSCORP.tt</DependentUpon>
+    </Compile>
+    <Compile Include="Model\SpRevertirDenegado_Result.cs">
+      <DependentUpon>EF_ERP_MSCORP.tt</DependentUpon>
+    </Compile>
+    <Compile Include="Model\spRutasXSemana_Result.cs">
+      <DependentUpon>EF_ERP_MSCORP.tt</DependentUpon>
+    </Compile>
+    <Compile Include="Model\SpServiciosMargenes_Result.cs">
+      <DependentUpon>EF_ERP_MSCORP.tt</DependentUpon>
+    </Compile>
+    <Compile Include="Model\SpServiciosOrdenTrabajo_Result.cs">
+      <DependentUpon>EF_ERP_MSCORP.tt</DependentUpon>
+    </Compile>
+    <Compile Include="Model\SpTotalDetalleFacturaPV_Result.cs">
+      <DependentUpon>EF_ERP_MSCORP.tt</DependentUpon>
+    </Compile>
+    <Compile Include="Model\SpTotalDeudaClienteCreditoReporteCordoba_Result.cs">
+      <DependentUpon>EF_ERP_MSCORP.tt</DependentUpon>
+    </Compile>
+    <Compile Include="Model\SpTotalDeudaClienteCreditoReporteDolar_Result.cs">
+      <DependentUpon>EF_ERP_MSCORP.tt</DependentUpon>
+    </Compile>
+    <Compile Include="Model\SpTotalDeudaXCliente_Result.cs">
+      <DependentUpon>EF_ERP_MSCORP.tt</DependentUpon>
+    </Compile>
+    <Compile Include="Model\SpTotalGastosGenerados_Result.cs">
+      <DependentUpon>EF_ERP_MSCORP.tt</DependentUpon>
+    </Compile>
+    <Compile Include="Model\SpTotalGastosGeneral_Result.cs">
+      <DependentUpon>EF_ERP_MSCORP.tt</DependentUpon>
+    </Compile>
+    <Compile Include="Model\SpTotalOtrasDeducciones_Result.cs">
+      <DependentUpon>EF_ERP_MSCORP.tt</DependentUpon>
+    </Compile>
+    <Compile Include="Model\SpTotalOtrosIngresos_Result.cs">
+      <DependentUpon>EF_ERP_MSCORP.tt</DependentUpon>
+    </Compile>
+    <Compile Include="Model\SpTotalReciboCajaChica_Result.cs">
+      <DependentUpon>EF_ERP_MSCORP.tt</DependentUpon>
+    </Compile>
+    <Compile Include="Model\SpTotalSubsidios_Result.cs">
+      <DependentUpon>EF_ERP_MSCORP.tt</DependentUpon>
+    </Compile>
+    <Compile Include="Model\SpValidarPermisoexistente_Result.cs">
+      <DependentUpon>EF_ERP_MSCORP.tt</DependentUpon>
+    </Compile>
+    <Compile Include="Model\SpVistaDetalleCombo_Result.cs">
+      <DependentUpon>EF_ERP_MSCORP.tt</DependentUpon>
+    </Compile>
+    <Compile Include="Model\SpVistaDetalleCotizacionPV_Result.cs">
+      <DependentUpon>EF_ERP_MSCORP.tt</DependentUpon>
+    </Compile>
+    <Compile Include="Model\SpVistaDetalleCotizacionV_Result.cs">
+      <DependentUpon>EF_ERP_MSCORP.tt</DependentUpon>
+    </Compile>
+    <Compile Include="Model\SpVistaDetallePrefacturaV_Result.cs">
+      <DependentUpon>EF_ERP_MSCORP.tt</DependentUpon>
+    </Compile>
+    <Compile Include="Model\SpVistaDetalleTraslado_Result.cs">
+      <DependentUpon>EF_ERP_MSCORP.tt</DependentUpon>
+    </Compile>
+    <Compile Include="Model\spVistaDevolucionCompra_Result.cs">
+      <DependentUpon>EF_ERP_MSCORP.tt</DependentUpon>
+    </Compile>
+    <Compile Include="Model\SpVistaFacturasCliente_GlobalesXId_Estado_Result.cs">
+      <DependentUpon>EF_ERP_MSCORP.tt</DependentUpon>
+    </Compile>
+    <Compile Include="Model\SpVistaFacturasCreditoAbonadas_Result.cs">
+      <DependentUpon>EF_ERP_MSCORP.tt</DependentUpon>
+    </Compile>
+    <Compile Include="Model\SpVistaFacturasCreditoXClienteReporteCordoba_Result.cs">
+      <DependentUpon>EF_ERP_MSCORP.tt</DependentUpon>
+    </Compile>
+    <Compile Include="Model\SpVistaFacturasCreditoXClienteReporteDolar_Result.cs">
+      <DependentUpon>EF_ERP_MSCORP.tt</DependentUpon>
+    </Compile>
+    <Compile Include="Model\SpVistaFacturasCreditoXEstado_Result.cs">
+      <DependentUpon>EF_ERP_MSCORP.tt</DependentUpon>
+    </Compile>
+    <Compile Include="Model\SpVistaFacturasParaAbonar_Result.cs">
+      <DependentUpon>EF_ERP_MSCORP.tt</DependentUpon>
+    </Compile>
+    <Compile Include="Model\SpVistaLote_Result.cs">
+      <DependentUpon>EF_ERP_MSCORP.tt</DependentUpon>
+    </Compile>
+    <Compile Include="Model\SpVistaOrdenesTrabajoAsignadasTecnicoServicioXEmpresa_Result.cs">
+      <DependentUpon>EF_ERP_MSCORP.tt</DependentUpon>
+    </Compile>
+    <Compile Include="Model\spVistaOrdenesTrabajoTraslado_Result.cs">
+      <DependentUpon>EF_ERP_MSCORP.tt</DependentUpon>
+    </Compile>
+    <Compile Include="Model\SpVistaPagoProveedoresXEstado_Result.cs">
+      <DependentUpon>EF_ERP_MSCORP.tt</DependentUpon>
+    </Compile>
+    <Compile Include="Model\SpVistaPermisosBodegaXEmpleado_Result.cs">
+      <DependentUpon>EF_ERP_MSCORP.tt</DependentUpon>
+    </Compile>
+    <Compile Include="Model\SpVistaPermisosCuentas_Result.cs">
+      <DependentUpon>EF_ERP_MSCORP.tt</DependentUpon>
+    </Compile>
+    <Compile Include="Model\SpVistaPrecioCombo_Result.cs">
+      <DependentUpon>EF_ERP_MSCORP.tt</DependentUpon>
+    </Compile>
+    <Compile Include="Model\SpVistaProductosXEmpresaXManejoLote_Result.cs">
+      <DependentUpon>EF_ERP_MSCORP.tt</DependentUpon>
+    </Compile>
+    <Compile Include="Model\SpVistaProductosXEmpresa_Result.cs">
+      <DependentUpon>EF_ERP_MSCORP.tt</DependentUpon>
+    </Compile>
+    <Compile Include="Model\SpVistaStockXProducto_Result.cs">
+      <DependentUpon>EF_ERP_MSCORP.tt</DependentUpon>
+    </Compile>
+    <Compile Include="Model\SpVistaTrabajosExternosXEmpresa_Result.cs">
+      <DependentUpon>EF_ERP_MSCORP.tt</DependentUpon>
+    </Compile>
+    <Compile Include="Model\Sp_Auxiliar_DetallePagoFACTURA_OT_Result.cs">
+      <DependentUpon>EF_ERP_MSCORP.tt</DependentUpon>
+    </Compile>
+    <Compile Include="Model\sp_CancelarFacturaND_ProveedorXPago_Result.cs">
+      <DependentUpon>EF_ERP_MSCORP.tt</DependentUpon>
+    </Compile>
+    <Compile Include="Model\sp_CancelarFacturaND_Proveedor_Result.cs">
+      <DependentUpon>EF_ERP_MSCORP.tt</DependentUpon>
+    </Compile>
+    <Compile Include="Model\Sp_CargarDatosEmpresaParaFACTURA_Result.cs">
+      <DependentUpon>EF_ERP_MSCORP.tt</DependentUpon>
+    </Compile>
+    <Compile Include="Model\sp_CargarDetalleNotaCredito_ReporteXId_Result.cs">
+      <DependentUpon>EF_ERP_MSCORP.tt</DependentUpon>
+    </Compile>
+    <Compile Include="Model\Sp_CargarDNCP_XIdNC_Result.cs">
+      <DependentUpon>EF_ERP_MSCORP.tt</DependentUpon>
+    </Compile>
+    <Compile Include="Model\Sp_CargarFacturasEnCobranza_Result.cs">
+      <DependentUpon>EF_ERP_MSCORP.tt</DependentUpon>
+    </Compile>
+    <Compile Include="Model\Sp_CargarFacturasPrefacturaPVParaAnulacion_Result.cs">
+      <DependentUpon>EF_ERP_MSCORP.tt</DependentUpon>
+    </Compile>
+    <Compile Include="Model\Sp_CargarFacturasPrefacturaPVParaCanceldas_Result.cs">
+      <DependentUpon>EF_ERP_MSCORP.tt</DependentUpon>
+    </Compile>
+    <Compile Include="Model\Sp_CargarListasCriterioProveedor_Result.cs">
+      <DependentUpon>EF_ERP_MSCORP.tt</DependentUpon>
+    </Compile>
+    <Compile Include="Model\sp_CargarSolicitudEmisionCheque_Result.cs">
+      <DependentUpon>EF_ERP_MSCORP.tt</DependentUpon>
+    </Compile>
+    <Compile Include="Model\Sp_CargarTodasFacturasPrefacturaPVParaAnulacion_Result.cs">
+      <DependentUpon>EF_ERP_MSCORP.tt</DependentUpon>
+    </Compile>
+    <Compile Include="Model\Sp_CargarTodasFacturasPrefacturaPVParaCancelas_Result.cs">
+      <DependentUpon>EF_ERP_MSCORP.tt</DependentUpon>
+    </Compile>
+    <Compile Include="Model\Sp_ComprobarExistenciaDevolucionesXFactura_Result.cs">
+      <DependentUpon>EF_ERP_MSCORP.tt</DependentUpon>
+    </Compile>
+    <Compile Include="Model\sp_CotizacionTaller_Result.cs">
+      <DependentUpon>EF_ERP_MSCORP.tt</DependentUpon>
+    </Compile>
+    <Compile Include="Model\Sp_DatosDelClienteEnFacturaRealizada_Result.cs">
+      <DependentUpon>EF_ERP_MSCORP.tt</DependentUpon>
+    </Compile>
+    <Compile Include="Model\sp_DatosDocumentoServicio_Result.cs">
+      <DependentUpon>EF_ERP_MSCORP.tt</DependentUpon>
+    </Compile>
+    <Compile Include="Model\sp_DatosNotaDebitoProveedorXId_Result.cs">
+      <DependentUpon>EF_ERP_MSCORP.tt</DependentUpon>
+    </Compile>
+    <Compile Include="Model\sp_DatosNotaDebitoXId_Result.cs">
+      <DependentUpon>EF_ERP_MSCORP.tt</DependentUpon>
+    </Compile>
+    <Compile Include="Model\sp_DatosPrefacturaInterna_Result.cs">
+      <DependentUpon>EF_ERP_MSCORP.tt</DependentUpon>
+    </Compile>
+    <Compile Include="Model\Sp_DetalleParaFacturaOT_Result.cs">
+      <DependentUpon>EF_ERP_MSCORP.tt</DependentUpon>
+    </Compile>
+    <Compile Include="Model\sp_DetallePreFacturaInternaOT_Result.cs">
+      <DependentUpon>EF_ERP_MSCORP.tt</DependentUpon>
+    </Compile>
+    <Compile Include="Model\Sp_DetallesCotizacionTaller_Result.cs">
+      <DependentUpon>EF_ERP_MSCORP.tt</DependentUpon>
+    </Compile>
+    <Compile Include="Model\sp_DetallesNotaDebitoXIdProveedor_Result.cs">
+      <DependentUpon>EF_ERP_MSCORP.tt</DependentUpon>
+    </Compile>
+    <Compile Include="Model\sp_DetallesNotaDebitoXId_Result.cs">
+      <DependentUpon>EF_ERP_MSCORP.tt</DependentUpon>
+    </Compile>
+    <Compile Include="Model\Sp_DetallesOrdenTrabajo_Result.cs">
+      <DependentUpon>EF_ERP_MSCORP.tt</DependentUpon>
+    </Compile>
+    <Compile Include="Model\sp_DetallesPrefacturaTaller_Result.cs">
+      <DependentUpon>EF_ERP_MSCORP.tt</DependentUpon>
+    </Compile>
+    <Compile Include="Model\sp_DocumentoServicioTaller_Result.cs">
+      <DependentUpon>EF_ERP_MSCORP.tt</DependentUpon>
+    </Compile>
+    <Compile Include="Model\Sp_EstadoCuentaGeneralCordobasXIdEmpresa_Result.cs">
+      <DependentUpon>EF_ERP_MSCORP.tt</DependentUpon>
+    </Compile>
+    <Compile Include="Model\Sp_FacturaCanceladasXCliente_ProntoPago_Result.cs">
+      <DependentUpon>EF_ERP_MSCORP.tt</DependentUpon>
+    </Compile>
+    <Compile Include="Model\sp_FrecuenciaPagoXCliente_Result.cs">
+      <DependentUpon>EF_ERP_MSCORP.tt</DependentUpon>
+    </Compile>
+    <Compile Include="Model\sp_GetCostoDetalleDocumento_Result.cs">
+      <DependentUpon>EF_ERP_MSCORP.tt</DependentUpon>
+    </Compile>
+    <Compile Include="Model\sp_getPrefacturasExoneradas_Result.cs">
+      <DependentUpon>EF_ERP_MSCORP.tt</DependentUpon>
+    </Compile>
+    <Compile Include="Model\sp_helpdiagramdefinition_Result.cs">
+      <DependentUpon>EF_ERP_MSCORP.tt</DependentUpon>
+    </Compile>
+    <Compile Include="Model\sp_helpdiagrams_Result.cs">
+      <DependentUpon>EF_ERP_MSCORP.tt</DependentUpon>
+    </Compile>
+    <Compile Include="Model\Sp_ListaCotizacionProductos_Result.cs">
+      <DependentUpon>EF_ERP_MSCORP.tt</DependentUpon>
+    </Compile>
+    <Compile Include="Model\Sp_ListaCotizacionServicios_Result.cs">
+      <DependentUpon>EF_ERP_MSCORP.tt</DependentUpon>
+    </Compile>
+    <Compile Include="Model\Sp_ListaDetallesCotizacionTaller_Result.cs">
+      <DependentUpon>EF_ERP_MSCORP.tt</DependentUpon>
+    </Compile>
+    <Compile Include="Model\SP_ListaNCPaprobada_Result.cs">
+      <DependentUpon>EF_ERP_MSCORP.tt</DependentUpon>
+    </Compile>
+    <Compile Include="Model\SP_ListaNCPdenegada_Result.cs">
+      <DependentUpon>EF_ERP_MSCORP.tt</DependentUpon>
+    </Compile>
+    <Compile Include="Model\SP_ListaNCPingresada_Result.cs">
+      <DependentUpon>EF_ERP_MSCORP.tt</DependentUpon>
+    </Compile>
+    <Compile Include="Model\sp_ListaNotasDebitoProveedorBeneficiario_Result.cs">
+      <DependentUpon>EF_ERP_MSCORP.tt</DependentUpon>
+    </Compile>
+    <Compile Include="Model\sp_ListaNotasDebitoXBeneficiario_Result.cs">
+      <DependentUpon>EF_ERP_MSCORP.tt</DependentUpon>
+    </Compile>
+    <Compile Include="Model\SP_ListaProductosSalidaInventario_Result.cs">
+      <DependentUpon>EF_ERP_MSCORP.tt</DependentUpon>
+    </Compile>
+    <Compile Include="Model\sp_MinutaDeposito_Result.cs">
+      <DependentUpon>EF_ERP_MSCORP.tt</DependentUpon>
+    </Compile>
+    <Compile Include="Model\sp_MontosTransferenciaFacturas_Result.cs">
+      <DependentUpon>EF_ERP_MSCORP.tt</DependentUpon>
+    </Compile>
+    <Compile Include="Model\Sp_MostarCalendarioMantenimientoXEstado_Result.cs">
+      <DependentUpon>EF_ERP_MSCORP.tt</DependentUpon>
+    </Compile>
+    <Compile Include="Model\Sp_MostrarDetalleEstadoCuentaXCliente_Result.cs">
+      <DependentUpon>EF_ERP_MSCORP.tt</DependentUpon>
+    </Compile>
+    <Compile Include="Model\sp_MostrarFacturasCredito_Proveedor_Result.cs">
+      <DependentUpon>EF_ERP_MSCORP.tt</DependentUpon>
+    </Compile>
+    <Compile Include="Model\SP_MOSTRARFACTURAS_COMPRA_Result.cs">
+      <DependentUpon>EF_ERP_MSCORP.tt</DependentUpon>
+    </Compile>
+    <Compile Include="Model\SP_MOSTRARFACTURAS_NOTADEBITO_Result.cs">
+      <DependentUpon>EF_ERP_MSCORP.tt</DependentUpon>
+    </Compile>
+    <Compile Include="Model\sp_MostrarLiquidacionEmpleado_Result.cs">
+      <DependentUpon>EF_ERP_MSCORP.tt</DependentUpon>
+    </Compile>
+    <Compile Include="Model\sp_MostrarLiquidacion_Result.cs">
+      <DependentUpon>EF_ERP_MSCORP.tt</DependentUpon>
+    </Compile>
+    <Compile Include="Model\Sp_MostrarPedidoOtrosProductosAprobados_Result.cs">
+      <DependentUpon>EF_ERP_MSCORP.tt</DependentUpon>
+    </Compile>
+    <Compile Include="Model\Sp_MostrarPedidoOtrosProductosEnProceso_Result.cs">
+      <DependentUpon>EF_ERP_MSCORP.tt</DependentUpon>
+    </Compile>
+    <Compile Include="Model\Sp_MostrarReembolsoAEditarSLChequeXIdEmpleado_Result.cs">
+      <DependentUpon>EF_ERP_MSCORP.tt</DependentUpon>
+    </Compile>
+    <Compile Include="Model\Sp_MostrarReembolsoXIdEmpleadoSLCheque_Result.cs">
+      <DependentUpon>EF_ERP_MSCORP.tt</DependentUpon>
+    </Compile>
+    <Compile Include="Model\sp_MostrarSolicitudesAperturaOTPendientes_Result.cs">
+      <DependentUpon>EF_ERP_MSCORP.tt</DependentUpon>
+    </Compile>
+    <Compile Include="Model\Sp_ObtenerAccesoriosOT_Result.cs">
+      <DependentUpon>EF_ERP_MSCORP.tt</DependentUpon>
+    </Compile>
+    <Compile Include="Model\sp_obtenerRetencionesXEstados_Result.cs">
+      <DependentUpon>EF_ERP_MSCORP.tt</DependentUpon>
+    </Compile>
+    <Compile Include="Model\Sp_ObtenerserviciosOT_Result.cs">
+      <DependentUpon>EF_ERP_MSCORP.tt</DependentUpon>
+    </Compile>
+    <Compile Include="Model\Sp_PagoFacturasPendienteProveedores_Result.cs">
+      <DependentUpon>EF_ERP_MSCORP.tt</DependentUpon>
+    </Compile>
+    <Compile Include="Model\Sp_PagoFacturasPendientes_Result.cs">
+      <DependentUpon>EF_ERP_MSCORP.tt</DependentUpon>
+    </Compile>
+    <Compile Include="Model\sp_PreFacturaInternaOT_Result.cs">
+      <DependentUpon>EF_ERP_MSCORP.tt</DependentUpon>
+    </Compile>
+    <Compile Include="Model\sp_PreFacturaOT_Result.cs">
+      <DependentUpon>EF_ERP_MSCORP.tt</DependentUpon>
+    </Compile>
+    <Compile Include="Model\sp_PrefacturasInternasXEstado_Result.cs">
+      <DependentUpon>EF_ERP_MSCORP.tt</DependentUpon>
+    </Compile>
+    <Compile Include="Model\Sp_Principal_CargarDatosFACTURA_OTCANCELADO_Result.cs">
+      <DependentUpon>EF_ERP_MSCORP.tt</DependentUpon>
+    </Compile>
+    <Compile Include="Model\Sp_Principal_CargarDatosFACTURA_OT_Result.cs">
+      <DependentUpon>EF_ERP_MSCORP.tt</DependentUpon>
+    </Compile>
+    <Compile Include="Model\sp_RecibosNoAplicadosXCliente_Result.cs">
+      <DependentUpon>EF_ERP_MSCORP.tt</DependentUpon>
+    </Compile>
+    <Compile Include="Model\Sp_ReporteCalendarioVacaciones_Result.cs">
+      <DependentUpon>EF_ERP_MSCORP.tt</DependentUpon>
+    </Compile>
+    <Compile Include="Model\SP_ReporteEstadosOT_Result.cs">
+      <DependentUpon>EF_ERP_MSCORP.tt</DependentUpon>
+    </Compile>
+    <Compile Include="Model\sp_ReporteGeneralOT_Result.cs">
+      <DependentUpon>EF_ERP_MSCORP.tt</DependentUpon>
+    </Compile>
+    <Compile Include="Model\Sp_ReporteNominaAprobada_Result.cs">
+      <DependentUpon>EF_ERP_MSCORP.tt</DependentUpon>
+    </Compile>
+    <Compile Include="Model\Sp_ReporteSubsidioAplicados_Result.cs">
+      <DependentUpon>EF_ERP_MSCORP.tt</DependentUpon>
+    </Compile>
+    <Compile Include="Model\SP_SalidaInventario_Result.cs">
+      <DependentUpon>EF_ERP_MSCORP.tt</DependentUpon>
+    </Compile>
+    <Compile Include="Model\sp_SolicitudesPaseCredito_Result.cs">
+      <DependentUpon>EF_ERP_MSCORP.tt</DependentUpon>
+    </Compile>
+    <Compile Include="Model\Sp_TotalFacturaConDevoluciones_Result.cs">
+      <DependentUpon>EF_ERP_MSCORP.tt</DependentUpon>
+    </Compile>
+    <Compile Include="Model\Sp_TotalFacturasPendientesPVXIdCliente_Result.cs">
+      <DependentUpon>EF_ERP_MSCORP.tt</DependentUpon>
+    </Compile>
+    <Compile Include="Model\Sp_TotalFacturasPendientesSACXIdCliente_Result.cs">
+      <DependentUpon>EF_ERP_MSCORP.tt</DependentUpon>
+    </Compile>
+    <Compile Include="Model\sp_TrasladosDirectosSinDespacho_Result.cs">
+      <DependentUpon>EF_ERP_MSCORP.tt</DependentUpon>
+    </Compile>
+    <Compile Include="Model\sp_TrasladosXSolicitudSinDespacho_Result.cs">
+      <DependentUpon>EF_ERP_MSCORP.tt</DependentUpon>
+    </Compile>
+    <Compile Include="Model\sp_UltimoRegistroMovimientoKardexPorBodegaOrdenProduccion_Result.cs">
+      <DependentUpon>EF_ERP_MSCORP.tt</DependentUpon>
+    </Compile>
+    <Compile Include="Model\sp_UltimoRegistroMovimientoKardexPorBodegaOrdenTrabajo_Result.cs">
+      <DependentUpon>EF_ERP_MSCORP.tt</DependentUpon>
+    </Compile>
+    <Compile Include="Model\sp_UltimoRegistroMovimientoKardexPorBodega_Result.cs">
+      <DependentUpon>EF_ERP_MSCORP.tt</DependentUpon>
+    </Compile>
+    <Compile Include="Model\Sp_VistaEmpleadosVacaciones_Result.cs">
+      <DependentUpon>EF_ERP_MSCORP.tt</DependentUpon>
+    </Compile>
+    <Compile Include="Model\Sp_VistaPagoProveedorXEstadoActualizada_Result.cs">
+      <DependentUpon>EF_ERP_MSCORP.tt</DependentUpon>
+    </Compile>
+    <Compile Include="Model\Sp_VistaPagoProveedorXEstadoConfir_Result.cs">
+      <DependentUpon>EF_ERP_MSCORP.tt</DependentUpon>
+    </Compile>
+    <Compile Include="Model\Sp_VistaStockXProductoXBodega_Result.cs">
+      <DependentUpon>EF_ERP_MSCORP.tt</DependentUpon>
+    </Compile>
+    <Compile Include="Model\Sp_VistaStockXProducto_Result.cs">
+      <DependentUpon>EF_ERP_MSCORP.tt</DependentUpon>
+    </Compile>
+    <Compile Include="Model\Sp_VwMostrarEntregaEquipos_Result.cs">
+      <DependentUpon>EF_ERP_MSCORP.tt</DependentUpon>
+    </Compile>
+    <Compile Include="Model\Sucursal.cs">
+      <DependentUpon>EF_ERP_MSCORP.tt</DependentUpon>
+    </Compile>
+    <Compile Include="Model\SucursalDepartamento.cs">
+      <DependentUpon>EF_ERP_MSCORP.tt</DependentUpon>
+    </Compile>
+    <Compile Include="Model\sysdiagrams.cs">
+      <DependentUpon>EF_ERP_MSCORP.tt</DependentUpon>
+    </Compile>
+    <Compile Include="Model\TareaPuesto.cs">
+      <DependentUpon>EF_ERP_MSCORP.tt</DependentUpon>
+    </Compile>
+    <Compile Include="Model\TasaCambio.cs">
+      <DependentUpon>EF_ERP_MSCORP.tt</DependentUpon>
+    </Compile>
+    <Compile Include="Model\Tecnico.cs">
+      <DependentUpon>EF_ERP_MSCORP.tt</DependentUpon>
+    </Compile>
+    <Compile Include="Model\TestigoAccidente.cs">
+      <DependentUpon>EF_ERP_MSCORP.tt</DependentUpon>
+    </Compile>
+    <Compile Include="Model\TipoCombustible.cs">
+      <DependentUpon>EF_ERP_MSCORP.tt</DependentUpon>
+    </Compile>
+    <Compile Include="Model\TipoCuenta.cs">
+      <DependentUpon>EF_ERP_MSCORP.tt</DependentUpon>
+    </Compile>
+    <Compile Include="Model\TipoEspacio.cs">
+      <DependentUpon>EF_ERP_MSCORP.tt</DependentUpon>
+    </Compile>
+    <Compile Include="Model\TipoVehiculo.cs">
+      <DependentUpon>EF_ERP_MSCORP.tt</DependentUpon>
+    </Compile>
+    <Compile Include="Model\TitulosReportes.cs">
+      <DependentUpon>EF_ERP_MSCORP.tt</DependentUpon>
+    </Compile>
+    <Compile Include="Model\TopContactoEmergencia_Result.cs">
+      <DependentUpon>EF_ERP_MSCORP.tt</DependentUpon>
+    </Compile>
+    <Compile Include="Model\TotalLiquidacionCompra.cs">
+      <DependentUpon>EF_ERP_MSCORP.tt</DependentUpon>
+    </Compile>
+    <Compile Include="Model\TrabajoCliente.cs">
+      <DependentUpon>EF_ERP_MSCORP.tt</DependentUpon>
+    </Compile>
+    <Compile Include="Model\TrabajoOrdenProduccion.cs">
+      <DependentUpon>EF_ERP_MSCORP.tt</DependentUpon>
+    </Compile>
+    <Compile Include="Model\TrabajosExternos.cs">
+      <DependentUpon>EF_ERP_MSCORP.tt</DependentUpon>
+    </Compile>
+    <Compile Include="Model\Traslado.cs">
+      <DependentUpon>EF_ERP_MSCORP.tt</DependentUpon>
+    </Compile>
+    <Compile Include="Model\TrasladoOrdenProduccion.cs">
+      <DependentUpon>EF_ERP_MSCORP.tt</DependentUpon>
+    </Compile>
+    <Compile Include="Model\TrasladoOrdenTrabajo.cs">
+      <DependentUpon>EF_ERP_MSCORP.tt</DependentUpon>
+    </Compile>
+    <Compile Include="Model\UbicacionCliente.cs">
+      <DependentUpon>EF_ERP_MSCORP.tt</DependentUpon>
+    </Compile>
+    <Compile Include="Model\UbicacionEmpleado.cs">
+      <DependentUpon>EF_ERP_MSCORP.tt</DependentUpon>
+    </Compile>
+    <Compile Include="Model\UbicacionFabrica.cs">
+      <DependentUpon>EF_ERP_MSCORP.tt</DependentUpon>
+    </Compile>
+    <Compile Include="Model\UnidadMedida.cs">
+      <DependentUpon>EF_ERP_MSCORP.tt</DependentUpon>
+    </Compile>
+    <Compile Include="Model\UnidadPeso.cs">
+      <DependentUpon>EF_ERP_MSCORP.tt</DependentUpon>
+    </Compile>
+    <Compile Include="Model\UspCS_DetalleCompra_Result.cs">
+      <DependentUpon>EF_ERP_MSCORP.tt</DependentUpon>
+    </Compile>
+    <Compile Include="Model\UspDatosDocumento_Result.cs">
+      <DependentUpon>EF_ERP_MSCORP.tt</DependentUpon>
+    </Compile>
+    <Compile Include="Model\UspDocumentoReserva_Result.cs">
+      <DependentUpon>EF_ERP_MSCORP.tt</DependentUpon>
+    </Compile>
+    <Compile Include="Model\UspGetCombosEnStockXBodega_Result.cs">
+      <DependentUpon>EF_ERP_MSCORP.tt</DependentUpon>
+    </Compile>
+    <Compile Include="Model\UspGetCombosEnStock_Result.cs">
+      <DependentUpon>EF_ERP_MSCORP.tt</DependentUpon>
+    </Compile>
+    <Compile Include="Model\UspGetDatosAnulacionCompra_Result.cs">
+      <DependentUpon>EF_ERP_MSCORP.tt</DependentUpon>
+    </Compile>
+    <Compile Include="Model\UspGetDatosCompra_Result.cs">
+      <DependentUpon>EF_ERP_MSCORP.tt</DependentUpon>
+    </Compile>
+    <Compile Include="Model\UspGetDetalleDocumentoReserva_Result.cs">
+      <DependentUpon>EF_ERP_MSCORP.tt</DependentUpon>
+    </Compile>
+    <Compile Include="Model\UspGetDetalleDocumento_Result.cs">
+      <DependentUpon>EF_ERP_MSCORP.tt</DependentUpon>
+    </Compile>
+    <Compile Include="Model\UspGetDetallesCompra_Result.cs">
+      <DependentUpon>EF_ERP_MSCORP.tt</DependentUpon>
+    </Compile>
+    <Compile Include="Model\UspGetIdentificadorDocumento_Result.cs">
+      <DependentUpon>EF_ERP_MSCORP.tt</DependentUpon>
+    </Compile>
+    <Compile Include="Model\UspGetLoteDocumento_Result.cs">
+      <DependentUpon>EF_ERP_MSCORP.tt</DependentUpon>
+    </Compile>
+    <Compile Include="Model\UspGetProductosAgotadosXEmpresa_Result.cs">
+      <DependentUpon>EF_ERP_MSCORP.tt</DependentUpon>
+    </Compile>
+    <Compile Include="Model\UspGetProductosAgotados_Result.cs">
+      <DependentUpon>EF_ERP_MSCORP.tt</DependentUpon>
+    </Compile>
+    <Compile Include="Model\UspListaDatosDocumento_Result.cs">
+      <DependentUpon>EF_ERP_MSCORP.tt</DependentUpon>
+    </Compile>
+    <Compile Include="Model\UspProductosSinCompras_Result.cs">
+      <DependentUpon>EF_ERP_MSCORP.tt</DependentUpon>
+    </Compile>
+    <Compile Include="Model\Usuario.cs">
+      <DependentUpon>EF_ERP_MSCORP.tt</DependentUpon>
+    </Compile>
+    <Compile Include="Model\UtilSistema.cs">
+      <DependentUpon>EF_ERP_MSCORP.tt</DependentUpon>
+    </Compile>
+    <Compile Include="Model\Vehiculo.cs">
+      <DependentUpon>EF_ERP_MSCORP.tt</DependentUpon>
+    </Compile>
+    <Compile Include="Model\VehiculoEnProceso.cs">
+      <DependentUpon>EF_ERP_MSCORP.tt</DependentUpon>
+    </Compile>
+    <Compile Include="Model\VehiculoProcesoEstaciones.cs">
+      <DependentUpon>EF_ERP_MSCORP.tt</DependentUpon>
+    </Compile>
+    <Compile Include="Model\Vendedor.cs">
+      <DependentUpon>EF_ERP_MSCORP.tt</DependentUpon>
+    </Compile>
+    <Compile Include="Model\VerificacionTransferencia.cs">
+      <DependentUpon>EF_ERP_MSCORP.tt</DependentUpon>
+    </Compile>
+    <Compile Include="Model\VersionAplicacion.cs">
+      <DependentUpon>EF_ERP_MSCORP.tt</DependentUpon>
+    </Compile>
+    <Compile Include="Model\VistaReservaCotizacion.cs">
+      <DependentUpon>EF_ERP_MSCORP.tt</DependentUpon>
+    </Compile>
+    <Compile Include="Model\VwBitacoraModuloSistema.cs">
+      <DependentUpon>EF_ERP_MSCORP.tt</DependentUpon>
+    </Compile>
+    <Compile Include="Model\VwBitacoraUsuario.cs">
+      <DependentUpon>EF_ERP_MSCORP.tt</DependentUpon>
+    </Compile>
+    <Compile Include="Model\VwDarFormatoPermisos.cs">
+      <DependentUpon>EF_ERP_MSCORP.tt</DependentUpon>
+    </Compile>
+    <Compile Include="Model\VwDatosEmpleado.cs">
+      <DependentUpon>EF_ERP_MSCORP.tt</DependentUpon>
+    </Compile>
+    <Compile Include="Model\VwDetallesCompra.cs">
+      <DependentUpon>EF_ERP_MSCORP.tt</DependentUpon>
+    </Compile>
+    <Compile Include="Model\VwEmpleadoConContrato.cs">
+      <DependentUpon>EF_ERP_MSCORP.tt</DependentUpon>
+    </Compile>
+    <Compile Include="Model\VwEmpleadoSinContrato.cs">
+      <DependentUpon>EF_ERP_MSCORP.tt</DependentUpon>
+    </Compile>
+    <Compile Include="Model\VwIdentificadorEnBodegaSeleccionable_Result.cs">
+      <DependentUpon>EF_ERP_MSCORP.tt</DependentUpon>
+    </Compile>
+    <Compile Include="Model\VwIdentificadorEnBodega_Result.cs">
+      <DependentUpon>EF_ERP_MSCORP.tt</DependentUpon>
+    </Compile>
+    <Compile Include="Model\VwIdentificadoresReservados.cs">
+      <DependentUpon>EF_ERP_MSCORP.tt</DependentUpon>
+    </Compile>
+    <Compile Include="Model\VwIdentificadorXPrefacturaOT_Result.cs">
+      <DependentUpon>EF_ERP_MSCORP.tt</DependentUpon>
+    </Compile>
+    <Compile Include="Model\VwIdentificadorXPrefacturaPV_Result.cs">
+      <DependentUpon>EF_ERP_MSCORP.tt</DependentUpon>
+    </Compile>
+    <Compile Include="Model\VwKardexBodegaProducto_Result.cs">
+      <DependentUpon>EF_ERP_MSCORP.tt</DependentUpon>
+    </Compile>
+    <Compile Include="Model\VwKardexTotalizadoXBodega_Result.cs">
+      <DependentUpon>EF_ERP_MSCORP.tt</DependentUpon>
+    </Compile>
+    <Compile Include="Model\VwLoteEnBodegaSeleccionable_Result.cs">
+      <DependentUpon>EF_ERP_MSCORP.tt</DependentUpon>
+    </Compile>
+    <Compile Include="Model\VwLoteEnBodega_Result.cs">
+      <DependentUpon>EF_ERP_MSCORP.tt</DependentUpon>
+    </Compile>
+    <Compile Include="Model\VwLoteXPrefacturaOT_Result.cs">
+      <DependentUpon>EF_ERP_MSCORP.tt</DependentUpon>
+    </Compile>
+    <Compile Include="Model\VwLoteXPrefacturaPV_Result.cs">
+      <DependentUpon>EF_ERP_MSCORP.tt</DependentUpon>
+    </Compile>
+    <Compile Include="Model\VwMostrarDepartamentos.cs">
+      <DependentUpon>EF_ERP_MSCORP.tt</DependentUpon>
+    </Compile>
+    <Compile Include="Model\VwMostrarEmpleados.cs">
+      <DependentUpon>EF_ERP_MSCORP.tt</DependentUpon>
+    </Compile>
+    <Compile Include="Model\VwMostrarEmpresa.cs">
+      <DependentUpon>EF_ERP_MSCORP.tt</DependentUpon>
+    </Compile>
+    <Compile Include="Model\VwMostrarEntregaEquipos.cs">
+      <DependentUpon>EF_ERP_MSCORP.tt</DependentUpon>
+    </Compile>
+    <Compile Include="Model\VwMostrarPuesto.cs">
+      <DependentUpon>EF_ERP_MSCORP.tt</DependentUpon>
+    </Compile>
+    <Compile Include="Model\VwMostrarPuestos.cs">
+      <DependentUpon>EF_ERP_MSCORP.tt</DependentUpon>
+    </Compile>
+    <Compile Include="Model\VwMostrarUsuario.cs">
+      <DependentUpon>EF_ERP_MSCORP.tt</DependentUpon>
+    </Compile>
+    <Compile Include="Model\VwMovimientoConfirmado.cs">
+      <DependentUpon>EF_ERP_MSCORP.tt</DependentUpon>
+    </Compile>
+    <Compile Include="Model\VwMovimientoDenegado.cs">
+      <DependentUpon>EF_ERP_MSCORP.tt</DependentUpon>
+    </Compile>
+    <Compile Include="Model\VwMovimientoEmpleado.cs">
+      <DependentUpon>EF_ERP_MSCORP.tt</DependentUpon>
+    </Compile>
+    <Compile Include="Model\VwObtenerCotizacionvsPrefactura_Result.cs">
+      <DependentUpon>EF_ERP_MSCORP.tt</DependentUpon>
+    </Compile>
+    <Compile Include="Model\VwPrductoCosto.cs">
+      <DependentUpon>EF_ERP_MSCORP.tt</DependentUpon>
+    </Compile>
+    <Compile Include="Model\VwReservaCotizacion.cs">
+      <DependentUpon>EF_ERP_MSCORP.tt</DependentUpon>
+    </Compile>
+    <Compile Include="Model\VwReservaPrefactura.cs">
+      <DependentUpon>EF_ERP_MSCORP.tt</DependentUpon>
+    </Compile>
+    <Compile Include="Model\VwReservaTraslado.cs">
+      <DependentUpon>EF_ERP_MSCORP.tt</DependentUpon>
+    </Compile>
+    <Compile Include="Model\VwSeleccionarEmpleado.cs">
+      <DependentUpon>EF_ERP_MSCORP.tt</DependentUpon>
+    </Compile>
+    <Compile Include="Model\VwSeries.cs">
+      <DependentUpon>EF_ERP_MSCORP.tt</DependentUpon>
+    </Compile>
+    <Compile Include="Model\VwVacacionesEmpleados_Result.cs">
+      <DependentUpon>EF_ERP_MSCORP.tt</DependentUpon>
+    </Compile>
+    <Compile Include="Model\Vw_EntradaBodega_Result.cs">
+      <DependentUpon>EF_ERP_MSCORP.tt</DependentUpon>
+    </Compile>
+    <Compile Include="Model\Vw_ReservaTotalizadaXProducto_Result.cs">
+      <DependentUpon>EF_ERP_MSCORP.tt</DependentUpon>
+    </Compile>
+    <Compile Include="Model\Vw_Reserva_Result.cs">
+      <DependentUpon>EF_ERP_MSCORP.tt</DependentUpon>
+    </Compile>
+    <Compile Include="Model\Zonas.cs">
+      <DependentUpon>EF_ERP_MSCORP.tt</DependentUpon>
+    </Compile>
+    <Compile Include="Properties\AssemblyInfo.cs" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="App.Config" />
+    <EntityDeploy Include="Model\EF_ERP_MSCORP.edmx">
+      <Generator>EntityModelCodeGenerator</Generator>
+      <LastGenOutput>EF_ERP_MSCORP.Designer.cs</LastGenOutput>
+    </EntityDeploy>
+    <None Include="Model\EF_ERP_MSCORP.edmx.diagram">
+      <DependentUpon>EF_ERP_MSCORP.edmx</DependentUpon>
+    </None>
+    <None Include="packages.config" />
+  </ItemGroup>
+  <ItemGroup>
+    <Service Include="{508349B6-6B84-4DF5-91F0-309BEEBAD82D}" />
+  </ItemGroup>
+  <ItemGroup />
+  <ItemGroup>
+    <Content Include="Model\EF_ERP_MSCORP.Context.tt">
+      <Generator>TextTemplatingFileGenerator</Generator>
+      <DependentUpon>EF_ERP_MSCORP.edmx</DependentUpon>
+      <LastGenOutput>EF_ERP_MSCORP.Context.cs</LastGenOutput>
+    </Content>
+    <Content Include="Model\EF_ERP_MSCORP.tt">
+      <Generator>TextTemplatingFileGenerator</Generator>
+      <DependentUpon>EF_ERP_MSCORP.edmx</DependentUpon>
+      <LastGenOutput>EF_ERP_MSCORP.cs</LastGenOutput>
+    </Content>
+  </ItemGroup>
+  <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
+  <Target Name="EnsureNuGetPackageBuildImports" BeforeTargets="PrepareForBuild">
+    <PropertyGroup>
+      <ErrorText>Este proyecto hace referencia a los paquetes NuGet que faltan en este equipo. Use la restauración de paquetes NuGet para descargarlos. Para obtener más información, consulte http://go.microsoft.com/fwlink/?LinkID=322105. El archivo que falta es {0}.</ErrorText>
+    </PropertyGroup>
+    <Error Condition="!Exists('..\packages\EntityFramework.6.4.0\build\EntityFramework.props')" Text="$([System.String]::Format('$(ErrorText)', '..\packages\EntityFramework.6.4.0\build\EntityFramework.props'))" />
+    <Error Condition="!Exists('..\packages\EntityFramework.6.4.0\build\EntityFramework.targets')" Text="$([System.String]::Format('$(ErrorText)', '..\packages\EntityFramework.6.4.0\build\EntityFramework.targets'))" />
+  </Target>
+  <Import Project="..\packages\EntityFramework.6.4.0\build\EntityFramework.targets" Condition="Exists('..\packages\EntityFramework.6.4.0\build\EntityFramework.targets')" />
+</Project>

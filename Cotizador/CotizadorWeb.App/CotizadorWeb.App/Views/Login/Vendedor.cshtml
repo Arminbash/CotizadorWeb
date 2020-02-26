@@ -1,0 +1,37 @@
+﻿@model CotizadorWeb.Infrastructure.ViewModel.UsuarioViewModel
+
+@{
+    ViewBag.Title = "MSCORP";
+}
+
+@using (Html.BeginForm())
+{
+    @Html.AntiForgeryToken()
+    <div class="wrapper fadeInDown">
+        <div id="formContent">
+            <!-- Tabs Titles -->
+            <!-- Icon -->
+            <div class="fadeIn first">
+                <img src="../Content/Images/SIGPRO.png" id="icon" alt="Empresa" style="height:30%; width:30%;" />
+                <p style="color:red; font-style:oblique">@ViewBag.MensajeError</p>
+            </div>
+            <!-- Login Form -->
+            <form>
+                @Html.EditorFor(m => m.Usuario, new { htmlAttributes = new { @class = "fadeIn second", @placeholder = "Usuario" } })
+                @Html.EditorFor(m => m.Password, new { htmlAttributes = new { @class = "fadeIn third", @placeholder = "Contraseña", @type = "password" } })
+
+                <input type="submit" id="btnEntrar" class="fadeIn fourth" value="Entrar">
+            </form>
+
+            <!-- Remind Passowrd -->
+            <div id="formFooter">
+                <a class="underlineHover" href="#">Olvido su contraseña?</a>
+            </div>
+
+        </div>
+    </div>
+}
+
+@section Scripts {
+    @Scripts.Render("~/bundles/jqueryval")
+}

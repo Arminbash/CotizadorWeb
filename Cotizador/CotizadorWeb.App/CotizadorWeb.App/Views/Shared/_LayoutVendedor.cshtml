@@ -1,0 +1,66 @@
+﻿<!DOCTYPE html>
+<html>
+<head>
+    <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width,height=device-height initial-scale=1.0">
+    <title>@ViewBag.Title</title>
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.11.2/css/all.css">
+    <link rel="stylesheet" href="https://fonts.googleapis.com/icon?family=Material+Icons">
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Roboto:300,400,500,700&display=swap">
+    <link href="https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css" rel="stylesheet" integrity="sha384-wvfXpqpZZVQGK6TAh5PVlGOfQNHSoD2xbE+QkPxCAFlNEevoEH3Sl0sibVcOQVnN" crossorigin="anonymous">
+</head>
+<body>
+    @RenderBody()
+</body>
+</html>
+<!-- JQuery -->
+<script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.4/umd/popper.min.js"></script>
+@Scripts.Render("~/bundles/jquery")
+@Styles.Render("~/Content/materialize")
+@Scripts.Render("~/bundles/materialize")
+<!-- Framework para wizard del materialize -->
+<link rel="stylesheet" href="https://unpkg.com/materialize-stepper@3.1.0/dist/css/mstepper.min.css">
+<script src="https://unpkg.com/materialize-stepper@3.1.0/dist/js/mstepper.min.js"></script>
+
+@*<script src="~/Scripts/jquery.signalR-2.4.1.min.js"></script>
+    <script src="~/signalr/hubs"></script>*@
+<script>
+    //Carga el modal del cliente en cierta parte del codigo
+    function loadModalCliente(urldirecion) {
+
+        $(function () {
+            var url = urldirecion;
+            $.get(url).done(function (data) {
+                $("#modalClienteTable").empty();
+                $("#modalClienteTable").append(data);
+            }).fail(function (s1, s2, error) {
+                if (s1.status === 0) {
+                    alert('No coneccion: Verificar la Network');
+                }
+                if (s1.status === 404) {
+                    alert('Requested page not found [404]');
+                }
+            });
+        });
+    }
+
+        function loadModalProductos(urldirecion) {
+        $(function () {
+            var url = urldirecion;
+            $.get(url).done(function (data) {
+                $("#modalProductosTable").empty();
+                $("#modalProductosTable").append(data);
+            }).fail(function (s1, s2, error) {
+                if (s1.status === 0) {
+                    alert('No coneccion: Verificar la Network');
+                }
+                if (s1.status === 404) {
+                    alert('Requested page not found [404]');
+                }
+            });
+        });
+    }
+    //------------------------------------------------------
+</script>
+@RenderSection("scripts", required: false)

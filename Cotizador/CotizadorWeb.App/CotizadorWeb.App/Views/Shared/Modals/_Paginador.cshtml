@@ -1,0 +1,43 @@
+﻿@model CotizadorWeb.Infrastructure.ViewModel.BaseModelo
+
+@{
+    var CantidadPaginas = (int)Math.Ceiling((double)Model.TotalDeRegistros / Model.RegistroPorPagina);
+}
+
+@{
+    int inicial = 1;
+    var radio = 2;
+    var cantidadMaximaDePaginas = radio * 2 + 1;
+    int final = (CantidadPaginas > cantidadMaximaDePaginas) ? cantidadMaximaDePaginas : CantidadPaginas;
+
+    if (Model.PaginaActual > radio + 1)
+    {
+        inicial = Model.PaginaActual - radio;
+        if (CantidadPaginas > Model.PaginaActual + radio)
+        {
+            final = Model.PaginaActual + radio;
+        }
+        else
+        {
+            final = CantidadPaginas;
+        }
+    }
+}
+<input id="tipoPaginador" value="@Model.TipoPaginador" hidden disabled />
+<ul class="pagination" id="paginationModalCliente">
+    <li class="waves-effect"><a style="background-color:skyblue; color:white;" onclick="ver('@Url.Action("Modal"+Model.TipoPaginador,"CotizadorVendedor", new { pagina = 1})','@Model.TipoPaginador')"><i class="material-icons">chevron_left</i></a></li>
+    @for (int i = inicial; i <= final; i++)
+    {
+        if (i == Model.PaginaActual)
+        {
+            <li class="active"><a class="blue darken-1" onclick="ver('@Url.Action("Modal"+Model.TipoPaginador,"CotizadorVendedor", new { pagina = i})','@Model.TipoPaginador')">@i.ToString()</a></li>
+        }
+        else
+        {
+            <li class="waves-effect"><a style="background-color:skyblue; color:white;" onclick="ver('@Url.Action("Modal"+Model.TipoPaginador,"CotizadorVendedor", new { pagina = i})','@Model.TipoPaginador')">@i.ToString()</a></li>
+        }
+    }
+    <li class="waves-effect"><a style="background-color:skyblue; color:white;" onclick="ver('@Url.Action("Modal"+Model.TipoPaginador,"CotizadorVendedor", new { pagina = CantidadPaginas})','@Model.TipoPaginador')"><i class="material-icons">chevron_right</i></a></li>
+</ul>
+
+

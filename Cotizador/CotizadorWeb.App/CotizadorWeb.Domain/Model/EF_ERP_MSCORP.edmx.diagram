@@ -1,0 +1,838 @@
+<?xml version="1.0" encoding="utf-8"?>
+<edmx:Edmx Version="3.0" xmlns:edmx="http://schemas.microsoft.com/ado/2009/11/edmx">
+ <!-- EF Designer content (DO NOT EDIT MANUALLY BELOW HERE) -->
+  <edmx:Designer xmlns="http://schemas.microsoft.com/ado/2009/11/edmx">
+    <!-- Diagram content (shape and connector positions) -->
+    <edmx:Diagrams>
+      <Diagram DiagramId="9b539f204eeb4541a1ae6d233ada858b" Name="Diagram1">
+        <EntityTypeShape EntityType="ERP_MSCORPModel.sysdiagrams" Width="1.5" PointX="6" PointY="4.75" IsExpanded="true" />
+        <EntityTypeShape EntityType="ERP_MSCORPModel.AprobarGastosOperativos" Width="1.5" PointX="10.25" PointY="7.5" IsExpanded="true" />
+        <EntityTypeShape EntityType="ERP_MSCORPModel.AsignacionCajaChica" Width="1.5" PointX="3.25" PointY="135.75" IsExpanded="true" />
+        <EntityTypeShape EntityType="ERP_MSCORPModel.AsignarMontoCajaChica" Width="1.5" PointX="5.5" PointY="149.375" IsExpanded="true" />
+        <EntityTypeShape EntityType="ERP_MSCORPModel.BitacoraCobranza" Width="1.5" PointX="8.25" PointY="108.875" IsExpanded="true" />
+        <EntityTypeShape EntityType="ERP_MSCORPModel.CatalogoConcepto" Width="1.5" PointX="19.25" PointY="218.75" IsExpanded="true" />
+        <EntityTypeShape EntityType="ERP_MSCORPModel.CatalogoCuenta" Width="1.5" PointX="1.75" PointY="166.375" IsExpanded="true" />
+        <EntityTypeShape EntityType="ERP_MSCORPModel.CategoriaDescripcionConceptoCajaChica" Width="1.5" PointX="1" PointY="115.875" IsExpanded="true" />
+        <EntityTypeShape EntityType="ERP_MSCORPModel.ConceptoMinutaDeposito" Width="1.5" PointX="4" PointY="159.125" IsExpanded="true" />
+        <EntityTypeShape EntityType="ERP_MSCORPModel.ConceptoNotaCredito" Width="1.5" PointX="16" PointY="211" IsExpanded="true" />
+        <EntityTypeShape EntityType="ERP_MSCORPModel.ConceptoNotaCreditoProveedor" Width="1.5" PointX="15" PointY="18.5" IsExpanded="true" />
+        <EntityTypeShape EntityType="ERP_MSCORPModel.ConceptoNotasDebitoProveedor" Width="1.5" PointX="4" PointY="17" IsExpanded="true" />
+        <EntityTypeShape EntityType="ERP_MSCORPModel.ConfiguracionFIN" Width="1.5" PointX="6" PointY="125.5" IsExpanded="true" />
+        <EntityTypeShape EntityType="ERP_MSCORPModel.CorreoDepartamento" Width="1.5" PointX="6" PointY="95.125" IsExpanded="true" />
+        <EntityTypeShape EntityType="ERP_MSCORPModel.Criterio_Cobranza" Width="1.5" PointX="8.25" PointY="105.5" IsExpanded="true" />
+        <EntityTypeShape EntityType="ERP_MSCORPModel.Criterio_Proveedor" Width="1.5" PointX="12" PointY="84.875" IsExpanded="true" />
+        <EntityTypeShape EntityType="ERP_MSCORPModel.CuentaBanco" Width="1.5" PointX="4" PointY="162" IsExpanded="true" />
+        <EntityTypeShape EntityType="ERP_MSCORPModel.DescripcionConceptoCaja" Width="1.5" PointX="3.25" PointY="115.5" IsExpanded="true" />
+        <EntityTypeShape EntityType="ERP_MSCORPModel.DetalleNotaCreditoProveedor" Width="1.5" PointX="19.5" PointY="18.375" IsExpanded="true" />
+        <EntityTypeShape EntityType="ERP_MSCORPModel.DetalleNotasDebito" Width="1.5" PointX="21.5" PointY="166.75" IsExpanded="true" />
+        <EntityTypeShape EntityType="ERP_MSCORPModel.DetalleNotasDebitoCredito" Width="1.5" PointX="20.5" PointY="210.625" IsExpanded="true" />
+        <EntityTypeShape EntityType="ERP_MSCORPModel.DetalleNotasDebitoProveedor" Width="1.5" PointX="6.25" PointY="17" IsExpanded="true" />
+        <EntityTypeShape EntityType="ERP_MSCORPModel.DetallePagoRealizadoTesoreria" Width="1.5" PointX="20.5" PointY="144.875" IsExpanded="true" />
+        <EntityTypeShape EntityType="ERP_MSCORPModel.DetalleReciboCajaChica" Width="1.5" PointX="13.75" PointY="114.25" IsExpanded="true" />
+        <EntityTypeShape EntityType="ERP_MSCORPModel.DetalleSolicitudCheque" Width="1.5" PointX="11.5" PointY="114.875" IsExpanded="true" />
+        <EntityTypeShape EntityType="ERP_MSCORPModel.DetalleSolicitudGO" Width="1.5" PointX="13.25" PointY="8.375" IsExpanded="true" />
+        <EntityTypeShape EntityType="ERP_MSCORPModel.DetalleSolicitudPagoReciboCajaChica" Width="1.5" PointX="5.5" PointY="120.375" IsExpanded="true" />
+        <EntityTypeShape EntityType="ERP_MSCORPModel.DistribucionGastosOperativos" Width="1.5" PointX="10.25" PointY="14.625" IsExpanded="true" />
+        <EntityTypeShape EntityType="ERP_MSCORPModel.GastosOperativos" Width="1.5" PointX="11" PointY="11.125" IsExpanded="true" />
+        <EntityTypeShape EntityType="ERP_MSCORPModel.MinutaDeposito" Width="1.5" PointX="6.25" PointY="133" IsExpanded="true" />
+        <EntityTypeShape EntityType="ERP_MSCORPModel.MovimientoBancario" Width="1.5" PointX="17.5" PointY="145.875" IsExpanded="true" />
+        <EntityTypeShape EntityType="ERP_MSCORPModel.NotaCreditoProveedor" Width="1.5" PointX="17.25" PointY="17.125" IsExpanded="true" />
+        <EntityTypeShape EntityType="ERP_MSCORPModel.NotasCredito" Width="1.5" PointX="18.25" PointY="209.75" IsExpanded="true" />
+        <EntityTypeShape EntityType="ERP_MSCORPModel.NotasCreditoAplicadas" Width="1.5" PointX="22.75" PointY="189.75" IsExpanded="true" />
+        <EntityTypeShape EntityType="ERP_MSCORPModel.NotasDebito" Width="1.5" PointX="19.25" PointY="163.875" IsExpanded="true" />
+        <EntityTypeShape EntityType="ERP_MSCORPModel.NotasDebitoCredito" Width="1.5" PointX="10" PointY="0.75" IsExpanded="true" />
+        <EntityTypeShape EntityType="ERP_MSCORPModel.NotasDebitoProveedor" Width="1.5" PointX="4" PointY="21.125" IsExpanded="true" />
+        <EntityTypeShape EntityType="ERP_MSCORPModel.PagoRealizadoTesoreria" Width="1.5" PointX="3.25" PointY="139.75" IsExpanded="true" />
+        <EntityTypeShape EntityType="ERP_MSCORPModel.ReciboCajaChica" Width="1.5" PointX="8.5" PointY="116.125" IsExpanded="true" />
+        <EntityTypeShape EntityType="ERP_MSCORPModel.SolicitudCheque" Width="1.5" PointX="9.25" PointY="133.5" IsExpanded="true" />
+        <EntityTypeShape EntityType="ERP_MSCORPModel.SolicitudGastosOperativos" Width="1.5" PointX="8" PointY="8" IsExpanded="true" />
+        <EntityTypeShape EntityType="ERP_MSCORPModel.SolicitudPagoCajaChica" Width="1.5" PointX="3.25" PointY="119.625" IsExpanded="true" />
+        <EntityTypeShape EntityType="ERP_MSCORPModel.SolicitudReciboReembolso" Width="1.5" PointX="10.75" PointY="118.125" IsExpanded="true" />
+        <EntityTypeShape EntityType="ERP_MSCORPModel.SolicitudReembolsoCajaChica" Width="1.5" PointX="3.25" PointY="125.25" IsExpanded="true" />
+        <EntityTypeShape EntityType="ERP_MSCORPModel.Accesorio" Width="1.5" PointX="20.75" PointY="215.125" IsExpanded="true" />
+        <EntityTypeShape EntityType="ERP_MSCORPModel.AccesorioFlota" Width="1.5" PointX="23" PointY="183" IsExpanded="true" />
+        <EntityTypeShape EntityType="ERP_MSCORPModel.ActivacionConductor" Width="1.5" PointX="1" PointY="3.25" IsExpanded="true" />
+        <EntityTypeShape EntityType="ERP_MSCORPModel.ActivacionFlota" Width="1.5" PointX="21.5" PointY="170.25" IsExpanded="true" />
+        <EntityTypeShape EntityType="ERP_MSCORPModel.AprobarCotizacionMantenimiento" Width="1.5" PointX="3.25" PointY="128.875" IsExpanded="true" />
+        <EntityTypeShape EntityType="ERP_MSCORPModel.AsignarConductoresVehiculos" Width="1.5" PointX="24.75" PointY="90.375" IsExpanded="true" />
+        <EntityTypeShape EntityType="ERP_MSCORPModel.CategoriaAccesorio" Width="1.5" PointX="18.5" PointY="215.375" IsExpanded="true" />
+        <EntityTypeShape EntityType="ERP_MSCORPModel.Combustible" Width="1.5" PointX="24" PointY="83.625" IsExpanded="true" />
+        <EntityTypeShape EntityType="ERP_MSCORPModel.Conductores" Width="1.5" PointX="1" PointY="6.25" IsExpanded="true" />
+        <EntityTypeShape EntityType="ERP_MSCORPModel.ConfirmarMantenimiento" Width="1.5" PointX="23" PointY="136.25" IsExpanded="true" />
+        <EntityTypeShape EntityType="ERP_MSCORPModel.CotizarMantenimiento" Width="1.5" PointX="1" PointY="123.25" IsExpanded="true" />
+        <EntityTypeShape EntityType="ERP_MSCORPModel.DetalleActivacionConductor" Width="1.5" PointX="3.25" PointY="6" IsExpanded="true" />
+        <EntityTypeShape EntityType="ERP_MSCORPModel.DetalleActivacionFlota" Width="1.5" PointX="23.75" PointY="174" IsExpanded="true" />
+        <EntityTypeShape EntityType="ERP_MSCORPModel.DetalleCotizarMantemiento" Width="1.5" PointX="3.25" PointY="95.375" IsExpanded="true" />
+        <EntityTypeShape EntityType="ERP_MSCORPModel.DetalleFacturaOP" Width="1.5" PointX="14.25" PointY="74.375" IsExpanded="true" />
+        <EntityTypeShape EntityType="ERP_MSCORPModel.DetalleFacturaReparacion" Width="1.5" PointX="26.75" PointY="150.5" IsExpanded="true" />
+        <EntityTypeShape EntityType="ERP_MSCORPModel.DetalleMantenimientoFlota" Width="1.5" PointX="23" PointY="163.625" IsExpanded="true" />
+        <EntityTypeShape EntityType="ERP_MSCORPModel.DetalleMantenimientoOperacion" Width="1.5" PointX="4" PointY="206.875" IsExpanded="true" />
+        <EntityTypeShape EntityType="ERP_MSCORPModel.DetallesRutas" Width="1.5" PointX="18.25" PointY="7" IsExpanded="true" />
+        <EntityTypeShape EntityType="ERP_MSCORPModel.DocumentosDelVehiculo" Width="1.5" PointX="20.75" PointY="183.375" IsExpanded="true" />
+        <EntityTypeShape EntityType="ERP_MSCORPModel.EstacionesCombustibles" Width="1.5" PointX="21.75" PointY="54.5" IsExpanded="true" />
+        <EntityTypeShape EntityType="ERP_MSCORPModel.FacturaCombustible" Width="1.5" PointX="12" PointY="73.875" IsExpanded="true" />
+        <EntityTypeShape EntityType="ERP_MSCORPModel.FacturaReparacion" Width="1.5" PointX="24.5" PointY="148.75" IsExpanded="true" />
+        <EntityTypeShape EntityType="ERP_MSCORPModel.FlotaMarca" Width="1.5" PointX="6.25" PointY="177.875" IsExpanded="true" />
+        <EntityTypeShape EntityType="ERP_MSCORPModel.FlotaModelo" Width="1.5" PointX="8.5" PointY="177.75" IsExpanded="true" />
+        <EntityTypeShape EntityType="ERP_MSCORPModel.FlotaSucursal" Width="1.5" PointX="18.5" PointY="173.75" IsExpanded="true" />
+        <EntityTypeShape EntityType="ERP_MSCORPModel.FlotaVehicular" Width="1.5" PointX="10.75" PointY="176.625" IsExpanded="true" />
+        <EntityTypeShape EntityType="ERP_MSCORPModel.ImagenFlota" Width="1.5" PointX="13" PointY="196.875" IsExpanded="true" />
+        <EntityTypeShape EntityType="ERP_MSCORPModel.MantenimientoFLota" Width="1.5" PointX="20.75" PointY="173.375" IsExpanded="true" />
+        <EntityTypeShape EntityType="ERP_MSCORPModel.MantenimientoOperacion" Width="1.5" PointX="1.75" PointY="150" IsExpanded="true" />
+        <EntityTypeShape EntityType="ERP_MSCORPModel.Mecanicos" Width="1.5" PointX="3.25" PointY="132" IsExpanded="true" />
+        <EntityTypeShape EntityType="ERP_MSCORPModel.Rutas" Width="1.5" PointX="16" PointY="7.125" IsExpanded="true" />
+        <EntityTypeShape EntityType="ERP_MSCORPModel.TipoCombustible" Width="1.5" PointX="21.75" PointY="50.875" IsExpanded="true" />
+        <EntityTypeShape EntityType="ERP_MSCORPModel.TipoVehiculo" Width="1.5" PointX="8.5" PointY="180.875" IsExpanded="true" />
+        <EntityTypeShape EntityType="ERP_MSCORPModel.Zonas" Width="1.5" PointX="16" PointY="10" IsExpanded="true" />
+        <EntityTypeShape EntityType="ERP_MSCORPModel.AcompañamientoProveedor" Width="1.5" PointX="12" PointY="92.125" IsExpanded="true" />
+        <EntityTypeShape EntityType="ERP_MSCORPModel.AnticipoCliente" Width="1.5" PointX="8.25" PointY="95.25" IsExpanded="true" />
+        <EntityTypeShape EntityType="ERP_MSCORPModel.AnulacionCompra" Width="1.5" PointX="6.25" PointY="140.625" IsExpanded="true" />
+        <EntityTypeShape EntityType="ERP_MSCORPModel.AnulacionFactura" Width="1.5" PointX="17.5" PointY="178.625" IsExpanded="true" />
+        <EntityTypeShape EntityType="ERP_MSCORPModel.AnulacionPrefactura" Width="1.5" PointX="1" PointY="19.75" IsExpanded="true" />
+        <EntityTypeShape EntityType="ERP_MSCORPModel.AnulacionReciboGeneral" Width="1.5" PointX="14.5" PointY="156.25" IsExpanded="true" />
+        <EntityTypeShape EntityType="ERP_MSCORPModel.AnulacionTraslado" Width="1.5" PointX="9.25" PointY="140" IsExpanded="true" />
+        <EntityTypeShape EntityType="ERP_MSCORPModel.AperturaCaja" Width="1.5" PointX="10" PointY="160.375" IsExpanded="true" />
+        <EntityTypeShape EntityType="ERP_MSCORPModel.AperturaDia" Width="1.5" PointX="1.75" PointY="176.625" IsExpanded="true" />
+        <EntityTypeShape EntityType="ERP_MSCORPModel.AplicacionBusqueda" Width="1.5" PointX="5.25" PointY="11.25" IsExpanded="true" />
+        <EntityTypeShape EntityType="ERP_MSCORPModel.AprobarSolicitudPaseCredito" Width="1.5" PointX="27.25" PointY="105.875" IsExpanded="true" />
+        <EntityTypeShape EntityType="ERP_MSCORPModel.ArqueoCaja" Width="1.5" PointX="14.5" PointY="191.625" IsExpanded="true" />
+        <EntityTypeShape EntityType="ERP_MSCORPModel.AsignacionCaja" Width="1.5" PointX="3.25" PointY="171.125" IsExpanded="true" />
+        <EntityTypeShape EntityType="ERP_MSCORPModel.AsignarTecnicosOrdenProduccion" Width="1.5" PointX="17.25" PointY="68.5" IsExpanded="true" />
+        <EntityTypeShape EntityType="ERP_MSCORPModel.Bancos" Width="1.5" PointX="1.75" PointY="162.375" IsExpanded="true" />
+        <EntityTypeShape EntityType="ERP_MSCORPModel.Bodega" Width="1.5" PointX="12" PointY="107.625" IsExpanded="true" />
+        <EntityTypeShape EntityType="ERP_MSCORPModel.Caja" Width="1.5" PointX="1" PointY="145.125" IsExpanded="true" />
+        <EntityTypeShape EntityType="ERP_MSCORPModel.CajaPrefactura" Width="1.5" PointX="6" PointY="20.75" IsExpanded="true" />
+        <EntityTypeShape EntityType="ERP_MSCORPModel.CarteraCliente" Width="1.5" PointX="5.5" PointY="153.75" IsExpanded="true" />
+        <EntityTypeShape EntityType="ERP_MSCORPModel.CategoriaLinea" Width="1.5" PointX="9.75" PointY="84.125" IsExpanded="true" />
+        <EntityTypeShape EntityType="ERP_MSCORPModel.Celular" Width="1.5" PointX="16.5" PointY="88.625" IsExpanded="true" />
+        <EntityTypeShape EntityType="ERP_MSCORPModel.CierreCaja" Width="1.5" PointX="12.25" PointY="158.75" IsExpanded="true" />
+        <EntityTypeShape EntityType="ERP_MSCORPModel.CierreDia" Width="1.5" PointX="4" PointY="176.75" IsExpanded="true" />
+        <EntityTypeShape EntityType="ERP_MSCORPModel.Cliente" Width="1.5" PointX="6" PointY="115.125" IsExpanded="true" />
+        <EntityTypeShape EntityType="ERP_MSCORPModel.ClienteBanco" Width="1.5" PointX="14.25" PointY="104.125" IsExpanded="true" />
+        <EntityTypeShape EntityType="ERP_MSCORPModel.ClienteSeguimiento" Width="1.5" PointX="7.75" PointY="77.125" IsExpanded="true" />
+        <EntityTypeShape EntityType="ERP_MSCORPModel.CodigoAplicacion" Width="1.5" PointX="7.5" PointY="1.125" IsExpanded="true" />
+        <EntityTypeShape EntityType="ERP_MSCORPModel.CodigoOriginal" Width="1.5" PointX="5.25" PointY="1.125" IsExpanded="true" />
+        <EntityTypeShape EntityType="ERP_MSCORPModel.ComboProducto" Width="1.5" PointX="17.5" PointY="158" IsExpanded="true" />
+        <EntityTypeShape EntityType="ERP_MSCORPModel.Compra" Width="1.5" PointX="11.25" PointY="126.125" IsExpanded="true" />
+        <EntityTypeShape EntityType="ERP_MSCORPModel.ConceptoSalidaInventario" Width="1.5" PointX="15" PointY="64.125" IsExpanded="true" />
+        <EntityTypeShape EntityType="ERP_MSCORPModel.ConfiguracionPV" Width="1.5" PointX="14" PointY="21.75" IsExpanded="true" />
+        <EntityTypeShape EntityType="ERP_MSCORPModel.ConfirmarPago" Width="1.5" PointX="7.75" PointY="184.75" IsExpanded="true" />
+        <EntityTypeShape EntityType="ERP_MSCORPModel.Consignacion" Width="1.5" PointX="8.5" PointY="148.875" IsExpanded="true" />
+        <EntityTypeShape EntityType="ERP_MSCORPModel.Contacto" Width="1.5" PointX="15.75" PointY="81.125" IsExpanded="true" />
+        <EntityTypeShape EntityType="ERP_MSCORPModel.CosteoPEPS" Width="1.5" PointX="21.75" PointY="106.25" IsExpanded="true" />
+        <EntityTypeShape EntityType="ERP_MSCORPModel.CosteoPromedio" Width="1.5" PointX="21.75" PointY="82.5" IsExpanded="true" />
+        <EntityTypeShape EntityType="ERP_MSCORPModel.CosteoPromedioPonderado" Width="1.5" PointX="21.75" PointY="79.125" IsExpanded="true" />
+        <EntityTypeShape EntityType="ERP_MSCORPModel.CotizacionVenta" Width="1.5" PointX="10.5" PointY="152.625" IsExpanded="true" />
+        <EntityTypeShape EntityType="ERP_MSCORPModel.CuentaBancaria" Width="1.5" PointX="4" PointY="180.125" IsExpanded="true" />
+        <EntityTypeShape EntityType="ERP_MSCORPModel.DatosBancariosCliente" Width="1.5" PointX="12" PointY="63.75" IsExpanded="true" />
+        <EntityTypeShape EntityType="ERP_MSCORPModel.DatosBancariosProveedor" Width="1.5" PointX="12.75" PointY="81" IsExpanded="true" />
+        <EntityTypeShape EntityType="ERP_MSCORPModel.DescuentoxProntoPago" Width="1.5" PointX="8.25" PointY="126.625" IsExpanded="true" />
+        <EntityTypeShape EntityType="ERP_MSCORPModel.DespachoFactura" Width="1.5" PointX="9.25" PointY="142.875" IsExpanded="true" />
+        <EntityTypeShape EntityType="ERP_MSCORPModel.DespachoTraslado" Width="1.5" PointX="21.75" PointY="123.125" IsExpanded="true" />
+        <EntityTypeShape EntityType="ERP_MSCORPModel.DetalleAnticipoCliente" Width="1.5" PointX="19.5" PointY="105.625" IsExpanded="true" />
+        <EntityTypeShape EntityType="ERP_MSCORPModel.DetalleAsignarTecnicosOrdenProduccion" Width="1.5" PointX="22.5" PointY="69" IsExpanded="true" />
+        <EntityTypeShape EntityType="ERP_MSCORPModel.DetalleCheque" Width="1.5" PointX="19.75" PointY="188.25" IsExpanded="true" />
+        <EntityTypeShape EntityType="ERP_MSCORPModel.DetalleComboProducto" Width="1.5" PointX="24.75" PointY="125.25" IsExpanded="true" />
+        <EntityTypeShape EntityType="ERP_MSCORPModel.DetalleCombosProducto" Width="1.5" PointX="27.25" PointY="143.125" IsExpanded="true" />
+        <EntityTypeShape EntityType="ERP_MSCORPModel.DetalleCompra" Width="1.5" PointX="19.5" PointY="124.25" IsExpanded="true" />
+        <EntityTypeShape EntityType="ERP_MSCORPModel.DetalleCompraEliminados" Width="1.5" PointX="21.75" PointY="127.125" IsExpanded="true" />
+        <EntityTypeShape EntityType="ERP_MSCORPModel.DetalleCotizacionV" Width="1.5" PointX="19.75" PointY="157.875" IsExpanded="true" />
+        <EntityTypeShape EntityType="ERP_MSCORPModel.DetalleDescuentoXProntoPAgo" Width="1.5" PointX="17.5" PointY="134.75" IsExpanded="true" />
+        <EntityTypeShape EntityType="ERP_MSCORPModel.DetalleDevolucionCompra" Width="1.5" PointX="15.75" PointY="151.5" IsExpanded="true" />
+        <EntityTypeShape EntityType="ERP_MSCORPModel.DetalleDevolucionFactura" Width="1.5" PointX="19.75" PointY="195.375" IsExpanded="true" />
+        <EntityTypeShape EntityType="ERP_MSCORPModel.DetalleEfectivo" Width="1.5" PointX="19.75" PointY="191.5" IsExpanded="true" />
+        <EntityTypeShape EntityType="ERP_MSCORPModel.DetalleExcento" Width="1.5" PointX="24.25" PointY="20.5" IsExpanded="true" />
+        <EntityTypeShape EntityType="ERP_MSCORPModel.DetalleFactura" Width="1.5" PointX="17.5" PointY="182.125" IsExpanded="true" />
+        <EntityTypeShape EntityType="ERP_MSCORPModel.DetalleNotaDebitoRetencion" Width="1.5" PointX="21.5" PointY="178.875" IsExpanded="true" />
+        <EntityTypeShape EntityType="ERP_MSCORPModel.DetallePago" Width="1.5" PointX="17.5" PointY="189" IsExpanded="true" />
+        <EntityTypeShape EntityType="ERP_MSCORPModel.DetallePagoProveedor" Width="1.5" PointX="10" PointY="164.625" IsExpanded="true" />
+        <EntityTypeShape EntityType="ERP_MSCORPModel.DetallePrefacturaV" Width="1.5" PointX="25" PointY="142.25" IsExpanded="true" />
+        <EntityTypeShape EntityType="ERP_MSCORPModel.DetalleProductoDevolucionCompra" Width="1.5" PointX="18" PointY="154.75" IsExpanded="true" />
+        <EntityTypeShape EntityType="ERP_MSCORPModel.DetalleProductoMaloOP" Width="1.5" PointX="16.5" PointY="93.875" IsExpanded="true" />
+        <EntityTypeShape EntityType="ERP_MSCORPModel.DetalleProductosPrefacturaPV" Width="1.5" PointX="27.25" PointY="146.5" IsExpanded="true" />
+        <EntityTypeShape EntityType="ERP_MSCORPModel.DetalleProductosSalidaInventario" Width="1.5" PointX="21.75" PointY="85.875" IsExpanded="true" />
+        <EntityTypeShape EntityType="ERP_MSCORPModel.DetalleReciboCajaGeneral" Width="1.5" PointX="18.5" PointY="150.5" IsExpanded="true" />
+        <EntityTypeShape EntityType="ERP_MSCORPModel.DetalleReciboCajaGeneralNota" Width="1.5" PointX="21.5" PointY="148.375" IsExpanded="true" />
+        <EntityTypeShape EntityType="ERP_MSCORPModel.DetalleReciboRetencion" Width="1.5" PointX="23.75" PointY="177.75" IsExpanded="true" />
+        <EntityTypeShape EntityType="ERP_MSCORPModel.DetalleRetencionesProveedor" Width="1.5" PointX="24.25" PointY="15.5" IsExpanded="true" />
+        <EntityTypeShape EntityType="ERP_MSCORPModel.DetalleReversionDocumento" Width="1.5" PointX="20.5" PointY="136.625" IsExpanded="true" />
+        <EntityTypeShape EntityType="ERP_MSCORPModel.DetalleRevisarCotizacion" Width="1.5" PointX="23.25" PointY="5.25" IsExpanded="true" />
+        <EntityTypeShape EntityType="ERP_MSCORPModel.DetalleSalidaInventario" Width="1.5" PointX="19.5" PointY="93.75" IsExpanded="true" />
+        <EntityTypeShape EntityType="ERP_MSCORPModel.DetalleServiciosImportacion" Width="1.5" PointX="22.5" PointY="102.125" IsExpanded="true" />
+        <EntityTypeShape EntityType="ERP_MSCORPModel.DetallesImpuestos" Width="1.5" PointX="22.5" PointY="130.625" IsExpanded="true" />
+        <EntityTypeShape EntityType="ERP_MSCORPModel.DetalleTarjeta" Width="1.5" PointX="19.75" PointY="202" IsExpanded="true" />
+        <EntityTypeShape EntityType="ERP_MSCORPModel.DetalleTransferencia" Width="1.5" PointX="19.75" PointY="205.375" IsExpanded="true" />
+        <EntityTypeShape EntityType="ERP_MSCORPModel.DetalleTraslado" Width="1.5" PointX="24.75" PointY="130" IsExpanded="true" />
+        <EntityTypeShape EntityType="ERP_MSCORPModel.DetalleTrasladoAprobado" Width="1.5" PointX="18.75" PointY="120.875" IsExpanded="true" />
+        <EntityTypeShape EntityType="ERP_MSCORPModel.DetalleTrasladoSolicitado" Width="1.5" PointX="16.5" PointY="125.875" IsExpanded="true" />
+        <EntityTypeShape EntityType="ERP_MSCORPModel.DetalleVerificacionSolicitudes" Width="1.5" PointX="11.25" PointY="20" IsExpanded="true" />
+        <EntityTypeShape EntityType="ERP_MSCORPModel.DevolucionCompra" Width="1.5" PointX="13.5" PointY="150.875" IsExpanded="true" />
+        <EntityTypeShape EntityType="ERP_MSCORPModel.DevolucionFactura" Width="1.5" PointX="17.5" PointY="195" IsExpanded="true" />
+        <EntityTypeShape EntityType="ERP_MSCORPModel.DocumentoSerie" Width="1.5" PointX="15" PointY="107.625" IsExpanded="true" />
+        <EntityTypeShape EntityType="ERP_MSCORPModel.EstacionesProduccion" Width="1.5" PointX="15" PointY="44.375" IsExpanded="true" />
+        <EntityTypeShape EntityType="ERP_MSCORPModel.EstimacionProduccion" Width="1.5" PointX="23" PointY="1" IsExpanded="true" />
+        <EntityTypeShape EntityType="ERP_MSCORPModel.EstimacionProduccionDetalles" Width="1.5" PointX="25.25" PointY="0.875" IsExpanded="true" />
+        <EntityTypeShape EntityType="ERP_MSCORPModel.Factura" Width="1.5" PointX="15.25" PointY="165.625" IsExpanded="true" />
+        <EntityTypeShape EntityType="ERP_MSCORPModel.FacturaRetencion" Width="1.5" PointX="17.5" PointY="198.875" IsExpanded="true" />
+        <EntityTypeShape EntityType="ERP_MSCORPModel.Familia" Width="1.5" PointX="3" PointY="1" IsExpanded="true" />
+        <EntityTypeShape EntityType="ERP_MSCORPModel.IdentificadorEnCombos" Width="1.5" PointX="29.5" PointY="143.25" IsExpanded="true" />
+        <EntityTypeShape EntityType="ERP_MSCORPModel.IdentificadoresReversion" Width="1.5" PointX="16.5" PointY="130.625" IsExpanded="true" />
+        <EntityTypeShape EntityType="ERP_MSCORPModel.IdentificadorProducto" Width="1.5" PointX="22.5" PointY="73.375" IsExpanded="true" />
+        <EntityTypeShape EntityType="ERP_MSCORPModel.IdentificadorVehiculo" Width="1.5" PointX="24.75" PointY="73" IsExpanded="true" />
+        <EntityTypeShape EntityType="ERP_MSCORPModel.Imagen" Width="1.5" PointX="16.5" PointY="102.25" IsExpanded="true" />
+        <EntityTypeShape EntityType="ERP_MSCORPModel.IngresoOrdenProduccion" Width="1.5" PointX="16.5" PointY="58.25" IsExpanded="true" />
+        <EntityTypeShape EntityType="ERP_MSCORPModel.IntervaloCredito" Width="1.5" PointX="13" PointY="12.875" IsExpanded="true" />
+        <EntityTypeShape EntityType="ERP_MSCORPModel.Kardex" Width="1.5" PointX="19.5" PointY="100.125" IsExpanded="true" />
+        <EntityTypeShape EntityType="ERP_MSCORPModel.KardexIdentificadorProducto" Width="1.5" PointX="24.75" PointY="101.375" IsExpanded="true" />
+        <EntityTypeShape EntityType="ERP_MSCORPModel.KardexLote" Width="1.5" PointX="24.75" PointY="98.25" IsExpanded="true" />
+        <EntityTypeShape EntityType="ERP_MSCORPModel.KardexOrdenProduccion" Width="1.5" PointX="21" PointY="8.75" IsExpanded="true" />
+        <EntityTypeShape EntityType="ERP_MSCORPModel.Linea" Width="1.5" PointX="12" PointY="88" IsExpanded="true" />
+        <EntityTypeShape EntityType="ERP_MSCORPModel.Lote" Width="1.5" PointX="22.5" PointY="110.125" IsExpanded="true" />
+        <EntityTypeShape EntityType="ERP_MSCORPModel.Marca" Width="1.5" PointX="12" PointY="95" IsExpanded="true" />
+        <EntityTypeShape EntityType="ERP_MSCORPModel.MarcaAplicacion" Width="1.5" PointX="1.5" PointY="16.375" IsExpanded="true" />
+        <EntityTypeShape EntityType="ERP_MSCORPModel.Margen" Width="1.5" PointX="16.5" PointY="113.75" IsExpanded="true" />
+        <EntityTypeShape EntityType="ERP_MSCORPModel.ModeloAplicacion" Width="1.5" PointX="0.75" PointY="13.25" IsExpanded="true" />
+        <EntityTypeShape EntityType="ERP_MSCORPModel.MotorAplicacion" Width="1.5" PointX="3" PointY="10.125" IsExpanded="true" />
+        <EntityTypeShape EntityType="ERP_MSCORPModel.OrdenProduccion" Width="1.5" PointX="12" PointY="67.875" IsExpanded="true" />
+        <EntityTypeShape EntityType="ERP_MSCORPModel.PermisoEmpleadoBodega" Width="1.5" PointX="12.25" PointY="134.75" IsExpanded="true" />
+        <EntityTypeShape EntityType="ERP_MSCORPModel.PrecioCombo" Width="1.5" PointX="24.75" PointY="118.375" IsExpanded="true" />
+        <EntityTypeShape EntityType="ERP_MSCORPModel.PrecioProducto" Width="1.5" PointX="19.5" PointY="86.625" IsExpanded="true" />
+        <EntityTypeShape EntityType="ERP_MSCORPModel.PrefacturaExcenta" Width="1.5" PointX="22" PointY="20" IsExpanded="true" />
+        <EntityTypeShape EntityType="ERP_MSCORPModel.PrefacturaVenta" Width="1.5" PointX="22.75" PointY="141.75" IsExpanded="true" />
+        <EntityTypeShape EntityType="ERP_MSCORPModel.ProcesamientoCreditoCliente" Width="1.5" PointX="12.25" PointY="138.375" IsExpanded="true" />
+        <EntityTypeShape EntityType="ERP_MSCORPModel.ProcesarOrdenProduccion" Width="1.5" PointX="14.25" PointY="59.75" IsExpanded="true" />
+        <EntityTypeShape EntityType="ERP_MSCORPModel.ProcesarSolicitudCostosProduccion" Width="1.5" PointX="16.5" PointY="48.75" IsExpanded="true" />
+        <EntityTypeShape EntityType="ERP_MSCORPModel.Producto" Width="1.5" PointX="14.25" PointY="90.125" IsExpanded="true" />
+        <EntityTypeShape EntityType="ERP_MSCORPModel.ProductoImportacion" Width="1.5" PointX="23" PointY="8.75" IsExpanded="true" />
+        <EntityTypeShape EntityType="ERP_MSCORPModel.ProductoMaloOP" Width="1.5" PointX="14.25" PointY="68.75" IsExpanded="true" />
+        <EntityTypeShape EntityType="ERP_MSCORPModel.ProductosDefectuosos" Width="1.5" PointX="14.25" PointY="56.375" IsExpanded="true" />
+        <EntityTypeShape EntityType="ERP_MSCORPModel.ProgramarPago" Width="1.5" PointX="5.5" PointY="184.625" IsExpanded="true" />
+        <EntityTypeShape EntityType="ERP_MSCORPModel.Proveedor" Width="1.5" PointX="9.75" PointY="86.75" IsExpanded="true" />
+        <EntityTypeShape EntityType="ERP_MSCORPModel.ProveedorBancario" Width="1.5" PointX="15" PointY="85.5" IsExpanded="true" />
+        <EntityTypeShape EntityType="ERP_MSCORPModel.ProveedorContacto" Width="1.5" PointX="18" PointY="83.5" IsExpanded="true" />
+        <EntityTypeShape EntityType="ERP_MSCORPModel.ReciboCajaGeneral" Width="1.5" PointX="12.25" PointY="142.75" IsExpanded="true" />
+        <EntityTypeShape EntityType="ERP_MSCORPModel.RequisitoCredito" Width="1.5" PointX="13" PointY="15.875" IsExpanded="true" />
+        <EntityTypeShape EntityType="ERP_MSCORPModel.RequisitoIntervalo" Width="1.5" PointX="15.25" PointY="13" IsExpanded="true" />
+        <EntityTypeShape EntityType="ERP_MSCORPModel.RequisitosProcesamiento" Width="1.5" PointX="20.5" PointY="140.75" IsExpanded="true" />
+        <EntityTypeShape EntityType="ERP_MSCORPModel.Reserva" Width="1.5" PointX="6.25" PointY="144.375" IsExpanded="true" />
+        <EntityTypeShape EntityType="ERP_MSCORPModel.Retenciones" Width="1.5" PointX="14.5" PointY="160.75" IsExpanded="true" />
+        <EntityTypeShape EntityType="ERP_MSCORPModel.RetencionesDetalle" Width="1.5" PointX="16.75" PointY="161.375" IsExpanded="true" />
+        <EntityTypeShape EntityType="ERP_MSCORPModel.RetencionesProveedor" Width="1.5" PointX="22" PointY="15" IsExpanded="true" />
+        <EntityTypeShape EntityType="ERP_MSCORPModel.ReversionDocumento" Width="1.5" PointX="14.25" PointY="129.125" IsExpanded="true" />
+        <EntityTypeShape EntityType="ERP_MSCORPModel.RevisarCotizacion" Width="1.5" PointX="21" PointY="5" IsExpanded="true" />
+        <EntityTypeShape EntityType="ERP_MSCORPModel.Rubro" Width="1.5" PointX="12" PointY="97.75" IsExpanded="true" />
+        <EntityTypeShape EntityType="ERP_MSCORPModel.SalidaInventario" Width="1.5" PointX="17.25" PointY="63" IsExpanded="true" />
+        <EntityTypeShape EntityType="ERP_MSCORPModel.SectorBodega" Width="1.5" PointX="14.25" PointY="101" IsExpanded="true" />
+        <EntityTypeShape EntityType="ERP_MSCORPModel.Segmento" Width="1.5" PointX="5.5" PointY="78.625" IsExpanded="true" />
+        <EntityTypeShape EntityType="ERP_MSCORPModel.SeguimientoContacto" Width="1.5" PointX="18" PointY="79.5" IsExpanded="true" />
+        <EntityTypeShape EntityType="ERP_MSCORPModel.Serie" Width="1.5" PointX="17.25" PointY="106.75" IsExpanded="true" />
+        <EntityTypeShape EntityType="ERP_MSCORPModel.Servicio" Width="1.5" PointX="17.5" PointY="169.375" IsExpanded="true" />
+        <EntityTypeShape EntityType="ERP_MSCORPModel.ServiciosImportacion" Width="1.5" PointX="20.25" PointY="111.75" IsExpanded="true" />
+        <EntityTypeShape EntityType="ERP_MSCORPModel.SolicitarProductosOP" Width="1.5" PointX="19.5" PointY="62.625" IsExpanded="true" />
+        <EntityTypeShape EntityType="ERP_MSCORPModel.SolicitarProductosOPDetalle" Width="1.5" PointX="21.75" PointY="62.875" IsExpanded="true" />
+        <EntityTypeShape EntityType="ERP_MSCORPModel.SolicitudCostosProduccion" Width="1.5" PointX="14.25" PointY="50" IsExpanded="true" />
+        <EntityTypeShape EntityType="ERP_MSCORPModel.SolicitudCostosProduccionDetalle" Width="1.5" PointX="16.5" PointY="52.625" IsExpanded="true" />
+        <EntityTypeShape EntityType="ERP_MSCORPModel.SolicitudCredito" Width="1.5" PointX="10" PointY="78.25" IsExpanded="true" />
+        <EntityTypeShape EntityType="ERP_MSCORPModel.SolicitudPaseCredito" Width="1.5" PointX="25" PointY="104.375" IsExpanded="true" />
+        <EntityTypeShape EntityType="ERP_MSCORPModel.SolicitudTraslado" Width="1.5" PointX="14.25" PointY="122.625" IsExpanded="true" />
+        <EntityTypeShape EntityType="ERP_MSCORPModel.Tecnico" Width="1.5" PointX="20.25" PointY="58.75" IsExpanded="true" />
+        <EntityTypeShape EntityType="ERP_MSCORPModel.TipoEspacio" Width="1.5" PointX="23.25" PointY="58.875" IsExpanded="true" />
+        <EntityTypeShape EntityType="ERP_MSCORPModel.TitulosReportes" Width="1.5" PointX="23" PointY="11.75" IsExpanded="true" />
+        <EntityTypeShape EntityType="ERP_MSCORPModel.TotalLiquidacionCompra" Width="1.5" PointX="21.75" PointY="115.875" IsExpanded="true" />
+        <EntityTypeShape EntityType="ERP_MSCORPModel.TrabajoOrdenProduccion" Width="1.5" PointX="1" PointY="23.75" IsExpanded="true" />
+        <EntityTypeShape EntityType="ERP_MSCORPModel.Traslado" Width="1.5" PointX="19.5" PointY="128.75" IsExpanded="true" />
+        <EntityTypeShape EntityType="ERP_MSCORPModel.TrasladoOrdenProduccion" Width="1.5" PointX="21.75" PointY="119.75" IsExpanded="true" />
+        <EntityTypeShape EntityType="ERP_MSCORPModel.TrasladoOrdenTrabajo" Width="1.5" PointX="21.75" PointY="153.375" IsExpanded="true" />
+        <EntityTypeShape EntityType="ERP_MSCORPModel.UbicacionCliente" Width="1.5" PointX="7.75" PointY="154" IsExpanded="true" />
+        <EntityTypeShape EntityType="ERP_MSCORPModel.UbicacionFabrica" Width="1.5" PointX="12.75" PointY="45" IsExpanded="true" />
+        <EntityTypeShape EntityType="ERP_MSCORPModel.UnidadMedida" Width="1.5" PointX="12" PointY="100.625" IsExpanded="true" />
+        <EntityTypeShape EntityType="ERP_MSCORPModel.UnidadPeso" Width="1.5" PointX="12" PointY="103.75" IsExpanded="true" />
+        <EntityTypeShape EntityType="ERP_MSCORPModel.Vehiculo" Width="1.5" PointX="16.5" PointY="97.75" IsExpanded="true" />
+        <EntityTypeShape EntityType="ERP_MSCORPModel.Vendedor" Width="1.5" PointX="3.25" PointY="145.375" IsExpanded="true" />
+        <EntityTypeShape EntityType="ERP_MSCORPModel.VerificacionTransferencia" Width="1.5" PointX="9" PointY="19.875" IsExpanded="true" />
+        <EntityTypeShape EntityType="ERP_MSCORPModel.VersionAplicacion" Width="1.5" PointX="3" PointY="13" IsExpanded="true" />
+        <EntityTypeShape EntityType="ERP_MSCORPModel.Accidente" Width="1.5" PointX="3.25" PointY="190.5" IsExpanded="true" />
+        <EntityTypeShape EntityType="ERP_MSCORPModel.Adelanto" Width="1.5" PointX="3.25" PointY="196.25" IsExpanded="true" />
+        <EntityTypeShape EntityType="ERP_MSCORPModel.AlcancePuesto" Width="1.5" PointX="15.25" PointY="219.375" IsExpanded="true" />
+        <EntityTypeShape EntityType="ERP_MSCORPModel.Alimento" Width="1.5" PointX="1" PointY="262.375" IsExpanded="true" />
+        <EntityTypeShape EntityType="ERP_MSCORPModel.Aplicacion" Width="1.5" PointX="7" PointY="166.75" IsExpanded="true" />
+        <EntityTypeShape EntityType="ERP_MSCORPModel.AplicacionEmpleado" Width="1.5" PointX="9.25" PointY="146.125" IsExpanded="true" />
+        <EntityTypeShape EntityType="ERP_MSCORPModel.Asistencia" Width="1.5" PointX="3.25" PointY="203.125" IsExpanded="true" />
+        <EntityTypeShape EntityType="ERP_MSCORPModel.BajaPersonal" Width="1.5" PointX="5.5" PointY="172" IsExpanded="true" />
+        <EntityTypeShape EntityType="ERP_MSCORPModel.CalendarioAlimento" Width="1.5" PointX="3.25" PointY="262.375" IsExpanded="true" />
+        <EntityTypeShape EntityType="ERP_MSCORPModel.CalendarioPago" Width="1.5" PointX="5.5" PointY="196.875" IsExpanded="true" />
+        <EntityTypeShape EntityType="ERP_MSCORPModel.Concepto" Width="1.5" PointX="4.75" PointY="166.75" IsExpanded="true" />
+        <EntityTypeShape EntityType="ERP_MSCORPModel.ConfiguracionRRHH" Width="1.5" PointX="3.75" PointY="92.25" IsExpanded="true" />
+        <EntityTypeShape EntityType="ERP_MSCORPModel.ContactoEmpresa" Width="1.5" PointX="3.75" PointY="87.875" IsExpanded="true" />
+        <EntityTypeShape EntityType="ERP_MSCORPModel.ContratoLaboral" Width="1.5" PointX="3.25" PointY="210.125" IsExpanded="true" />
+        <EntityTypeShape EntityType="ERP_MSCORPModel.CorreoCarteraYCobro" Width="1.5" PointX="18" PointY="11" IsExpanded="true" />
+        <EntityTypeShape EntityType="ERP_MSCORPModel.CuentaEmpleado" Width="1.5" PointX="3.25" PointY="213.375" IsExpanded="true" />
+        <EntityTypeShape EntityType="ERP_MSCORPModel.Departamento" Width="1.5" PointX="3.75" PointY="104.625" IsExpanded="true" />
+        <EntityTypeShape EntityType="ERP_MSCORPModel.DesvinculacionPersonal" Width="1.5" PointX="3.25" PointY="216.75" IsExpanded="true" />
+        <EntityTypeShape EntityType="ERP_MSCORPModel.DetalleCorreoCarteraYCobro" Width="1.5" PointX="20.25" PointY="11.125" IsExpanded="true" />
+        <EntityTypeShape EntityType="ERP_MSCORPModel.DetalleEquipos" Width="1.5" PointX="5.5" PointY="230.625" IsExpanded="true" />
+        <EntityTypeShape EntityType="ERP_MSCORPModel.DetallePedido" Width="1.5" PointX="5.5" PointY="255.625" IsExpanded="true" />
+        <EntityTypeShape EntityType="ERP_MSCORPModel.Documento" Width="1.5" PointX="3.25" PointY="220.25" IsExpanded="true" />
+        <EntityTypeShape EntityType="ERP_MSCORPModel.DocumentoAccidente" Width="1.5" PointX="5.5" PointY="190.25" IsExpanded="true" />
+        <EntityTypeShape EntityType="ERP_MSCORPModel.DocumentoDesvinculacion" Width="1.5" PointX="5.5" PointY="217.125" IsExpanded="true" />
+        <EntityTypeShape EntityType="ERP_MSCORPModel.DocumentoIncidente" Width="1.5" PointX="5.5" PointY="233.875" IsExpanded="true" />
+        <EntityTypeShape EntityType="ERP_MSCORPModel.DocumentoPuesto" Width="1.5" PointX="15.25" PointY="200.125" IsExpanded="true" />
+        <EntityTypeShape EntityType="ERP_MSCORPModel.DocumentoSoporte" Width="1.5" PointX="18.25" PointY="117" IsExpanded="true" />
+        <EntityTypeShape EntityType="ERP_MSCORPModel.Emergencia" Width="1.5" PointX="3.25" PointY="223.125" IsExpanded="true" />
+        <EntityTypeShape EntityType="ERP_MSCORPModel.Empleado" Width="1.5" PointX="1" PointY="128" IsExpanded="true" />
+        <EntityTypeShape EntityType="ERP_MSCORPModel.EmpleadoPuesto" Width="1.5" PointX="15.25" PointY="134.375" IsExpanded="true" />
+        <EntityTypeShape EntityType="ERP_MSCORPModel.Empresa" Width="1.5" PointX="1.5" PointY="103.875" IsExpanded="true" />
+        <EntityTypeShape EntityType="ERP_MSCORPModel.EnfermedadPuesto" Width="1.5" PointX="15.25" PointY="222.625" IsExpanded="true" />
+        <EntityTypeShape EntityType="ERP_MSCORPModel.EntregaEquipo" Width="1.5" PointX="3.25" PointY="230.5" IsExpanded="true" />
+        <EntityTypeShape EntityType="ERP_MSCORPModel.EvaluacionBaja" Width="1.5" PointX="7.75" PointY="157.75" IsExpanded="true" />
+        <EntityTypeShape EntityType="ERP_MSCORPModel.HerramientaPuesto" Width="1.5" PointX="15.25" PointY="225.375" IsExpanded="true" />
+        <EntityTypeShape EntityType="ERP_MSCORPModel.Horario" Width="1.5" PointX="3.75" PointY="84.375" IsExpanded="true" />
+        <EntityTypeShape EntityType="ERP_MSCORPModel.Incidente" Width="1.5" PointX="3.25" PointY="233.625" IsExpanded="true" />
+        <EntityTypeShape EntityType="ERP_MSCORPModel.IndicadorDesempeñoPuesto" Width="1.5" PointX="15.25" PointY="227.875" IsExpanded="true" />
+        <EntityTypeShape EntityType="ERP_MSCORPModel.InfoPuesto" Width="1.5" PointX="15.25" PointY="230.875" IsExpanded="true" />
+        <EntityTypeShape EntityType="ERP_MSCORPModel.Liquidacion" Width="1.5" PointX="3.25" PointY="240.625" IsExpanded="true" />
+        <EntityTypeShape EntityType="ERP_MSCORPModel.NivelAcademico" Width="1.5" PointX="3.25" PointY="237.125" IsExpanded="true" />
+        <EntityTypeShape EntityType="ERP_MSCORPModel.Nomina" Width="1.5" PointX="3.25" PointY="248.375" IsExpanded="true" />
+        <EntityTypeShape EntityType="ERP_MSCORPModel.Pais" Width="1.5" PointX="1.5" PointY="100.625" IsExpanded="true" />
+        <EntityTypeShape EntityType="ERP_MSCORPModel.Pedido" Width="1.5" PointX="3.25" PointY="255.5" IsExpanded="true" />
+        <EntityTypeShape EntityType="ERP_MSCORPModel.PermisoEmpleado" Width="1.5" PointX="3.25" PointY="258.625" IsExpanded="true" />
+        <EntityTypeShape EntityType="ERP_MSCORPModel.Puesto" Width="1.5" PointX="13" PointY="166.125" IsExpanded="true" />
+        <EntityTypeShape EntityType="ERP_MSCORPModel.RequisitoPuesto" Width="1.5" PointX="15.25" PointY="233.5" IsExpanded="true" />
+        <EntityTypeShape EntityType="ERP_MSCORPModel.RiesgoPuesto" Width="1.5" PointX="15.25" PointY="236.125" IsExpanded="true" />
+        <EntityTypeShape EntityType="ERP_MSCORPModel.Sucursal" Width="1.5" PointX="3.75" PointY="110.125" IsExpanded="true" />
+        <EntityTypeShape EntityType="ERP_MSCORPModel.SucursalDepartamento" Width="1.5" PointX="6" PointY="107.75" IsExpanded="true" />
+        <EntityTypeShape EntityType="ERP_MSCORPModel.TareaPuesto" Width="1.5" PointX="15.25" PointY="238.875" IsExpanded="true" />
+        <EntityTypeShape EntityType="ERP_MSCORPModel.TestigoAccidente" Width="1.5" PointX="5.5" PointY="193.125" IsExpanded="true" />
+        <EntityTypeShape EntityType="ERP_MSCORPModel.UbicacionEmpleado" Width="1.5" PointX="8.25" PointY="123.125" IsExpanded="true" />
+        <EntityTypeShape EntityType="ERP_MSCORPModel.AccesorioOrdenTrabajo" Width="1.5" PointX="15.25" PointY="172.625" IsExpanded="true" />
+        <EntityTypeShape EntityType="ERP_MSCORPModel.AprobarPrefacturaInternaOT" Width="1.5" PointX="15.25" PointY="186.875" IsExpanded="true" />
+        <EntityTypeShape EntityType="ERP_MSCORPModel.AsignacionTecnicoServicio" Width="1.5" PointX="15.25" PointY="202.875" IsExpanded="true" />
+        <EntityTypeShape EntityType="ERP_MSCORPModel.AsignarProductos" Width="1.5" PointX="18" PointY="72.75" IsExpanded="true" />
+        <EntityTypeShape EntityType="ERP_MSCORPModel.BodegaSerieOT" Width="1.5" PointX="6" PointY="23.75" IsExpanded="true" />
+        <EntityTypeShape EntityType="ERP_MSCORPModel.ConceptoCotizacion" Width="1.5" PointX="13" PointY="173.125" IsExpanded="true" />
+        <EntityTypeShape EntityType="ERP_MSCORPModel.ConductorCliente" Width="1.5" PointX="8.25" PointY="170.625" IsExpanded="true" />
+        <EntityTypeShape EntityType="ERP_MSCORPModel.ConfirmarCita" Width="1.5" PointX="30.5" PointY="161" IsExpanded="true" />
+        <EntityTypeShape EntityType="ERP_MSCORPModel.ConsecutivoCotizacionCompra" Width="1.5" PointX="17.5" PointY="139.375" IsExpanded="true" />
+        <EntityTypeShape EntityType="ERP_MSCORPModel.CotizacionCompra" Width="1.5" PointX="15.25" PointY="139.5" IsExpanded="true" />
+        <EntityTypeShape EntityType="ERP_MSCORPModel.CotizacionOT" Width="1.5" PointX="20.25" PointY="66.875" IsExpanded="true" />
+        <EntityTypeShape EntityType="ERP_MSCORPModel.DetalleAsignacionTecnicoServicio" Width="1.5" PointX="17.5" PointY="203" IsExpanded="true" />
+        <EntityTypeShape EntityType="ERP_MSCORPModel.DetalleAsignarProductos" Width="1.5" PointX="22.5" PointY="93.5" IsExpanded="true" />
+        <EntityTypeShape EntityType="ERP_MSCORPModel.DetalleCotizacionCompra" Width="1.5" PointX="17.5" PointY="141.875" IsExpanded="true" />
+        <EntityTypeShape EntityType="ERP_MSCORPModel.DetalleCotizacionInsumo" Width="1.5" PointX="22.5" PointY="46.75" IsExpanded="true" />
+        <EntityTypeShape EntityType="ERP_MSCORPModel.DetalleMantenimiento" Width="1.5" PointX="25.25" PointY="166.25" IsExpanded="true" />
+        <EntityTypeShape EntityType="ERP_MSCORPModel.DetallePeticionCompra" Width="1.5" PointX="22.5" PointY="89.75" IsExpanded="true" />
+        <EntityTypeShape EntityType="ERP_MSCORPModel.DetallePreFacturaInternaOT" Width="1.5" PointX="25.5" PointY="137.25" IsExpanded="true" />
+        <EntityTypeShape EntityType="ERP_MSCORPModel.DetallePreFacturaOT" Width="1.5" PointX="27.5" PointY="132.25" IsExpanded="true" />
+        <EntityTypeShape EntityType="ERP_MSCORPModel.DetalleProductosCotizacionOT" Width="1.5" PointX="22.5" PointY="97.5" IsExpanded="true" />
+        <EntityTypeShape EntityType="ERP_MSCORPModel.DetalleServicioCotizacionOT" Width="1.5" PointX="25.25" PointY="114" IsExpanded="true" />
+        <EntityTypeShape EntityType="ERP_MSCORPModel.DetalleTrabajoCliente" Width="1.5" PointX="30.5" PointY="164.25" IsExpanded="true" />
+        <EntityTypeShape EntityType="ERP_MSCORPModel.EmpleadosPreFacturaInternaOT" Width="1.5" PointX="15.25" PointY="146.125" IsExpanded="true" />
+        <EntityTypeShape EntityType="ERP_MSCORPModel.EstacionTrabajo" Width="1.5" PointX="3.25" PointY="155" IsExpanded="true" />
+        <EntityTypeShape EntityType="ERP_MSCORPModel.EstadosOT" Width="1.5" PointX="15.25" PointY="196.875" IsExpanded="true" />
+        <EntityTypeShape EntityType="ERP_MSCORPModel.FlotaCliente" Width="1.5" PointX="26" PointY="162.375" IsExpanded="true" />
+        <EntityTypeShape EntityType="ERP_MSCORPModel.ImagenesCroquis" Width="1.5" PointX="10.75" PointY="184.875" IsExpanded="true" />
+        <EntityTypeShape EntityType="ERP_MSCORPModel.ImagenesVehiculoOT" Width="1.5" PointX="15.25" PointY="183.875" IsExpanded="true" />
+        <EntityTypeShape EntityType="ERP_MSCORPModel.Insumos" Width="1.5" PointX="24.75" PointY="93.75" IsExpanded="true" />
+        <EntityTypeShape EntityType="ERP_MSCORPModel.KardexOT" Width="1.5" PointX="21.75" PointY="76.25" IsExpanded="true" />
+        <EntityTypeShape EntityType="ERP_MSCORPModel.Mantenimiento" Width="1.5" PointX="23" PointY="156.75" IsExpanded="true" />
+        <EntityTypeShape EntityType="ERP_MSCORPModel.MantenimientoOrdenTrabajo" Width="1.5" PointX="25.25" PointY="157.5" IsExpanded="true" />
+        <EntityTypeShape EntityType="ERP_MSCORPModel.MecanicosEstacionTrabajo" Width="1.5" PointX="5.5" PointY="129.25" IsExpanded="true" />
+        <EntityTypeShape EntityType="ERP_MSCORPModel.MecanicosVehiculoProceso" Width="1.5" PointX="8.5" PointY="130.25" IsExpanded="true" />
+        <EntityTypeShape EntityType="ERP_MSCORPModel.MovimientosEntreOrdenesTrabajo" Width="1.5" PointX="18" PointY="1" IsExpanded="true" />
+        <EntityTypeShape EntityType="ERP_MSCORPModel.MovimientosEntreOrdenesTrabajoDetalle" Width="1.5" PointX="20.25" PointY="1.125" IsExpanded="true" />
+        <EntityTypeShape EntityType="ERP_MSCORPModel.OrdenTrabajo" Width="1.5" PointX="13" PointY="176.25" IsExpanded="true" />
+        <EntityTypeShape EntityType="ERP_MSCORPModel.PeticionCompra" Width="1.5" PointX="20.25" PointY="72.75" IsExpanded="true" />
+        <EntityTypeShape EntityType="ERP_MSCORPModel.PreFacturaInternaOT" Width="1.5" PointX="13" PointY="185.875" IsExpanded="true" />
+        <EntityTypeShape EntityType="ERP_MSCORPModel.PreFacturaOT" Width="1.5" PointX="15.25" PointY="178.25" IsExpanded="true" />
+        <EntityTypeShape EntityType="ERP_MSCORPModel.PruebaVehiculo" Width="1.5" PointX="15.25" PointY="205.875" IsExpanded="true" />
+        <EntityTypeShape EntityType="ERP_MSCORPModel.SolicitudAperturaOT" Width="1.5" PointX="15.25" PointY="214.75" IsExpanded="true" />
+        <EntityTypeShape EntityType="ERP_MSCORPModel.TrabajoCliente" Width="1.5" PointX="28.25" PointY="161.375" IsExpanded="true" />
+        <EntityTypeShape EntityType="ERP_MSCORPModel.TrabajosExternos" Width="1.5" PointX="27.25" PointY="125.875" IsExpanded="true" />
+        <EntityTypeShape EntityType="ERP_MSCORPModel.VehiculoEnProceso" Width="1.5" PointX="4" PointY="100.125" IsExpanded="true" />
+        <EntityTypeShape EntityType="ERP_MSCORPModel.VehiculoProcesoEstaciones" Width="1.5" PointX="6.25" PointY="99.875" IsExpanded="true" />
+        <EntityTypeShape EntityType="ERP_MSCORPModel.BitacoraUsuario" Width="1.5" PointX="3.75" PointY="74.25" IsExpanded="true" />
+        <EntityTypeShape EntityType="ERP_MSCORPModel.BitacoraUsuarioModulo" Width="1.5" PointX="13.5" PointY="118.75" IsExpanded="true" />
+        <EntityTypeShape EntityType="ERP_MSCORPModel.ListaMac" Width="1.5" PointX="6" PointY="111.75" IsExpanded="true" />
+        <EntityTypeShape EntityType="ERP_MSCORPModel.ListaModulos" Width="1.5" PointX="15.25" PointY="2.625" IsExpanded="true" />
+        <EntityTypeShape EntityType="ERP_MSCORPModel.Notificacion" Width="1.5" PointX="14.25" PointY="110.875" IsExpanded="true" />
+        <EntityTypeShape EntityType="ERP_MSCORPModel.NotificacionUsuario" Width="1.5" PointX="16.5" PointY="121.875" IsExpanded="true" />
+        <EntityTypeShape EntityType="ERP_MSCORPModel.Permiso" Width="1.5" PointX="19.5" PointY="54.625" IsExpanded="true" />
+        <EntityTypeShape EntityType="ERP_MSCORPModel.Sistema" Width="1.5" PointX="13" PointY="3" IsExpanded="true" />
+        <EntityTypeShape EntityType="ERP_MSCORPModel.SistemaEmpresa" Width="1.5" PointX="19.25" PointY="51.125" IsExpanded="true" />
+        <EntityTypeShape EntityType="ERP_MSCORPModel.SolicitudPermisoSistema" Width="1.5" PointX="3.25" PointY="275.75" IsExpanded="true" />
+        <EntityTypeShape EntityType="ERP_MSCORPModel.TasaCambio" Width="1.5" PointX="12" PointY="0.75" IsExpanded="true" />
+        <EntityTypeShape EntityType="ERP_MSCORPModel.TipoCuenta" Width="1.5" PointX="9" PointY="112.875" IsExpanded="true" />
+        <EntityTypeShape EntityType="ERP_MSCORPModel.Usuario" Width="1.5" PointX="11.25" PointY="121.5" IsExpanded="true" />
+        <EntityTypeShape EntityType="ERP_MSCORPModel.UtilSistema" Width="1.5" PointX="8" PointY="23.75" IsExpanded="true" />
+        <EntityTypeShape EntityType="ERP_MSCORPModel.SectorEspacio" Width="1.5" PointX="25.5" PointY="110.875" IsExpanded="true" />
+        <EntityTypeShape EntityType="ERP_MSCORPModel.VistaReservaCotizacion" Width="1.5" PointX="10" PointY="23.75" IsExpanded="true" />
+        <EntityTypeShape EntityType="ERP_MSCORPModel.VwBitacoraModuloSistema" Width="1.5" PointX="16" PointY="23.75" IsExpanded="true" />
+        <EntityTypeShape EntityType="ERP_MSCORPModel.VwBitacoraUsuario" Width="1.5" PointX="18" PointY="23.75" IsExpanded="true" />
+        <EntityTypeShape EntityType="ERP_MSCORPModel.VwDarFormatoPermisos" Width="1.5" PointX="20" PointY="23.75" IsExpanded="true" />
+        <EntityTypeShape EntityType="ERP_MSCORPModel.VwDatosEmpleado" Width="1.5" PointX="22" PointY="23.75" IsExpanded="true" />
+        <EntityTypeShape EntityType="ERP_MSCORPModel.VwDetallesCompra" Width="1.5" PointX="24" PointY="23.75" IsExpanded="true" />
+        <EntityTypeShape EntityType="ERP_MSCORPModel.VwEmpleadoConContrato" Width="1.5" PointX="25" PointY="8.75" IsExpanded="true" />
+        <EntityTypeShape EntityType="ERP_MSCORPModel.VwEmpleadoSinContrato" Width="1.5" PointX="26" PointY="4.75" IsExpanded="true" />
+        <EntityTypeShape EntityType="ERP_MSCORPModel.VwIdentificadoresReservados" Width="1.5" PointX="18" PointY="4.75" IsExpanded="true" />
+        <EntityTypeShape EntityType="ERP_MSCORPModel.VwMostrarDepartamentos" Width="1.5" PointX="12" PointY="25.75" IsExpanded="true" />
+        <EntityTypeShape EntityType="ERP_MSCORPModel.VwMostrarEmpleados" Width="1.5" PointX="26" PointY="23.75" IsExpanded="true" />
+        <EntityTypeShape EntityType="ERP_MSCORPModel.VwMostrarEmpresa" Width="1.5" PointX="3" PointY="26.75" IsExpanded="true" />
+        <EntityTypeShape EntityType="ERP_MSCORPModel.VwMostrarEntregaEquipos" Width="1.5" PointX="5" PointY="26.75" IsExpanded="true" />
+        <EntityTypeShape EntityType="ERP_MSCORPModel.VwMostrarPuesto" Width="1.5" PointX="7" PointY="26.75" IsExpanded="true" />
+        <EntityTypeShape EntityType="ERP_MSCORPModel.VwMostrarPuestos" Width="1.5" PointX="27" PointY="7.75" IsExpanded="true" />
+        <EntityTypeShape EntityType="ERP_MSCORPModel.VwMostrarUsuario" Width="1.5" PointX="27" PointY="12.75" IsExpanded="true" />
+        <EntityTypeShape EntityType="ERP_MSCORPModel.VwMovimientoConfirmado" Width="1.5" PointX="14" PointY="26.75" IsExpanded="true" />
+        <EntityTypeShape EntityType="ERP_MSCORPModel.VwMovimientoDenegado" Width="1.5" PointX="27" PointY="17.75" IsExpanded="true" />
+        <EntityTypeShape EntityType="ERP_MSCORPModel.VwMovimientoEmpleado" Width="1.5" PointX="28" PointY="0.75" IsExpanded="true" />
+        <EntityTypeShape EntityType="ERP_MSCORPModel.VwPrductoCosto" Width="1.5" PointX="9" PointY="27.75" IsExpanded="true" />
+        <EntityTypeShape EntityType="ERP_MSCORPModel.VwReservaCotizacion" Width="1.5" PointX="16" PointY="27.75" IsExpanded="true" />
+        <EntityTypeShape EntityType="ERP_MSCORPModel.VwReservaPrefactura" Width="1.5" PointX="18" PointY="27.75" IsExpanded="true" />
+        <EntityTypeShape EntityType="ERP_MSCORPModel.VwReservaTraslado" Width="1.5" PointX="28" PointY="22.75" IsExpanded="true" />
+        <EntityTypeShape EntityType="ERP_MSCORPModel.VwSeleccionarEmpleado" Width="1.5" PointX="24" PointY="27.75" IsExpanded="true" />
+        <EntityTypeShape EntityType="ERP_MSCORPModel.VwSeries" Width="1.5" PointX="26" PointY="27.75" IsExpanded="true" />
+        <AssociationConnector Association="ERP_MSCORPModel.FK__AprobarGa__IdSol__39C42FC6" ManuallyRouted="false" />
+        <AssociationConnector Association="ERP_MSCORPModel.FK__Asignacio__IdCaj__3A978D17" ManuallyRouted="false" />
+        <AssociationConnector Association="ERP_MSCORPModel.FK__Asignacio__IdEmp__3B8BB150" ManuallyRouted="false" />
+        <AssociationConnector Association="ERP_MSCORPModel.FK__AsignarMo__IdAsi__3E681DFB" ManuallyRouted="false" />
+        <AssociationConnector Association="ERP_MSCORPModel.FK__ReciboCaj__IdAsi__58E70A0D" ManuallyRouted="false" />
+        <AssociationConnector Association="ERP_MSCORPModel.FK__BitacoraC__IdCli__33C13DAD" ManuallyRouted="false" />
+        <AssociationConnector Association="ERP_MSCORPModel.FK__DetalleNo__IdCat__0BE8567D" ManuallyRouted="false" />
+        <AssociationConnector Association="ERP_MSCORPModel.FK__Bancos__IdCatala__06648751" ManuallyRouted="false" />
+        <AssociationConnector Association="ERP_MSCORPModel.FK__CatalogoC__IdEmp__682A18F4" ManuallyRouted="false" />
+        <AssociationConnector Association="ERP_MSCORPModel.FK__PagoReali__IdCue__7EC36589" ManuallyRouted="false" />
+        <AssociationConnector Association="ERP_MSCORPModel.FK__Descripci__IdCat__401B5C43" ManuallyRouted="false" />
+        <AssociationConnector Association="ERP_MSCORPModel.FK__MinutaDep__IdCon__7B91F323" ManuallyRouted="false" />
+        <AssociationConnector Association="ERP_MSCORPModel.FK__NotasCred__IdCon__1097FD01" ManuallyRouted="false" />
+        <AssociationConnector Association="ERP_MSCORPModel.FK__NotaCredi__IdCon__118C213A" ManuallyRouted="false" />
+        <AssociationConnector Association="ERP_MSCORPModel.FK__DetalleNo__IdCat__316EE0E7" ManuallyRouted="false" />
+        <AssociationConnector Association="ERP_MSCORPModel.FK__Configura__IdBan__253E142C" ManuallyRouted="false" />
+        <AssociationConnector Association="ERP_MSCORPModel.FK__Configura__IdEmp__2449EFF3" ManuallyRouted="false" />
+        <AssociationConnector Association="ERP_MSCORPModel.FK__CorreoDep__IdDep__5BCF2F07" ManuallyRouted="false" />
+        <AssociationConnector Association="ERP_MSCORPModel.FK__Criterio___IdCli__605ED9FA" ManuallyRouted="false" />
+        <AssociationConnector Association="ERP_MSCORPModel.FK__Criterio___Estad__5C2434C2" ManuallyRouted="false" />
+        <AssociationConnector Association="ERP_MSCORPModel.FK__CuentaBan__IdBan__3163F3EF" ManuallyRouted="false" />
+        <AssociationConnector Association="ERP_MSCORPModel.FK__CuentaBan__IdSuc__334C3C61" ManuallyRouted="false" />
+        <AssociationConnector Association="ERP_MSCORPModel.FK__MinutaDep__IdCue__7A9DCEEA" ManuallyRouted="false" />
+        <AssociationConnector Association="ERP_MSCORPModel.FK__Movimient__IdCue__3628A90C" ManuallyRouted="false" />
+        <AssociationConnector Association="ERP_MSCORPModel.FK__PagoReali__IdCue__35898A8E" ManuallyRouted="false" />
+        <AssociationConnector Association="ERP_MSCORPModel.FK__DetalleAn__IdDes__4460EE73" ManuallyRouted="false" />
+        <AssociationConnector Association="ERP_MSCORPModel.FK__DetalleRe__IdDes__6458BCB9" ManuallyRouted="false" />
+        <AssociationConnector Association="ERP_MSCORPModel.FK__DetalleSo__IdDes__12DEA178" ManuallyRouted="false" />
+        <AssociationConnector Association="ERP_MSCORPModel.FK__ReciboCaj__IdDes__412F7C0D" ManuallyRouted="false" />
+        <AssociationConnector Association="ERP_MSCORPModel.FK__DetalleNo__IdNot__0F19C8E3" ManuallyRouted="false" />
+        <AssociationConnector Association="ERP_MSCORPModel.FK__DetalleNo__IdNot__0AF43244" ManuallyRouted="false" />
+        <AssociationConnector Association="ERP_MSCORPModel.FK__NotasCred__IdDet__46D41221" ManuallyRouted="false" />
+        <AssociationConnector Association="ERP_MSCORPModel.FK_Detalle_NotasCredito" ManuallyRouted="false" />
+        <AssociationConnector Association="ERP_MSCORPModel.FK__DetalleNo__IdNot__307ABCAE" ManuallyRouted="false" />
+        <AssociationConnector Association="ERP_MSCORPModel.FK__DetallePa__IdPag__3A4E3FAB" ManuallyRouted="false" />
+        <AssociationConnector Association="ERP_MSCORPModel.FK__DetallePa__IdSol__3B4263E4" ManuallyRouted="false" />
+        <AssociationConnector Association="ERP_MSCORPModel.FK__DetalleRe__IdRec__5F94079C" ManuallyRouted="false" />
+        <AssociationConnector Association="ERP_MSCORPModel.FK__DetalleSo__IdSol__2EBC916E" ManuallyRouted="false" />
+        <AssociationConnector Association="ERP_MSCORPModel.FK__DetalleSo__IdGas__0A151CA4" ManuallyRouted="false" />
+        <AssociationConnector Association="ERP_MSCORPModel.FK__DetalleSo__IdSol__0920F86B" ManuallyRouted="false" />
+        <AssociationConnector Association="ERP_MSCORPModel.FK__DetalleSo__IdSol__11EA7D3F" ManuallyRouted="false" />
+        <AssociationConnector Association="ERP_MSCORPModel.FK__Distribuc__IdSol__0CF1894F" ManuallyRouted="false" />
+        <AssociationConnector Association="ERP_MSCORPModel.FK__MinutaDep__IdCie__6B268130" ManuallyRouted="false" />
+        <AssociationConnector Association="ERP_MSCORPModel.FK__MinutaDep__IdEmp__78B58678" ManuallyRouted="false" />
+        <AssociationConnector Association="ERP_MSCORPModel.FK__MinutaDep__IdSuc__79A9AAB1" ManuallyRouted="false" />
+        <AssociationConnector Association="ERP_MSCORPModel.FK__Movimient__IdMin__2276B61A" ManuallyRouted="false" />
+        <AssociationConnector Association="ERP_MSCORPModel.FK_MinutaDeposito_AperturaDia" ManuallyRouted="false" />
+        <AssociationConnector Association="ERP_MSCORPModel.FK__Movimient__IdPag__4990833B" ManuallyRouted="false" />
+        <AssociationConnector Association="ERP_MSCORPModel.FK__NotasCred__IdDet__47C8365A" ManuallyRouted="false" />
+        <AssociationConnector Association="ERP_MSCORPModel.FK__DetalleNo__IdNot__55223178" ManuallyRouted="false" />
+        <AssociationConnector Association="ERP_MSCORPModel.FK__DetalleRe__IdNot__5151A094" ManuallyRouted="false" />
+        <AssociationConnector Association="ERP_MSCORPModel.FK__PagoReali__IdEmp__5CA357AF" ManuallyRouted="false" />
+        <AssociationConnector Association="ERP_MSCORPModel.FK__PagoReali__IdEnc__7A33BA96" ManuallyRouted="false" />
+        <AssociationConnector Association="ERP_MSCORPModel.FK__ReciboCaj__IdEmp__5ACF527F" ManuallyRouted="false" />
+        <AssociationConnector Association="ERP_MSCORPModel.FK__ReciboCaj__IdSol__614745E4" ManuallyRouted="false" />
+        <AssociationConnector Association="ERP_MSCORPModel.FK__Solicitud__IdRec__04908221" ManuallyRouted="false" />
+        <AssociationConnector Association="ERP_MSCORPModel.FK__Solicitud__IdDep__1D47ECA9" ManuallyRouted="false" />
+        <AssociationConnector Association="ERP_MSCORPModel.FK__Solicitud__IdEmp__2BE024C3" ManuallyRouted="false" />
+        <AssociationConnector Association="ERP_MSCORPModel.FK__Solicitud__IdEmp__5F5EFD72" ManuallyRouted="false" />
+        <AssociationConnector Association="ERP_MSCORPModel.FK__Solicitud__IdSol__25325BDD" ManuallyRouted="false" />
+        <AssociationConnector Association="ERP_MSCORPModel.FK__Solicitud__IdEmp__69527C00" ManuallyRouted="false" />
+        <AssociationConnector Association="ERP_MSCORPModel.FK__Accesorio__IdAcc__672A3C6C" ManuallyRouted="false" />
+        <AssociationConnector Association="ERP_MSCORPModel.FK__Accesorio__IdCat__6359AB88" ManuallyRouted="false" />
+        <AssociationConnector Association="ERP_MSCORPModel.FK__Accesorio__IdFlo__66361833" ManuallyRouted="false" />
+        <AssociationConnector Association="ERP_MSCORPModel.FK__DetalleAc__IdAct__487B981A" ManuallyRouted="false" />
+        <AssociationConnector Association="ERP_MSCORPModel.FK__DetalleAc__IdAct__55167929" ManuallyRouted="false" />
+        <AssociationConnector Association="ERP_MSCORPModel.FK__AprobarCo__IdCot__2FF0ACC9" ManuallyRouted="false" />
+        <AssociationConnector Association="ERP_MSCORPModel.FK__AprobarCo__IdEmp__30E4D102" ManuallyRouted="false" />
+        <AssociationConnector Association="ERP_MSCORPModel.FK__AsignarCo__IdCon__53633AE1" ManuallyRouted="false" />
+        <AssociationConnector Association="ERP_MSCORPModel.FK__AsignarCo__IdFlo__54575F1A" ManuallyRouted="false" />
+        <AssociationConnector Association="ERP_MSCORPModel.FK__Combustib__IdCon__7988E3C9" ManuallyRouted="false" />
+        <AssociationConnector Association="ERP_MSCORPModel.FK__Combustib__IdEst__7B712C3B" ManuallyRouted="false" />
+        <AssociationConnector Association="ERP_MSCORPModel.FK__Combustib__IdVeh__7A7D0802" ManuallyRouted="false" />
+        <AssociationConnector Association="ERP_MSCORPModel.FK_Combustible_TipoCombustible" ManuallyRouted="false" />
+        <AssociationConnector Association="ERP_MSCORPModel.FK__DetalleAc__IdCon__496FBC53" ManuallyRouted="false" />
+        <AssociationConnector Association="ERP_MSCORPModel.FK__Confirmar__IdMan__6D0DFE4B" ManuallyRouted="false" />
+        <AssociationConnector Association="ERP_MSCORPModel.FK__Confirmar__IdPro__6E022284" ManuallyRouted="false" />
+        <AssociationConnector Association="ERP_MSCORPModel.FK__Contizar" ManuallyRouted="false" />
+        <AssociationConnector Association="ERP_MSCORPModel.FK__Flot" ManuallyRouted="false" />
+        <AssociationConnector Association="ERP_MSCORPModel.FK__Mante" ManuallyRouted="false" />
+        <AssociationConnector Association="ERP_MSCORPModel.FK__CotizarMa__IdFlo__69E84434" ManuallyRouted="false" />
+        <AssociationConnector Association="ERP_MSCORPModel.FK__CotizarMa__IdMan__670BD789" ManuallyRouted="false" />
+        <AssociationConnector Association="ERP_MSCORPModel.FK__CotizarMa__IdPro__6BD08CA6" ManuallyRouted="false" />
+        <AssociationConnector Association="ERP_MSCORPModel.FK__DetalleCo__IdCot__049C3A70" ManuallyRouted="false" />
+        <AssociationConnector Association="ERP_MSCORPModel.FK__FacturaRe__IdCot__55773733" ManuallyRouted="false" />
+        <AssociationConnector Association="ERP_MSCORPModel.FK__DetalleAc__IdFlo__560A9D62" ManuallyRouted="false" />
+        <AssociationConnector Association="ERP_MSCORPModel.FK__DetalleFa__IdFac__30D918B3" ManuallyRouted="false" />
+        <AssociationConnector Association="ERP_MSCORPModel.FK__DetalleFa__IdFac__2D9297B4" ManuallyRouted="false" />
+        <AssociationConnector Association="ERP_MSCORPModel.FK__DetalleMa__IdMan__3E88198C" ManuallyRouted="false" />
+        <AssociationConnector Association="ERP_MSCORPModel.FK_DetalleMantenimientoFlota_MantenimientoFLota" ManuallyRouted="false" />
+        <AssociationConnector Association="ERP_MSCORPModel.FK__DetalleMa__IdMan__0643C069" ManuallyRouted="false" />
+        <AssociationConnector Association="ERP_MSCORPModel.FK__DetallesR__IdRut__0347582D" ManuallyRouted="false" />
+        <AssociationConnector Association="ERP_MSCORPModel.FK__DetallesR__IdZon__043B7C66" ManuallyRouted="false" />
+        <AssociationConnector Association="ERP_MSCORPModel.FK__Documento__IdFlo__039C5DE8" ManuallyRouted="false" />
+        <AssociationConnector Association="ERP_MSCORPModel.FK__FacturaCo__IdPro__538EEEC1" ManuallyRouted="false" />
+        <AssociationConnector Association="ERP_MSCORPModel.FK__FacturaRe__IdFlo__548312FA" ManuallyRouted="false" />
+        <AssociationConnector Association="ERP_MSCORPModel.FK__FacturaRe__IdSuc__566B5B6C" ManuallyRouted="false" />
+        <AssociationConnector Association="ERP_MSCORPModel.FK_FacturaReparacion_PreFacturaOT" ManuallyRouted="false" />
+        <AssociationConnector Association="ERP_MSCORPModel.FK__FlotaMode__IdMar__386F4D83" ManuallyRouted="false" />
+        <AssociationConnector Association="ERP_MSCORPModel.FK__FlotaVehi__IdMod__3E2826D9" ManuallyRouted="false" />
+        <AssociationConnector Association="ERP_MSCORPModel.FK__FlotaSucu__IdFlo__48A5B54C" ManuallyRouted="false" />
+        <AssociationConnector Association="ERP_MSCORPModel.FK__FlotaSucu__IdSuc__47B19113" ManuallyRouted="false" />
+        <AssociationConnector Association="ERP_MSCORPModel.FK__Mantenimi__IdFlo__21EBDADE" ManuallyRouted="false" />
+        <AssociationConnector Association="ERP_MSCORPModel.FK_FlotaSucursal_Departamento" ManuallyRouted="false" />
+        <AssociationConnector Association="ERP_MSCORPModel.FK__FlotaClie__IdFlo__44D52468" ManuallyRouted="false" />
+        <AssociationConnector Association="ERP_MSCORPModel.FK__FlotaVehi__TipoV__3D3402A0" ManuallyRouted="false" />
+        <AssociationConnector Association="ERP_MSCORPModel.FK__ImagenFlo__IdFlo__09CB03E1" ManuallyRouted="false" />
+        <AssociationConnector Association="ERP_MSCORPModel.FK__OrdenTrab__IdFlo__4B8221F7" ManuallyRouted="false" />
+        <AssociationConnector Association="ERP_MSCORPModel.FK_Cotizacion_FlotaVehicular" ManuallyRouted="false" />
+        <AssociationConnector Association="ERP_MSCORPModel.FK__Mecanicos__IdEmp__62EF9734" ManuallyRouted="false" />
+        <AssociationConnector Association="ERP_MSCORPModel.FK__Mecanicos__IdMec__480696CE" ManuallyRouted="false" />
+        <AssociationConnector Association="ERP_MSCORPModel.FK__Mecanicos__IdMec__4FA7B896" ManuallyRouted="false" />
+        <AssociationConnector Association="ERP_MSCORPModel.FK__ImagenesC__IdTip__7AC720C5" ManuallyRouted="false" />
+        <AssociationConnector Association="ERP_MSCORPModel.FK_AcompañamEmpleado" ManuallyRouted="false" />
+        <AssociationConnector Association="ERP_MSCORPModel.FK__AnticipoC__IdCli__40905D8F" ManuallyRouted="false" />
+        <AssociationConnector Association="ERP_MSCORPModel.FK__DetalleAn__IdAnt__436CCA3A" ManuallyRouted="false" />
+        <AssociationConnector Association="ERP_MSCORPModel.FK__Anulacion__IdCom__69135035" ManuallyRouted="false" />
+        <AssociationConnector Association="ERP_MSCORPModel.FK__Anulacion__IdEmp__6A07746E" ManuallyRouted="false" />
+        <AssociationConnector Association="ERP_MSCORPModel.fk_AnulacFact" ManuallyRouted="false" />
+        <AssociationConnector Association="ERP_MSCORPModel.fkReciboAnulacion" ManuallyRouted="false" />
+        <AssociationConnector Association="ERP_MSCORPModel.FK__Anulacion__IdEmp__4D7622B8" ManuallyRouted="false" />
+        <AssociationConnector Association="ERP_MSCORPModel.FK__Anulacion__IdTra__4E6A46F1" ManuallyRouted="false" />
+        <AssociationConnector Association="ERP_MSCORPModel.fk_Apertura_Apertura_AperturaCaja" ManuallyRouted="false" />
+        <AssociationConnector Association="ERP_MSCORPModel.fk_Apertura_Caja" ManuallyRouted="false" />
+        <AssociationConnector Association="ERP_MSCORPModel.fk_Cierre_DiaCaja" ManuallyRouted="false" />
+        <AssociationConnector Association="ERP_MSCORPModel.fk_Apertura_DiaCaja" ManuallyRouted="false" />
+        <AssociationConnector Association="ERP_MSCORPModel.FK__Aplicacio__IdMot__770B9E7A" ManuallyRouted="false" />
+        <AssociationConnector Association="ERP_MSCORPModel.FK__Aplicacio__IdVer__77FFC2B3" ManuallyRouted="false" />
+        <AssociationConnector Association="ERP_MSCORPModel.FK__CodigoApl__IdApl__5B638405" ManuallyRouted="false" />
+        <AssociationConnector Association="ERP_MSCORPModel.FK__AprobarSo__IdSol__5DE194AB" ManuallyRouted="false" />
+        <AssociationConnector Association="ERP_MSCORPModel.fk_ArqueoCierre" ManuallyRouted="false" />
+        <AssociationConnector Association="ERP_MSCORPModel.fk_Caja_AsignacionCaja" ManuallyRouted="false" />
+        <AssociationConnector Association="ERP_MSCORPModel.FK__AsignarTe__IdEst__2C352A7E" ManuallyRouted="false" />
+        <AssociationConnector Association="ERP_MSCORPModel.FK__AsignarTe__IdOrd__2B410645" ManuallyRouted="false" />
+        <AssociationConnector Association="ERP_MSCORPModel.FK__DetalleAs__IdAsi__2F119729" ManuallyRouted="false" />
+        <AssociationConnector Association="ERP_MSCORPModel.FK__Solicitar__IdAsi__3F47FEF2" ManuallyRouted="false" />
+        <AssociationConnector Association="ERP_MSCORPModel.FK__CuentaBan__IdBan__6C2EE8AB" ManuallyRouted="false" />
+        <AssociationConnector Association="ERP_MSCORPModel.FK__DetallePa__IdBan__2EB1A476" ManuallyRouted="false" />
+        <AssociationConnector Association="ERP_MSCORPModel.FK__Bodega__IdSucurs__705EA0EB" ManuallyRouted="false" />
+        <AssociationConnector Association="ERP_MSCORPModel.FK__Compra__IdBodega__4F1DA8B1" ManuallyRouted="false" />
+        <AssociationConnector Association="ERP_MSCORPModel.FK__Consignac__IdBod__33208881" ManuallyRouted="false" />
+        <AssociationConnector Association="ERP_MSCORPModel.FK__Kardex__IdBodega__6EAB62A3" ManuallyRouted="false" />
+        <AssociationConnector Association="ERP_MSCORPModel.FK__Reserva__IdBodeg__0DC5B1F7" ManuallyRouted="false" />
+        <AssociationConnector Association="ERP_MSCORPModel.FK__Reversion__IdBod__017FD6A3" ManuallyRouted="false" />
+        <AssociationConnector Association="ERP_MSCORPModel.FK__SectorBod__IdBod__388F4914" ManuallyRouted="false" />
+        <AssociationConnector Association="ERP_MSCORPModel.FK__Solicitud__Bodeg__12D3B480" ManuallyRouted="false" />
+        <AssociationConnector Association="ERP_MSCORPModel.FK__Solicitud__Bodeg__13C7D8B9" ManuallyRouted="false" />
+        <AssociationConnector Association="ERP_MSCORPModel.FK__Traslado__Bodega__40657506" ManuallyRouted="false" />
+        <AssociationConnector Association="ERP_MSCORPModel.FK__Traslado__Bodega__4159993F" ManuallyRouted="false" />
+        <AssociationConnector Association="ERP_MSCORPModel.fk_PermisoBodega" ManuallyRouted="false" />
+        <AssociationConnector Association="ERP_MSCORPModel.FK_PrefacturaVenta_Bodega" ManuallyRouted="false" />
+        <AssociationConnector Association="ERP_MSCORPModel.fk_Caja_cierro" ManuallyRouted="false" />
+        <AssociationConnector Association="ERP_MSCORPModel.fk_Caja_Sucursal" ManuallyRouted="false" />
+        <AssociationConnector Association="ERP_MSCORPModel.FK__CarteraCl__IdVen__6DA22FD1" ManuallyRouted="false" />
+        <AssociationConnector Association="ERP_MSCORPModel.FK__Ubicacion__IdCar__707E9C7C" ManuallyRouted="false" />
+        <AssociationConnector Association="ERP_MSCORPModel.Fk_CL" ManuallyRouted="false" />
+        <AssociationConnector Association="ERP_MSCORPModel.FK__Celular__IdProdu__59B045BD" ManuallyRouted="false" />
+        <AssociationConnector Association="ERP_MSCORPModel.FK__ClienteBa__IdCli__19E17019" ManuallyRouted="false" />
+        <AssociationConnector Association="ERP_MSCORPModel.FK__ClienteSe__IdCli__30441BD6" ManuallyRouted="false" />
+        <AssociationConnector Association="ERP_MSCORPModel.FK__Conductor__IdCli__41049384" ManuallyRouted="false" />
+        <AssociationConnector Association="ERP_MSCORPModel.FK__Cotizacio__IdCli__6517D6C8" ManuallyRouted="false" />
+        <AssociationConnector Association="ERP_MSCORPModel.FK__Descuento__IdCli__5C043931" ManuallyRouted="false" />
+        <AssociationConnector Association="ERP_MSCORPModel.FK__FlotaClie__IdCli__43E1002F" ManuallyRouted="false" />
+        <AssociationConnector Association="ERP_MSCORPModel.FK__Prefactur__IdCli__7B1C2680" ManuallyRouted="false" />
+        <AssociationConnector Association="ERP_MSCORPModel.FK__Solicitud__IdCli__2B5614DE" ManuallyRouted="false" />
+        <AssociationConnector Association="ERP_MSCORPModel.FK__ClienteBa__IdDat__1AD59452" ManuallyRouted="false" />
+        <AssociationConnector Association="ERP_MSCORPModel.FK__Consignac__IdCli__3508D0F3" ManuallyRouted="false" />
+        <AssociationConnector Association="ERP_MSCORPModel.FK__Seguimien__IdSeg__5C229E14" ManuallyRouted="false" />
+        <AssociationConnector Association="ERP_MSCORPModel.FK__Solicitud__IdSeg__2C4A3917" ManuallyRouted="false" />
+        <AssociationConnector Association="ERP_MSCORPModel.FK__Ubicacion__IdCli__7172C0B5" ManuallyRouted="false" />
+        <AssociationConnector Association="ERP_MSCORPModel.FK_ClienteSeguimiento_Segmento" ManuallyRouted="false" />
+        <AssociationConnector Association="ERP_MSCORPModel.Fk_SolClient" ManuallyRouted="false" />
+        <AssociationConnector Association="ERP_MSCORPModel.FK__CodigoApl__IdCod__5C57A83E" ManuallyRouted="false" />
+        <AssociationConnector Association="ERP_MSCORPModel.FK_CodFam" ManuallyRouted="false" />
+        <AssociationConnector Association="ERP_MSCORPModel.FK__DetalleCo__IdCom__2196D523" ManuallyRouted="false" />
+        <AssociationConnector Association="ERP_MSCORPModel.FK__DetalleCo__IdCom__41648637" ManuallyRouted="false" />
+        <AssociationConnector Association="ERP_MSCORPModel.FK__PrecioCom__IdCom__60882BD5" ManuallyRouted="false" />
+        <AssociationConnector Association="ERP_MSCORPModel.FK__Compra__IdProvee__4E298478" ManuallyRouted="false" />
+        <AssociationConnector Association="ERP_MSCORPModel.FK__Compra__Ingresad__650CE9D0" ManuallyRouted="false" />
+        <AssociationConnector Association="ERP_MSCORPModel.FK__Compra__Realizad__6418C597" ManuallyRouted="false" />
+        <AssociationConnector Association="ERP_MSCORPModel.FK__DetalleCo__IdCom__417A6027" ManuallyRouted="false" />
+        <AssociationConnector Association="ERP_MSCORPModel.FK__DetalleCo__IdCom__599B3724" ManuallyRouted="false" />
+        <AssociationConnector Association="ERP_MSCORPModel.FK__DetallesI__IdCom__5C23696B" ManuallyRouted="false" />
+        <AssociationConnector Association="ERP_MSCORPModel.FK__Devolucio__IdCom__49659AB2" ManuallyRouted="false" />
+        <AssociationConnector Association="ERP_MSCORPModel.FK_SalidaInventario_ConceptoSalidaInventario" ManuallyRouted="false" />
+        <AssociationConnector Association="ERP_MSCORPModel.FK__Confirmar__IdPro__233FF1CA" ManuallyRouted="false" />
+        <AssociationConnector Association="ERP_MSCORPModel.FK__DetallePa__IdCon__2DBD803D" ManuallyRouted="false" />
+        <AssociationConnector Association="ERP_MSCORPModel.FK__Consignac__IdVen__3414ACBA" ManuallyRouted="false" />
+        <AssociationConnector Association="ERP_MSCORPModel.FK__Seguimien__IdCon__5D16C24D" ManuallyRouted="false" />
+        <AssociationConnector Association="ERP_MSCORPModel.Fk_Co" ManuallyRouted="false" />
+        <AssociationConnector Association="ERP_MSCORPModel.FK__CosteoPEP__IdKar__77EAB41A" ManuallyRouted="false" />
+        <AssociationConnector Association="ERP_MSCORPModel.FK__CosteoPro__IdKar__7325FEFD" ManuallyRouted="false" />
+        <AssociationConnector Association="ERP_MSCORPModel.FK__CosteoPro__IdKar__70499252" ManuallyRouted="false" />
+        <AssociationConnector Association="ERP_MSCORPModel.FK__Cotizacio__IdSeg__67001F3A" ManuallyRouted="false" />
+        <AssociationConnector Association="ERP_MSCORPModel.FK__Cotizacio__IdVen__660BFB01" ManuallyRouted="false" />
+        <AssociationConnector Association="ERP_MSCORPModel.FK__DetalleCo__IdCot__69DC8BE5" ManuallyRouted="false" />
+        <AssociationConnector Association="ERP_MSCORPModel.FK__Reserva__IdCotiz__0EB9D630" ManuallyRouted="false" />
+        <AssociationConnector Association="ERP_MSCORPModel.FK_PrefacturaVenta_CotizacionVenta" ManuallyRouted="false" />
+        <AssociationConnector Association="ERP_MSCORPModel.Fk_PrDat" ManuallyRouted="false" />
+        <AssociationConnector Association="ERP_MSCORPModel.FK__Descuento__IdEmp__5CF85D6A" ManuallyRouted="false" />
+        <AssociationConnector Association="ERP_MSCORPModel.FK__Descuento__IdSer__5B1014F8" ManuallyRouted="false" />
+        <AssociationConnector Association="ERP_MSCORPModel.FK__DetalleDe__IdDes__5FD4CA15" ManuallyRouted="false" />
+        <AssociationConnector Association="ERP_MSCORPModel.FK__DespachoF__IdEmp__1BD3DA2C" ManuallyRouted="false" />
+        <AssociationConnector Association="ERP_MSCORPModel.FK__DespachoF__IdFac__1ADFB5F3" ManuallyRouted="false" />
+        <AssociationConnector Association="ERP_MSCORPModel.fk_Despacho_Traslado" ManuallyRouted="false" />
+        <AssociationConnector Association="ERP_MSCORPModel.FK__DetalleAs__IdTec__3005BB62" ManuallyRouted="false" />
+        <AssociationConnector Association="ERP_MSCORPModel.fk_DetalleCheque" ManuallyRouted="false" />
+        <AssociationConnector Association="ERP_MSCORPModel.FK__DetalleCo__IdPro__121F8769" ManuallyRouted="false" />
+        <AssociationConnector Association="ERP_MSCORPModel.FK__DetalleCo__IdDet__5244F976" ManuallyRouted="false" />
+        <AssociationConnector Association="ERP_MSCORPModel.FK__DetalleCo__IdPro__53391DAF" ManuallyRouted="false" />
+        <AssociationConnector Association="ERP_MSCORPModel.FK__Identific__IdDet__56158A5A" ManuallyRouted="false" />
+        <AssociationConnector Association="ERP_MSCORPModel.FK__DetalleCo__IdDet__40863BEE" ManuallyRouted="false" />
+        <AssociationConnector Association="ERP_MSCORPModel.FK__DetalleCo__IdPro__5A8F5B5D" ManuallyRouted="false" />
+        <AssociationConnector Association="ERP_MSCORPModel.FK__TotalLiqu__IdDet__12D47FD7" ManuallyRouted="false" />
+        <AssociationConnector Association="ERP_MSCORPModel.FK__DetalleCo__IdPro__6AD0B01E" ManuallyRouted="false" />
+        <AssociationConnector Association="ERP_MSCORPModel.FK__DetalleCo__IdSer__407061FE" ManuallyRouted="false" />
+        <AssociationConnector Association="ERP_MSCORPModel.FK__DetalleDe__IdFac__61BD1287" ManuallyRouted="false" />
+        <AssociationConnector Association="ERP_MSCORPModel.FK__DetalleDe__IdPre__60C8EE4E" ManuallyRouted="false" />
+        <AssociationConnector Association="ERP_MSCORPModel.FK__DetalleDe__IdDev__4C42075D" ManuallyRouted="false" />
+        <AssociationConnector Association="ERP_MSCORPModel.FK__DetalleDe__IdPro__4D362B96" ManuallyRouted="false" />
+        <AssociationConnector Association="ERP_MSCORPModel.FK__DetallePr__IdDet__50129841" ManuallyRouted="false" />
+        <AssociationConnector Association="ERP_MSCORPModel.fk_DetDevol" ManuallyRouted="false" />
+        <AssociationConnector Association="ERP_MSCORPModel.fk_DetalleEfectivo" ManuallyRouted="false" />
+        <AssociationConnector Association="ERP_MSCORPModel.fk_FacturaExc" ManuallyRouted="false" />
+        <AssociationConnector Association="ERP_MSCORPModel.fk_DetalleFactura" ManuallyRouted="false" />
+        <AssociationConnector Association="ERP_MSCORPModel.FK__DetalleNo__IdDet__542E0D3F" ManuallyRouted="false" />
+        <AssociationConnector Association="ERP_MSCORPModel.FK__DetalleRe__IdDet__7B3CED68" ManuallyRouted="false" />
+        <AssociationConnector Association="ERP_MSCORPModel.FK__DetalleTr__IdDet__1F0F6E33" ManuallyRouted="false" />
+        <AssociationConnector Association="ERP_MSCORPModel.fk_DetallePago" ManuallyRouted="false" />
+        <AssociationConnector Association="ERP_MSCORPModel.fk_DetalleTarjeta" ManuallyRouted="false" />
+        <AssociationConnector Association="ERP_MSCORPModel.FK__DetallePr__IdDet__4F688CCB" ManuallyRouted="false" />
+        <AssociationConnector Association="ERP_MSCORPModel.FK__DetallePr__IdFac__7EECB764" ManuallyRouted="false" />
+        <AssociationConnector Association="ERP_MSCORPModel.FK__DetallePr__IdPro__7FE0DB9D" ManuallyRouted="false" />
+        <AssociationConnector Association="ERP_MSCORPModel.FK__DetallePr__IdPro__78D58209" ManuallyRouted="false" />
+        <AssociationConnector Association="ERP_MSCORPModel.FK__DetallePr__IdPro__79C9A642" ManuallyRouted="false" />
+        <AssociationConnector Association="ERP_MSCORPModel.FK__DetallePr__IdDet__48F09966" ManuallyRouted="false" />
+        <AssociationConnector Association="ERP_MSCORPModel.FK__DetalleRe__IdFac__1C330188" ManuallyRouted="false" />
+        <AssociationConnector Association="ERP_MSCORPModel.FK__DetalleRe__IdRec__1B3EDD4F" ManuallyRouted="false" />
+        <AssociationConnector Association="ERP_MSCORPModel.FK__DetalleRe__IdRec__505D7C5B" ManuallyRouted="false" />
+        <AssociationConnector Association="ERP_MSCORPModel.FK__DetalleRe__IdFac__7C3111A1" ManuallyRouted="false" />
+        <AssociationConnector Association="ERP_MSCORPModel.FK__DetalleRe__IdRet__4634F3A3" ManuallyRouted="false" />
+        <AssociationConnector Association="ERP_MSCORPModel.FK__DetalleRe__IdPro__50DC9F48" ManuallyRouted="false" />
+        <AssociationConnector Association="ERP_MSCORPModel.FK__DetalleRe__IdRev__4FE87B0F" ManuallyRouted="false" />
+        <AssociationConnector Association="ERP_MSCORPModel.fk_DetalleRevisar" ManuallyRouted="false" />
+        <AssociationConnector Association="ERP_MSCORPModel.FK__DetalleSa__IdPro__23BF14B7" ManuallyRouted="false" />
+        <AssociationConnector Association="ERP_MSCORPModel.FK__DetalleSa__IdSal__22CAF07E" ManuallyRouted="false" />
+        <AssociationConnector Association="ERP_MSCORPModel.FK__DetalleSe__IdPro__548247A3" ManuallyRouted="false" />
+        <AssociationConnector Association="ERP_MSCORPModel.FK__DetalleSe__IdSer__538E236A" ManuallyRouted="false" />
+        <AssociationConnector Association="ERP_MSCORPModel.FK__DetallesI__IdSer__5D178DA4" ManuallyRouted="false" />
+        <AssociationConnector Association="ERP_MSCORPModel.FK__DetalleTr__IdPro__31583BA0" ManuallyRouted="false" />
+        <AssociationConnector Association="ERP_MSCORPModel.FK__DetalleTr__IdSol__30641767" ManuallyRouted="false" />
+        <AssociationConnector Association="ERP_MSCORPModel.FK__DetalleTr__IdDet__202DAF9E" ManuallyRouted="false" />
+        <AssociationConnector Association="ERP_MSCORPModel.FK__DetalleTr__IdPro__2121D3D7" ManuallyRouted="false" />
+        <AssociationConnector Association="ERP_MSCORPModel.FK__DetalleTr__IdPro__1D5142F3" ManuallyRouted="false" />
+        <AssociationConnector Association="ERP_MSCORPModel.FK__DetalleTr__IdSol__1C5D1EBA" ManuallyRouted="false" />
+        <AssociationConnector Association="ERP_MSCORPModel.fk_Verificacion_Detalle" ManuallyRouted="false" />
+        <AssociationConnector Association="ERP_MSCORPModel.fk_DevFac" ManuallyRouted="false" />
+        <AssociationConnector Association="ERP_MSCORPModel.FK__Serie__IdDocumen__6304A5CD" ManuallyRouted="false" />
+        <AssociationConnector Association="ERP_MSCORPModel.FK__Estacione__IdUbi__182E31D1" ManuallyRouted="false" />
+        <AssociationConnector Association="ERP_MSCORPModel.FK__Estimacio__IdEst__550235E7" ManuallyRouted="false" />
+        <AssociationConnector Association="ERP_MSCORPModel.FK__FacturaRe__IdFac__6BFAA9D8" ManuallyRouted="false" />
+        <AssociationConnector Association="ERP_MSCORPModel.FK__Familia__IdAsoci__4850AF91" ManuallyRouted="false" />
+        <AssociationConnector Association="ERP_MSCORPModel.FK__Identific__IdRev__31B8F9AA" ManuallyRouted="false" />
+        <AssociationConnector Association="ERP_MSCORPModel.FK__KardexIde__IdIde__7EE1CA6C" ManuallyRouted="false" />
+        <AssociationConnector Association="ERP_MSCORPModel.Fk_IdentProd" ManuallyRouted="false" />
+        <AssociationConnector Association="ERP_MSCORPModel.FK__Imagen__IdProduc__5C8CB268" ManuallyRouted="false" />
+        <AssociationConnector Association="ERP_MSCORPModel.FK__IngresoOr__IdOrd__03881AA6" ManuallyRouted="false" />
+        <AssociationConnector Association="ERP_MSCORPModel.FK__IngresoOr__IdSol__047C3EDF" ManuallyRouted="false" />
+        <AssociationConnector Association="ERP_MSCORPModel.FK__Requerimi__IdInt__7A721B0A" ManuallyRouted="false" />
+        <AssociationConnector Association="ERP_MSCORPModel.FK__Kardex__IdProduc__6F9F86DC" ManuallyRouted="false" />
+        <AssociationConnector Association="ERP_MSCORPModel.FK__KardexIde__IdKar__7DEDA633" ManuallyRouted="false" />
+        <AssociationConnector Association="ERP_MSCORPModel.FK__KardexLot__IdKar__058EC7FB" ManuallyRouted="false" />
+        <AssociationConnector Association="ERP_MSCORPModel.FK__KardexOT__IdKard__0FCD2AA3" ManuallyRouted="false" />
+        <AssociationConnector Association="ERP_MSCORPModel.FK__KardexLot__IdLot__0682EC34" ManuallyRouted="false" />
+        <AssociationConnector Association="ERP_MSCORPModel.FK__Producto__IdLine__53F76C67" ManuallyRouted="false" />
+        <AssociationConnector Association="ERP_MSCORPModel.Fk_Pr1" ManuallyRouted="false" />
+        <AssociationConnector Association="ERP_MSCORPModel.FK__Producto__IdMarc__520F23F5" ManuallyRouted="false" />
+        <AssociationConnector Association="ERP_MSCORPModel.FK__ModeloApl__IdMar__4FF1D159" ManuallyRouted="false" />
+        <AssociationConnector Association="ERP_MSCORPModel.FK__Margen__IdProduc__5F691F13" ManuallyRouted="false" />
+        <AssociationConnector Association="ERP_MSCORPModel.FK__VersionAp__IdMod__52CE3E04" ManuallyRouted="false" />
+        <AssociationConnector Association="ERP_MSCORPModel.FK__ProcesarO__IdOrd__11813442" ManuallyRouted="false" />
+        <AssociationConnector Association="ERP_MSCORPModel.FK__ProductoM__IdOrd__75F9155E" ManuallyRouted="false" />
+        <AssociationConnector Association="ERP_MSCORPModel.FK__Productos__IdOrd__7ABDCA7B" ManuallyRouted="false" />
+        <AssociationConnector Association="ERP_MSCORPModel.FK__Solicitud__IdOrd__19AC65EF" ManuallyRouted="false" />
+        <AssociationConnector Association="ERP_MSCORPModel.fk_PermisoEmpleado" ManuallyRouted="false" />
+        <AssociationConnector Association="ERP_MSCORPModel.FK__PrecioCom__IdSeg__247341CE" ManuallyRouted="false" />
+        <AssociationConnector Association="ERP_MSCORPModel.FK__PrecioPro__IdPro__4D2051A6" ManuallyRouted="false" />
+        <AssociationConnector Association="ERP_MSCORPModel.FK__PrecioPro__IdSeg__4C2C2D6D" ManuallyRouted="false" />
+        <AssociationConnector Association="ERP_MSCORPModel.FK__Prefactur__IdVen__7C104AB9" ManuallyRouted="false" />
+        <AssociationConnector Association="ERP_MSCORPModel.FK__Procesami__IdApr__392E6792" ManuallyRouted="false" />
+        <AssociationConnector Association="ERP_MSCORPModel.FK__Procesami__IdRec__3A228BCB" ManuallyRouted="false" />
+        <AssociationConnector Association="ERP_MSCORPModel.FK__Requisito__IdPro__1AA9E072" ManuallyRouted="false" />
+        <AssociationConnector Association="ERP_MSCORPModel.fk_PrecSolic" ManuallyRouted="false" />
+        <AssociationConnector Association="ERP_MSCORPModel.FK__ProcesarS__IdSol__6ABC6CDC" ManuallyRouted="false" />
+        <AssociationConnector Association="ERP_MSCORPModel.FK__DetalleAs__IdPro__5D36BDDE" ManuallyRouted="false" />
+        <AssociationConnector Association="ERP_MSCORPModel.FK__DetallePe__IdPro__3ED2324F" ManuallyRouted="false" />
+        <AssociationConnector Association="ERP_MSCORPModel.FK__DetallePr__IdPro__628582E0" ManuallyRouted="false" />
+        <AssociationConnector Association="ERP_MSCORPModel.FK__DetallePr__IdPro__6F2B50E7" ManuallyRouted="false" />
+        <AssociationConnector Association="ERP_MSCORPModel.FK__DetallePr__IdPro__72BBEAA9" ManuallyRouted="false" />
+        <AssociationConnector Association="ERP_MSCORPModel.FK__Producto__IdRubr__5303482E" ManuallyRouted="false" />
+        <AssociationConnector Association="ERP_MSCORPModel.FK__Producto__IdUnid__5026DB83" ManuallyRouted="false" />
+        <AssociationConnector Association="ERP_MSCORPModel.FK__Producto__IdUnid__511AFFBC" ManuallyRouted="false" />
+        <AssociationConnector Association="ERP_MSCORPModel.FK__Vehiculo__IdProd__56D3D912" ManuallyRouted="false" />
+        <AssociationConnector Association="ERP_MSCORPModel.FK__Cotizacio__IdPro__6438C128" ManuallyRouted="false" />
+        <AssociationConnector Association="ERP_MSCORPModel.FK__TrabajosE__IdPro__1650D657" ManuallyRouted="false" />
+        <AssociationConnector Association="ERP_MSCORPModel.Fk_Pr" ManuallyRouted="false" />
+        <AssociationConnector Association="ERP_MSCORPModel.Fk_PrPr" ManuallyRouted="false" />
+        <AssociationConnector Association="ERP_MSCORPModel.FK__ReciboCaj__IdEmp__176E4C6B" ManuallyRouted="false" />
+        <AssociationConnector Association="ERP_MSCORPModel.FK__Retencion__IdRec__39CF1CBE" ManuallyRouted="false" />
+        <AssociationConnector Association="ERP_MSCORPModel.FK__Requerimi__IdReq__797DF6D1" ManuallyRouted="false" />
+        <AssociationConnector Association="ERP_MSCORPModel.FK__Requisito__IdDoc__41C3AD93" ManuallyRouted="false" />
+        <AssociationConnector Association="ERP_MSCORPModel.FK__Reserva__IdEmple__648E923A" ManuallyRouted="false" />
+        <AssociationConnector Association="ERP_MSCORPModel.FK__Retencion__IdRet__3D9FADA2" ManuallyRouted="false" />
+        <AssociationConnector Association="ERP_MSCORPModel.FK__Reversion__IdEmp__43D7A9E5" ManuallyRouted="false" />
+        <AssociationConnector Association="ERP_MSCORPModel.FK__SectorEsp__IdSec__3E48226A" ManuallyRouted="false" />
+        <AssociationConnector Association="ERP_MSCORPModel.FK__Vendedor__IdSegm__29971E47" ManuallyRouted="false" />
+        <AssociationConnector Association="ERP_MSCORPModel.FK__Serie__IdSucursa__5F3414E9" ManuallyRouted="false" />
+        <AssociationConnector Association="ERP_MSCORPModel.FK__Traslado__IdSeri__36DC0ACC" ManuallyRouted="false" />
+        <AssociationConnector Association="ERP_MSCORPModel.FK__Solicitar__IdSol__42246B9D" ManuallyRouted="false" />
+        <AssociationConnector Association="ERP_MSCORPModel.FK__Solicitud__IdSol__1C88D29A" ManuallyRouted="false" />
+        <AssociationConnector Association="ERP_MSCORPModel.FK__Solicitud__Aprob__11DF9047" ManuallyRouted="false" />
+        <AssociationConnector Association="ERP_MSCORPModel.FK__Solicitud__Solic__10EB6C0E" ManuallyRouted="false" />
+        <AssociationConnector Association="ERP_MSCORPModel.FK__Traslado__IdSoli__2B9F624A" ManuallyRouted="false" />
+        <AssociationConnector Association="ERP_MSCORPModel.FK__Tecnico__IdUbica__09E0127A" ManuallyRouted="false" />
+        <AssociationConnector Association="ERP_MSCORPModel.FK__SectorEsp__IdTip__3F3C46A3" ManuallyRouted="false" />
+        <AssociationConnector Association="ERP_MSCORPModel.FK__Traslado__Genera__3C94E422" ManuallyRouted="false" />
+        <AssociationConnector Association="ERP_MSCORPModel.FK__TrasladoO__IdTra__571F8883" ManuallyRouted="false" />
+        <AssociationConnector Association="ERP_MSCORPModel.FK__TrasladoO__IdTra__63649880" ManuallyRouted="false" />
+        <AssociationConnector Association="ERP_MSCORPModel.FK__Vendedor__IdEmpl__35FCF52C" ManuallyRouted="false" />
+        <AssociationConnector Association="ERP_MSCORPModel.FK__Accidente__IdEmp__658C0CBD" ManuallyRouted="false" />
+        <AssociationConnector Association="ERP_MSCORPModel.FK__Documento__IdAcc__5DB5E0CB" ManuallyRouted="false" />
+        <AssociationConnector Association="ERP_MSCORPModel.FK_TestAccid" ManuallyRouted="false" />
+        <AssociationConnector Association="ERP_MSCORPModel.FK__Adelanto__IdEmpl__0F2D40CE" ManuallyRouted="false" />
+        <AssociationConnector Association="ERP_MSCORPModel.FK__Calendari__IdAde__13F1F5EB" ManuallyRouted="false" />
+        <AssociationConnector Association="ERP_MSCORPModel.FK__AlcancePu__IdPue__6CA31EA0" ManuallyRouted="false" />
+        <AssociationConnector Association="ERP_MSCORPModel.FK__Calendari__IdAli__77AABCF8" ManuallyRouted="false" />
+        <AssociationConnector Association="ERP_MSCORPModel.FK__Aplicacio__IdApl__62AFA012" ManuallyRouted="false" />
+        <AssociationConnector Association="ERP_MSCORPModel.FK__Aplicacio__IdCon__19AACF41" ManuallyRouted="false" />
+        <AssociationConnector Association="ERP_MSCORPModel.FK__Aplicacio__IdEmp__61BB7BD9" ManuallyRouted="false" />
+        <AssociationConnector Association="ERP_MSCORPModel.FK__Asistenci__IdEmp__7B264821" ManuallyRouted="false" />
+        <AssociationConnector Association="ERP_MSCORPModel.FK__BajaPerso__IdDes__67A95F59" ManuallyRouted="false" />
+        <AssociationConnector Association="ERP_MSCORPModel.FK__BajaPerso__IdEmp__66B53B20" ManuallyRouted="false" />
+        <AssociationConnector Association="ERP_MSCORPModel.FK__Evaluacio__IdBaj__6A85CC04" ManuallyRouted="false" />
+        <AssociationConnector Association="ERP_MSCORPModel.fk_IdCalendario" ManuallyRouted="false" />
+        <AssociationConnector Association="ERP_MSCORPModel.fk_confempl" ManuallyRouted="false" />
+        <AssociationConnector Association="ERP_MSCORPModel.FK__ContactoE__IdEmp__52442E1F" ManuallyRouted="false" />
+        <AssociationConnector Association="ERP_MSCORPModel.FK__ContratoL__IdEmp__3AA1AEB8" ManuallyRouted="false" />
+        <AssociationConnector Association="ERP_MSCORPModel.FK__DetalleCo__IdCor__3885F2CA" ManuallyRouted="false" />
+        <AssociationConnector Association="ERP_MSCORPModel.FK__CuentaEmp__IdEmp__1DBB5747" ManuallyRouted="false" />
+        <AssociationConnector Association="ERP_MSCORPModel.FK__SucursalD__IdDep__1B7E091A" ManuallyRouted="false" />
+        <AssociationConnector Association="ERP_MSCORPModel.fk_departempl" ManuallyRouted="false" />
+        <AssociationConnector Association="ERP_MSCORPModel.FK__Desvincul__IdEmp__5F141958" ManuallyRouted="false" />
+        <AssociationConnector Association="ERP_MSCORPModel.FK__Documento__IdDes__0539C240" ManuallyRouted="false" />
+        <AssociationConnector Association="ERP_MSCORPModel.fk_DetalleEntrega" ManuallyRouted="false" />
+        <AssociationConnector Association="ERP_MSCORPModel.fk_detallepedido" ManuallyRouted="false" />
+        <AssociationConnector Association="ERP_MSCORPModel.FK__Documento__IdEmp__5C6CB6D7" ManuallyRouted="false" />
+        <AssociationConnector Association="ERP_MSCORPModel.FK__Documento__IdDoc__062DE679" ManuallyRouted="false" />
+        <AssociationConnector Association="ERP_MSCORPModel.FK__Documento__IdInc__5AD97420" ManuallyRouted="false" />
+        <AssociationConnector Association="ERP_MSCORPModel.fk_docpuesto" ManuallyRouted="false" />
+        <AssociationConnector Association="ERP_MSCORPModel.FK__Emergenci__IdEmp__7EF6D905" ManuallyRouted="false" />
+        <AssociationConnector Association="ERP_MSCORPModel.FK__Cotizacio__IdEmp__63449CEF" ManuallyRouted="false" />
+        <AssociationConnector Association="ERP_MSCORPModel.FK__EmpleadoP__IdEmp__7BE56230" ManuallyRouted="false" />
+        <AssociationConnector Association="ERP_MSCORPModel.FK__Empleados__IdEmp__30F91444" ManuallyRouted="false" />
+        <AssociationConnector Association="ERP_MSCORPModel.FK__Evaluacio__IdLLe__6B79F03D" ManuallyRouted="false" />
+        <AssociationConnector Association="ERP_MSCORPModel.FK__Incidente__IdEmp__73852659" ManuallyRouted="false" />
+        <AssociationConnector Association="ERP_MSCORPModel.FK__Liquidaci__idEmp__7ADC2F5E" ManuallyRouted="false" />
+        <AssociationConnector Association="ERP_MSCORPModel.FK__NivelAcad__IdEmp__01D345B0" ManuallyRouted="false" />
+        <AssociationConnector Association="ERP_MSCORPModel.FK__Nomina__IdEmplea__2DB1C7EE" ManuallyRouted="false" />
+        <AssociationConnector Association="ERP_MSCORPModel.FK__PermisoEm__IdEmp__0C70CFB4" ManuallyRouted="false" />
+        <AssociationConnector Association="ERP_MSCORPModel.FK__Solicitud__IdEmp__79BDEDF3" ManuallyRouted="false" />
+        <AssociationConnector Association="ERP_MSCORPModel.FK__Ubicacion__IdEmp__1F4E99FE" ManuallyRouted="false" />
+        <AssociationConnector Association="ERP_MSCORPModel.FK__Usuario__IdEmple__2AD55B43" ManuallyRouted="false" />
+        <AssociationConnector Association="ERP_MSCORPModel.fk_EntregaEmpleado" ManuallyRouted="false" />
+        <AssociationConnector Association="ERP_MSCORPModel.fk_pedidoempleado" ManuallyRouted="false" />
+        <AssociationConnector Association="ERP_MSCORPModel.FK__EmpleadoP__IdPue__7CD98669" ManuallyRouted="false" />
+        <AssociationConnector Association="ERP_MSCORPModel.FK__BitacoraU__IdEmp__0C50D423" ManuallyRouted="false" />
+        <AssociationConnector Association="ERP_MSCORPModel.FK__Empresa__IdPais__01F4D7EF" ManuallyRouted="false" />
+        <AssociationConnector Association="ERP_MSCORPModel.FK__SistemaEm__IdEmp__4396E76C" ManuallyRouted="false" />
+        <AssociationConnector Association="ERP_MSCORPModel.fk_confempl2" ManuallyRouted="false" />
+        <AssociationConnector Association="ERP_MSCORPModel.FK__Enfermeda__IdPue__68D28DBC" ManuallyRouted="false" />
+        <AssociationConnector Association="ERP_MSCORPModel.fk_herrampuesto" ManuallyRouted="false" />
+        <AssociationConnector Association="ERP_MSCORPModel.FK__Indicador__IdPue__6F7F8B4B" ManuallyRouted="false" />
+        <AssociationConnector Association="ERP_MSCORPModel.FK__InfoPuest__IdPue__61316BF4" ManuallyRouted="false" />
+        <AssociationConnector Association="ERP_MSCORPModel.FK__RiesgoPue__IdPue__6501FCD8" ManuallyRouted="false" />
+        <AssociationConnector Association="ERP_MSCORPModel.fk_Reqpuesto" ManuallyRouted="false" />
+        <AssociationConnector Association="ERP_MSCORPModel.fk_tarpuesto" ManuallyRouted="false" />
+        <AssociationConnector Association="ERP_MSCORPModel.FK__SucursalD__IdSuc__1A89E4E1" ManuallyRouted="false" />
+        <AssociationConnector Association="ERP_MSCORPModel.fk_ListaSucursal" ManuallyRouted="false" />
+        <AssociationConnector Association="ERP_MSCORPModel.FK__Ubicacion__IdSuc__1E5A75C5" ManuallyRouted="false" />
+        <AssociationConnector Association="ERP_MSCORPModel.FK__Accesorio__IdOrd__00EA0E6F" ManuallyRouted="false" />
+        <AssociationConnector Association="ERP_MSCORPModel.FK__AprobarPr__IdPre__114B5EC1" ManuallyRouted="false" />
+        <AssociationConnector Association="ERP_MSCORPModel.FK__Asignacio__IdOrd__35148942" ManuallyRouted="false" />
+        <AssociationConnector Association="ERP_MSCORPModel.FK__DetalleAs__IdAsi__37F0F5ED" ManuallyRouted="false" />
+        <AssociationConnector Association="ERP_MSCORPModel.FK__AsignarPr__IdOrd__59662CFA" ManuallyRouted="false" />
+        <AssociationConnector Association="ERP_MSCORPModel.FK__DetalleAs__IdAsi__5C4299A5" ManuallyRouted="false" />
+        <AssociationConnector Association="ERP_MSCORPModel.FK__Insumos__IdAsign__579DE019" ManuallyRouted="false" />
+        <AssociationConnector Association="ERP_MSCORPModel.FK__PeticionC__IdAsi__37311087" ManuallyRouted="false" />
+        <AssociationConnector Association="ERP_MSCORPModel.FK__Cotizacio__IdCon__625078B6" ManuallyRouted="false" />
+        <AssociationConnector Association="ERP_MSCORPModel.FK__Confirmar__IdTra__3DBE1285" ManuallyRouted="false" />
+        <AssociationConnector Association="ERP_MSCORPModel.FK__Consecuti__IdCot__774B959C" ManuallyRouted="false" />
+        <AssociationConnector Association="ERP_MSCORPModel.FK__DetalleCo__IdCot__67152DD3" ManuallyRouted="false" />
+        <AssociationConnector Association="ERP_MSCORPModel.FK__Cotizacio__IdOrd__70148828" ManuallyRouted="false" />
+        <AssociationConnector Association="ERP_MSCORPModel.FK__DetalleCo__IdCot__4401C717" ManuallyRouted="false" />
+        <AssociationConnector Association="ERP_MSCORPModel.FK__DetallePr__IdCot__61915EA7" ManuallyRouted="false" />
+        <AssociationConnector Association="ERP_MSCORPModel.FK__DetalleSe__IdCot__6561EF8B" ManuallyRouted="false" />
+        <AssociationConnector Association="ERP_MSCORPModel.FK_Insumos_DetalleAsignarProductos" ManuallyRouted="false" />
+        <AssociationConnector Association="ERP_MSCORPModel.FK__DetalleMa__IdMan__5AC46587" ManuallyRouted="false" />
+        <AssociationConnector Association="ERP_MSCORPModel.FK__DetallePe__IdPet__3DDE0E16" ManuallyRouted="false" />
+        <AssociationConnector Association="ERP_MSCORPModel.FK__DetallePr__IdMan__6E372CAE" ManuallyRouted="false" />
+        <AssociationConnector Association="ERP_MSCORPModel.FK__DetallePr__IdPre__6D430875" ManuallyRouted="false" />
+        <AssociationConnector Association="ERP_MSCORPModel.FK__DetallePr__IdTra__701F7520" ManuallyRouted="false" />
+        <AssociationConnector Association="ERP_MSCORPModel.FK__DetallePr__IdMan__71C7C670" ManuallyRouted="false" />
+        <AssociationConnector Association="ERP_MSCORPModel.FK__DetallePr__IdPre__70D3A237" ManuallyRouted="false" />
+        <AssociationConnector Association="ERP_MSCORPModel.FK_DetallePreFacturaOT_TrabajosExternos" ManuallyRouted="false" />
+        <AssociationConnector Association="ERP_MSCORPModel.FK__DetalleSe__IdMan__665613C4" ManuallyRouted="false" />
+        <AssociationConnector Association="ERP_MSCORPModel.FK__DetalleTr__IdTra__3AE1A5DA" ManuallyRouted="false" />
+        <AssociationConnector Association="ERP_MSCORPModel.FK__Empleados__IdPre__3004F00B" ManuallyRouted="false" />
+        <AssociationConnector Association="ERP_MSCORPModel.FK__Mecanicos__IdEst__48FABB07" ManuallyRouted="false" />
+        <AssociationConnector Association="ERP_MSCORPModel.FK__VehiculoP__IdEst__4BD727B2" ManuallyRouted="false" />
+        <AssociationConnector Association="ERP_MSCORPModel.FK__EstadosOT__IdOrd__236A0EFC" ManuallyRouted="false" />
+        <AssociationConnector Association="ERP_MSCORPModel.FK__TrabajoCl__IdFlo__3805392F" ManuallyRouted="false" />
+        <AssociationConnector Association="ERP_MSCORPModel.FK__ImagenesV__IdOrd__59511E61" ManuallyRouted="false" />
+        <AssociationConnector Association="ERP_MSCORPModel.FK__Mantenimi__IdDet__5E94F66B" ManuallyRouted="false" />
+        <AssociationConnector Association="ERP_MSCORPModel.FK__TrabajosE__IdSer__5031C87B" ManuallyRouted="false" />
+        <AssociationConnector Association="ERP_MSCORPModel.FK__Mantenimi__IdOrd__5DA0D232" ManuallyRouted="false" />
+        <AssociationConnector Association="ERP_MSCORPModel.FK__Mecanicos__IdVeh__4EB3945D" ManuallyRouted="false" />
+        <AssociationConnector Association="ERP_MSCORPModel.FK__Movimient__IdMov__6F370936" ManuallyRouted="false" />
+        <AssociationConnector Association="ERP_MSCORPModel.FK__PreFactur__IdOrd__6A669BCA" ManuallyRouted="false" />
+        <AssociationConnector Association="ERP_MSCORPModel.FK__PreFactur__IdOrd__6DF7358C" ManuallyRouted="false" />
+        <AssociationConnector Association="ERP_MSCORPModel.FK__TrabajosE__IdOrd__5125ECB4" ManuallyRouted="false" />
+        <AssociationConnector Association="ERP_MSCORPModel.FK__VehiculoE__IdOrd__288DEB75" ManuallyRouted="false" />
+        <AssociationConnector Association="ERP_MSCORPModel.fk_PruebaVeh" ManuallyRouted="false" />
+        <AssociationConnector Association="ERP_MSCORPModel.fk_SolOT" ManuallyRouted="false" />
+        <AssociationConnector Association="ERP_MSCORPModel.FK_VehiculoProcesoEstaciones_VehiculoEnProceso" ManuallyRouted="false" />
+        <AssociationConnector Association="ERP_MSCORPModel.fk_bitus" ManuallyRouted="false" />
+        <AssociationConnector Association="ERP_MSCORPModel.FK__ListaModu__IdSis__3AEC92D2" ManuallyRouted="false" />
+        <AssociationConnector Association="ERP_MSCORPModel.fk_PerLMo" ManuallyRouted="false" />
+        <AssociationConnector Association="ERP_MSCORPModel.FK__Notificac__IdNot__321755AF" ManuallyRouted="false" />
+        <AssociationConnector Association="ERP_MSCORPModel.FK__Notificac__IdUsu__2C201BE5" ManuallyRouted="false" />
+        <AssociationConnector Association="ERP_MSCORPModel.fk_PerTCu" ManuallyRouted="false" />
+        <AssociationConnector Association="ERP_MSCORPModel.FK__SistemaEm__IdSis__448B0BA5" ManuallyRouted="false" />
+        <AssociationConnector Association="ERP_MSCORPModel.fk_UsTC" ManuallyRouted="false" />
+      </Diagram>
+    </edmx:Diagrams>
+  </edmx:Designer>
+</edmx:Edmx>

@@ -1,0 +1,451 @@
+C:\Users\Mscorp\Desktop\CotizadorWeb.App\CotizadorWeb.App\bin\CotizadorWeb.App.dll.config
+C:\Users\Mscorp\Desktop\CotizadorWeb.App\CotizadorWeb.App\bin\CotizadorWeb.App.dll
+C:\Users\Mscorp\Desktop\CotizadorWeb.App\CotizadorWeb.App\bin\CotizadorWeb.App.pdb
+C:\Users\Mscorp\Desktop\CotizadorWeb.App\CotizadorWeb.App\bin\roslyn\csc.exe
+C:\Users\Mscorp\Desktop\CotizadorWeb.App\CotizadorWeb.App\bin\roslyn\csc.exe.config
+C:\Users\Mscorp\Desktop\CotizadorWeb.App\CotizadorWeb.App\bin\roslyn\csc.rsp
+C:\Users\Mscorp\Desktop\CotizadorWeb.App\CotizadorWeb.App\bin\roslyn\csi.exe
+C:\Users\Mscorp\Desktop\CotizadorWeb.App\CotizadorWeb.App\bin\roslyn\csi.exe.config
+C:\Users\Mscorp\Desktop\CotizadorWeb.App\CotizadorWeb.App\bin\roslyn\csi.rsp
+C:\Users\Mscorp\Desktop\CotizadorWeb.App\CotizadorWeb.App\bin\roslyn\Microsoft.Build.Tasks.CodeAnalysis.dll
+C:\Users\Mscorp\Desktop\CotizadorWeb.App\CotizadorWeb.App\bin\roslyn\Microsoft.CodeAnalysis.CSharp.dll
+C:\Users\Mscorp\Desktop\CotizadorWeb.App\CotizadorWeb.App\bin\roslyn\Microsoft.CodeAnalysis.CSharp.Scripting.dll
+C:\Users\Mscorp\Desktop\CotizadorWeb.App\CotizadorWeb.App\bin\roslyn\Microsoft.CodeAnalysis.dll
+C:\Users\Mscorp\Desktop\CotizadorWeb.App\CotizadorWeb.App\bin\roslyn\Microsoft.CodeAnalysis.Scripting.dll
+C:\Users\Mscorp\Desktop\CotizadorWeb.App\CotizadorWeb.App\bin\roslyn\Microsoft.CodeAnalysis.VisualBasic.dll
+C:\Users\Mscorp\Desktop\CotizadorWeb.App\CotizadorWeb.App\bin\roslyn\Microsoft.CSharp.Core.targets
+C:\Users\Mscorp\Desktop\CotizadorWeb.App\CotizadorWeb.App\bin\roslyn\Microsoft.DiaSymReader.Native.amd64.dll
+C:\Users\Mscorp\Desktop\CotizadorWeb.App\CotizadorWeb.App\bin\roslyn\Microsoft.DiaSymReader.Native.x86.dll
+C:\Users\Mscorp\Desktop\CotizadorWeb.App\CotizadorWeb.App\bin\roslyn\Microsoft.Managed.Core.targets
+C:\Users\Mscorp\Desktop\CotizadorWeb.App\CotizadorWeb.App\bin\roslyn\Microsoft.VisualBasic.Core.targets
+C:\Users\Mscorp\Desktop\CotizadorWeb.App\CotizadorWeb.App\bin\roslyn\Microsoft.Win32.Primitives.dll
+C:\Users\Mscorp\Desktop\CotizadorWeb.App\CotizadorWeb.App\bin\roslyn\System.AppContext.dll
+C:\Users\Mscorp\Desktop\CotizadorWeb.App\CotizadorWeb.App\bin\roslyn\System.Collections.Immutable.dll
+C:\Users\Mscorp\Desktop\CotizadorWeb.App\CotizadorWeb.App\bin\roslyn\System.Console.dll
+C:\Users\Mscorp\Desktop\CotizadorWeb.App\CotizadorWeb.App\bin\roslyn\System.Diagnostics.DiagnosticSource.dll
+C:\Users\Mscorp\Desktop\CotizadorWeb.App\CotizadorWeb.App\bin\roslyn\System.Diagnostics.FileVersionInfo.dll
+C:\Users\Mscorp\Desktop\CotizadorWeb.App\CotizadorWeb.App\bin\roslyn\System.Diagnostics.StackTrace.dll
+C:\Users\Mscorp\Desktop\CotizadorWeb.App\CotizadorWeb.App\bin\roslyn\System.Globalization.Calendars.dll
+C:\Users\Mscorp\Desktop\CotizadorWeb.App\CotizadorWeb.App\bin\roslyn\System.IO.Compression.dll
+C:\Users\Mscorp\Desktop\CotizadorWeb.App\CotizadorWeb.App\bin\roslyn\System.IO.Compression.ZipFile.dll
+C:\Users\Mscorp\Desktop\CotizadorWeb.App\CotizadorWeb.App\bin\roslyn\System.IO.FileSystem.dll
+C:\Users\Mscorp\Desktop\CotizadorWeb.App\CotizadorWeb.App\bin\roslyn\System.IO.FileSystem.Primitives.dll
+C:\Users\Mscorp\Desktop\CotizadorWeb.App\CotizadorWeb.App\bin\roslyn\System.Net.Http.dll
+C:\Users\Mscorp\Desktop\CotizadorWeb.App\CotizadorWeb.App\bin\roslyn\System.Net.Sockets.dll
+C:\Users\Mscorp\Desktop\CotizadorWeb.App\CotizadorWeb.App\bin\roslyn\System.Reflection.Metadata.dll
+C:\Users\Mscorp\Desktop\CotizadorWeb.App\CotizadorWeb.App\bin\roslyn\System.Runtime.InteropServices.RuntimeInformation.dll
+C:\Users\Mscorp\Desktop\CotizadorWeb.App\CotizadorWeb.App\bin\roslyn\System.Security.Cryptography.Algorithms.dll
+C:\Users\Mscorp\Desktop\CotizadorWeb.App\CotizadorWeb.App\bin\roslyn\System.Security.Cryptography.Encoding.dll
+C:\Users\Mscorp\Desktop\CotizadorWeb.App\CotizadorWeb.App\bin\roslyn\System.Security.Cryptography.Primitives.dll
+C:\Users\Mscorp\Desktop\CotizadorWeb.App\CotizadorWeb.App\bin\roslyn\System.Security.Cryptography.X509Certificates.dll
+C:\Users\Mscorp\Desktop\CotizadorWeb.App\CotizadorWeb.App\bin\roslyn\System.Text.Encoding.CodePages.dll
+C:\Users\Mscorp\Desktop\CotizadorWeb.App\CotizadorWeb.App\bin\roslyn\System.Threading.Tasks.Extensions.dll
+C:\Users\Mscorp\Desktop\CotizadorWeb.App\CotizadorWeb.App\bin\roslyn\System.ValueTuple.dll
+C:\Users\Mscorp\Desktop\CotizadorWeb.App\CotizadorWeb.App\bin\roslyn\System.Xml.ReaderWriter.dll
+C:\Users\Mscorp\Desktop\CotizadorWeb.App\CotizadorWeb.App\bin\roslyn\System.Xml.XmlDocument.dll
+C:\Users\Mscorp\Desktop\CotizadorWeb.App\CotizadorWeb.App\bin\roslyn\System.Xml.XPath.dll
+C:\Users\Mscorp\Desktop\CotizadorWeb.App\CotizadorWeb.App\bin\roslyn\System.Xml.XPath.XDocument.dll
+C:\Users\Mscorp\Desktop\CotizadorWeb.App\CotizadorWeb.App\bin\roslyn\vbc.exe
+C:\Users\Mscorp\Desktop\CotizadorWeb.App\CotizadorWeb.App\bin\roslyn\vbc.exe.config
+C:\Users\Mscorp\Desktop\CotizadorWeb.App\CotizadorWeb.App\bin\roslyn\vbc.rsp
+C:\Users\Mscorp\Desktop\CotizadorWeb.App\CotizadorWeb.App\bin\roslyn\VBCSCompiler.exe
+C:\Users\Mscorp\Desktop\CotizadorWeb.App\CotizadorWeb.App\bin\roslyn\VBCSCompiler.exe.config
+C:\Users\Mscorp\Desktop\CotizadorWeb.App\CotizadorWeb.App\bin\Antlr3.Runtime.dll
+C:\Users\Mscorp\Desktop\CotizadorWeb.App\CotizadorWeb.App\bin\CotizadorWeb.Infrastructure.dll
+C:\Users\Mscorp\Desktop\CotizadorWeb.App\CotizadorWeb.App\bin\CotizadorWeb.Services.dll
+C:\Users\Mscorp\Desktop\CotizadorWeb.App\CotizadorWeb.App\bin\Microsoft.CodeDom.Providers.DotNetCompilerPlatform.dll
+C:\Users\Mscorp\Desktop\CotizadorWeb.App\CotizadorWeb.App\bin\Microsoft.Web.Infrastructure.dll
+C:\Users\Mscorp\Desktop\CotizadorWeb.App\CotizadorWeb.App\bin\Newtonsoft.Json.dll
+C:\Users\Mscorp\Desktop\CotizadorWeb.App\CotizadorWeb.App\bin\System.Web.Helpers.dll
+C:\Users\Mscorp\Desktop\CotizadorWeb.App\CotizadorWeb.App\bin\System.Web.Mvc.dll
+C:\Users\Mscorp\Desktop\CotizadorWeb.App\CotizadorWeb.App\bin\System.Web.Optimization.dll
+C:\Users\Mscorp\Desktop\CotizadorWeb.App\CotizadorWeb.App\bin\System.Web.Razor.dll
+C:\Users\Mscorp\Desktop\CotizadorWeb.App\CotizadorWeb.App\bin\System.Web.WebPages.Deployment.dll
+C:\Users\Mscorp\Desktop\CotizadorWeb.App\CotizadorWeb.App\bin\System.Web.WebPages.dll
+C:\Users\Mscorp\Desktop\CotizadorWeb.App\CotizadorWeb.App\bin\System.Web.WebPages.Razor.dll
+C:\Users\Mscorp\Desktop\CotizadorWeb.App\CotizadorWeb.App\bin\WebGrease.dll
+C:\Users\Mscorp\Desktop\CotizadorWeb.App\CotizadorWeb.App\bin\CotizadorWeb.Domain.dll
+C:\Users\Mscorp\Desktop\CotizadorWeb.App\CotizadorWeb.App\bin\Ninject.dll
+C:\Users\Mscorp\Desktop\CotizadorWeb.App\CotizadorWeb.App\bin\FluentValidation.ValidatorAttribute.dll
+C:\Users\Mscorp\Desktop\CotizadorWeb.App\CotizadorWeb.App\bin\EntityFramework.dll
+C:\Users\Mscorp\Desktop\CotizadorWeb.App\CotizadorWeb.App\bin\FluentValidation.dll
+C:\Users\Mscorp\Desktop\CotizadorWeb.App\CotizadorWeb.App\bin\CotizadorWeb.Infrastructure.pdb
+C:\Users\Mscorp\Desktop\CotizadorWeb.App\CotizadorWeb.App\bin\CotizadorWeb.Infrastructure.dll.config
+C:\Users\Mscorp\Desktop\CotizadorWeb.App\CotizadorWeb.App\bin\CotizadorWeb.Services.pdb
+C:\Users\Mscorp\Desktop\CotizadorWeb.App\CotizadorWeb.App\bin\CotizadorWeb.Services.dll.config
+C:\Users\Mscorp\Desktop\CotizadorWeb.App\CotizadorWeb.App\bin\System.Web.Helpers.xml
+C:\Users\Mscorp\Desktop\CotizadorWeb.App\CotizadorWeb.App\bin\System.Web.Mvc.xml
+C:\Users\Mscorp\Desktop\CotizadorWeb.App\CotizadorWeb.App\bin\System.Web.Optimization.xml
+C:\Users\Mscorp\Desktop\CotizadorWeb.App\CotizadorWeb.App\bin\System.Web.Razor.xml
+C:\Users\Mscorp\Desktop\CotizadorWeb.App\CotizadorWeb.App\bin\System.Web.WebPages.xml
+C:\Users\Mscorp\Desktop\CotizadorWeb.App\CotizadorWeb.App\bin\System.Web.WebPages.Deployment.xml
+C:\Users\Mscorp\Desktop\CotizadorWeb.App\CotizadorWeb.App\bin\System.Web.WebPages.Razor.xml
+C:\Users\Mscorp\Desktop\CotizadorWeb.App\CotizadorWeb.App\bin\Newtonsoft.Json.xml
+C:\Users\Mscorp\Desktop\CotizadorWeb.App\CotizadorWeb.App\bin\Antlr3.Runtime.pdb
+C:\Users\Mscorp\Desktop\CotizadorWeb.App\CotizadorWeb.App\bin\Microsoft.CodeDom.Providers.DotNetCompilerPlatform.xml
+C:\Users\Mscorp\Desktop\CotizadorWeb.App\CotizadorWeb.App\bin\CotizadorWeb.Domain.pdb
+C:\Users\Mscorp\Desktop\CotizadorWeb.App\CotizadorWeb.App\bin\CotizadorWeb.Domain.dll.config
+C:\Users\Mscorp\Desktop\CotizadorWeb.App\CotizadorWeb.App\bin\Ninject.xml
+C:\Users\Mscorp\Desktop\CotizadorWeb.App\CotizadorWeb.App\bin\EntityFramework.xml
+C:\Users\Mscorp\Desktop\CotizadorWeb.App\CotizadorWeb.App\bin\FluentValidation.xml
+C:\Users\Mscorp\Desktop\CotizadorWeb.App\CotizadorWeb.App\bin\es\System.Web.Helpers.resources.dll
+C:\Users\Mscorp\Desktop\CotizadorWeb.App\CotizadorWeb.App\bin\es\System.Web.Mvc.resources.dll
+C:\Users\Mscorp\Desktop\CotizadorWeb.App\CotizadorWeb.App\bin\es\System.Web.Optimization.resources.dll
+C:\Users\Mscorp\Desktop\CotizadorWeb.App\CotizadorWeb.App\bin\es\System.Web.Razor.resources.dll
+C:\Users\Mscorp\Desktop\CotizadorWeb.App\CotizadorWeb.App\bin\es\System.Web.WebPages.resources.dll
+C:\Users\Mscorp\Desktop\CotizadorWeb.App\CotizadorWeb.App\bin\es\System.Web.WebPages.Deployment.resources.dll
+C:\Users\Mscorp\Desktop\CotizadorWeb.App\CotizadorWeb.App\bin\es\System.Web.WebPages.Razor.resources.dll
+C:\Users\Mscorp\Desktop\CotizadorWeb.App\CotizadorWeb.App\obj\Debug\CotizadorWeb.App.csprojAssemblyReference.cache
+C:\Users\Mscorp\Desktop\CotizadorWeb.App\CotizadorWeb.App\obj\Debug\CotizadorWeb.App.csproj.CopyComplete
+C:\Users\Mscorp\Desktop\CotizadorWeb.App\CotizadorWeb.App\obj\Debug\CotizadorWeb.App.dll
+C:\Users\Mscorp\Desktop\CotizadorWeb.App\CotizadorWeb.App\obj\Debug\CotizadorWeb.App.pdb
+C:\Users\Mscorp\Desktop\CotizadorWeb.App\CotizadorWeb.App\bin\EntityFramework.SqlServer.dll
+C:\Users\Mscorp\Desktop\CotizadorWeb.App\CotizadorWeb.App\bin\EntityFramework.SqlServer.xml
+C:\Users\Mscorp\Documents\GitHub\CotizadorWeb.App\CotizadorWeb.App\bin\roslyn\Microsoft.CodeAnalysis.CSharp.dll
+C:\Users\Mscorp\Documents\GitHub\CotizadorWeb.App\CotizadorWeb.App\bin\roslyn\Microsoft.CodeAnalysis.dll
+C:\Users\Mscorp\Documents\GitHub\CotizadorWeb.App\CotizadorWeb.App\bin\roslyn\Microsoft.CodeAnalysis.VisualBasic.dll
+C:\Users\Mscorp\Documents\GitHub\CotizadorWeb.App\CotizadorWeb.App\bin\roslyn\Microsoft.DiaSymReader.Native.amd64.dll
+C:\Users\Mscorp\Documents\GitHub\CotizadorWeb.App\CotizadorWeb.App\bin\roslyn\System.Collections.Immutable.dll
+C:\Users\Mscorp\Documents\GitHub\CotizadorWeb.App\CotizadorWeb.App\bin\roslyn\System.IO.FileSystem.dll
+C:\Users\Mscorp\Documents\GitHub\CotizadorWeb.App\CotizadorWeb.App\bin\roslyn\System.IO.FileSystem.Primitives.dll
+C:\Users\Mscorp\Documents\GitHub\CotizadorWeb.App\CotizadorWeb.App\bin\roslyn\System.Reflection.Metadata.dll
+C:\Users\Mscorp\Documents\GitHub\CotizadorWeb.App\CotizadorWeb.App\bin\roslyn\System.Security.Cryptography.Primitives.dll
+C:\Users\Mscorp\Documents\GitHub\CotizadorWeb.App\CotizadorWeb.App\bin\roslyn\System.ValueTuple.dll
+C:\Users\Mscorp\Documents\GitHub\CotizadorWeb.App\CotizadorWeb.App\bin\roslyn\VBCSCompiler.exe
+C:\Users\Mscorp\Documents\GitHub\CotizadorWeb.App\CotizadorWeb.App\bin\CotizadorWeb.App.dll.config
+C:\Users\Mscorp\Documents\GitHub\CotizadorWeb.App\CotizadorWeb.App\bin\CotizadorWeb.App.dll
+C:\Users\Mscorp\Documents\GitHub\CotizadorWeb.App\CotizadorWeb.App\bin\CotizadorWeb.App.pdb
+C:\Users\Mscorp\Documents\GitHub\CotizadorWeb.App\CotizadorWeb.App\bin\roslyn\csc.exe
+C:\Users\Mscorp\Documents\GitHub\CotizadorWeb.App\CotizadorWeb.App\bin\roslyn\csc.exe.config
+C:\Users\Mscorp\Documents\GitHub\CotizadorWeb.App\CotizadorWeb.App\bin\roslyn\csc.rsp
+C:\Users\Mscorp\Documents\GitHub\CotizadorWeb.App\CotizadorWeb.App\bin\roslyn\csi.exe
+C:\Users\Mscorp\Documents\GitHub\CotizadorWeb.App\CotizadorWeb.App\bin\roslyn\csi.exe.config
+C:\Users\Mscorp\Documents\GitHub\CotizadorWeb.App\CotizadorWeb.App\bin\roslyn\csi.rsp
+C:\Users\Mscorp\Documents\GitHub\CotizadorWeb.App\CotizadorWeb.App\bin\roslyn\Microsoft.Build.Tasks.CodeAnalysis.dll
+C:\Users\Mscorp\Documents\GitHub\CotizadorWeb.App\CotizadorWeb.App\bin\roslyn\Microsoft.CodeAnalysis.CSharp.Scripting.dll
+C:\Users\Mscorp\Documents\GitHub\CotizadorWeb.App\CotizadorWeb.App\bin\roslyn\Microsoft.CodeAnalysis.Scripting.dll
+C:\Users\Mscorp\Documents\GitHub\CotizadorWeb.App\CotizadorWeb.App\bin\roslyn\Microsoft.CSharp.Core.targets
+C:\Users\Mscorp\Documents\GitHub\CotizadorWeb.App\CotizadorWeb.App\bin\roslyn\Microsoft.DiaSymReader.Native.x86.dll
+C:\Users\Mscorp\Documents\GitHub\CotizadorWeb.App\CotizadorWeb.App\bin\roslyn\Microsoft.Managed.Core.targets
+C:\Users\Mscorp\Documents\GitHub\CotizadorWeb.App\CotizadorWeb.App\bin\roslyn\Microsoft.VisualBasic.Core.targets
+C:\Users\Mscorp\Documents\GitHub\CotizadorWeb.App\CotizadorWeb.App\bin\roslyn\Microsoft.Win32.Primitives.dll
+C:\Users\Mscorp\Documents\GitHub\CotizadorWeb.App\CotizadorWeb.App\bin\roslyn\System.AppContext.dll
+C:\Users\Mscorp\Documents\GitHub\CotizadorWeb.App\CotizadorWeb.App\bin\roslyn\System.Console.dll
+C:\Users\Mscorp\Documents\GitHub\CotizadorWeb.App\CotizadorWeb.App\bin\roslyn\System.Diagnostics.DiagnosticSource.dll
+C:\Users\Mscorp\Documents\GitHub\CotizadorWeb.App\CotizadorWeb.App\bin\roslyn\System.Diagnostics.FileVersionInfo.dll
+C:\Users\Mscorp\Documents\GitHub\CotizadorWeb.App\CotizadorWeb.App\bin\roslyn\System.Diagnostics.StackTrace.dll
+C:\Users\Mscorp\Documents\GitHub\CotizadorWeb.App\CotizadorWeb.App\bin\roslyn\System.Globalization.Calendars.dll
+C:\Users\Mscorp\Documents\GitHub\CotizadorWeb.App\CotizadorWeb.App\bin\roslyn\System.IO.Compression.dll
+C:\Users\Mscorp\Documents\GitHub\CotizadorWeb.App\CotizadorWeb.App\bin\roslyn\System.IO.Compression.ZipFile.dll
+C:\Users\Mscorp\Documents\GitHub\CotizadorWeb.App\CotizadorWeb.App\bin\roslyn\System.Net.Http.dll
+C:\Users\Mscorp\Documents\GitHub\CotizadorWeb.App\CotizadorWeb.App\bin\roslyn\System.Net.Sockets.dll
+C:\Users\Mscorp\Documents\GitHub\CotizadorWeb.App\CotizadorWeb.App\bin\roslyn\System.Runtime.InteropServices.RuntimeInformation.dll
+C:\Users\Mscorp\Documents\GitHub\CotizadorWeb.App\CotizadorWeb.App\bin\roslyn\System.Security.Cryptography.Algorithms.dll
+C:\Users\Mscorp\Documents\GitHub\CotizadorWeb.App\CotizadorWeb.App\bin\roslyn\System.Security.Cryptography.Encoding.dll
+C:\Users\Mscorp\Documents\GitHub\CotizadorWeb.App\CotizadorWeb.App\bin\roslyn\System.Security.Cryptography.X509Certificates.dll
+C:\Users\Mscorp\Documents\GitHub\CotizadorWeb.App\CotizadorWeb.App\bin\roslyn\System.Text.Encoding.CodePages.dll
+C:\Users\Mscorp\Documents\GitHub\CotizadorWeb.App\CotizadorWeb.App\bin\roslyn\System.Threading.Tasks.Extensions.dll
+C:\Users\Mscorp\Documents\GitHub\CotizadorWeb.App\CotizadorWeb.App\bin\roslyn\System.Xml.ReaderWriter.dll
+C:\Users\Mscorp\Documents\GitHub\CotizadorWeb.App\CotizadorWeb.App\bin\roslyn\System.Xml.XmlDocument.dll
+C:\Users\Mscorp\Documents\GitHub\CotizadorWeb.App\CotizadorWeb.App\bin\roslyn\System.Xml.XPath.dll
+C:\Users\Mscorp\Documents\GitHub\CotizadorWeb.App\CotizadorWeb.App\bin\roslyn\System.Xml.XPath.XDocument.dll
+C:\Users\Mscorp\Documents\GitHub\CotizadorWeb.App\CotizadorWeb.App\bin\roslyn\vbc.exe
+C:\Users\Mscorp\Documents\GitHub\CotizadorWeb.App\CotizadorWeb.App\bin\roslyn\vbc.exe.config
+C:\Users\Mscorp\Documents\GitHub\CotizadorWeb.App\CotizadorWeb.App\bin\roslyn\vbc.rsp
+C:\Users\Mscorp\Documents\GitHub\CotizadorWeb.App\CotizadorWeb.App\bin\roslyn\VBCSCompiler.exe.config
+C:\Users\Mscorp\Documents\GitHub\CotizadorWeb.App\CotizadorWeb.App\bin\Antlr3.Runtime.dll
+C:\Users\Mscorp\Documents\GitHub\CotizadorWeb.App\CotizadorWeb.App\bin\CotizadorWeb.Infrastructure.dll
+C:\Users\Mscorp\Documents\GitHub\CotizadorWeb.App\CotizadorWeb.App\bin\CotizadorWeb.Services.dll
+C:\Users\Mscorp\Documents\GitHub\CotizadorWeb.App\CotizadorWeb.App\bin\EntityFramework.dll
+C:\Users\Mscorp\Documents\GitHub\CotizadorWeb.App\CotizadorWeb.App\bin\EntityFramework.SqlServer.dll
+C:\Users\Mscorp\Documents\GitHub\CotizadorWeb.App\CotizadorWeb.App\bin\Microsoft.AspNet.SignalR.Core.dll
+C:\Users\Mscorp\Documents\GitHub\CotizadorWeb.App\CotizadorWeb.App\bin\Microsoft.AspNet.SignalR.SystemWeb.dll
+C:\Users\Mscorp\Documents\GitHub\CotizadorWeb.App\CotizadorWeb.App\bin\Microsoft.CodeDom.Providers.DotNetCompilerPlatform.dll
+C:\Users\Mscorp\Documents\GitHub\CotizadorWeb.App\CotizadorWeb.App\bin\Microsoft.Owin.dll
+C:\Users\Mscorp\Documents\GitHub\CotizadorWeb.App\CotizadorWeb.App\bin\Microsoft.Owin.Host.SystemWeb.dll
+C:\Users\Mscorp\Documents\GitHub\CotizadorWeb.App\CotizadorWeb.App\bin\Microsoft.Owin.Security.dll
+C:\Users\Mscorp\Documents\GitHub\CotizadorWeb.App\CotizadorWeb.App\bin\Microsoft.Web.Infrastructure.dll
+C:\Users\Mscorp\Documents\GitHub\CotizadorWeb.App\CotizadorWeb.App\bin\Newtonsoft.Json.dll
+C:\Users\Mscorp\Documents\GitHub\CotizadorWeb.App\CotizadorWeb.App\bin\Owin.dll
+C:\Users\Mscorp\Documents\GitHub\CotizadorWeb.App\CotizadorWeb.App\bin\System.Web.Helpers.dll
+C:\Users\Mscorp\Documents\GitHub\CotizadorWeb.App\CotizadorWeb.App\bin\System.Web.Mvc.dll
+C:\Users\Mscorp\Documents\GitHub\CotizadorWeb.App\CotizadorWeb.App\bin\System.Web.Optimization.dll
+C:\Users\Mscorp\Documents\GitHub\CotizadorWeb.App\CotizadorWeb.App\bin\System.Web.Razor.dll
+C:\Users\Mscorp\Documents\GitHub\CotizadorWeb.App\CotizadorWeb.App\bin\System.Web.WebPages.Deployment.dll
+C:\Users\Mscorp\Documents\GitHub\CotizadorWeb.App\CotizadorWeb.App\bin\System.Web.WebPages.dll
+C:\Users\Mscorp\Documents\GitHub\CotizadorWeb.App\CotizadorWeb.App\bin\System.Web.WebPages.Razor.dll
+C:\Users\Mscorp\Documents\GitHub\CotizadorWeb.App\CotizadorWeb.App\bin\WebGrease.dll
+C:\Users\Mscorp\Documents\GitHub\CotizadorWeb.App\CotizadorWeb.App\bin\CotizadorWeb.Domain.dll
+C:\Users\Mscorp\Documents\GitHub\CotizadorWeb.App\CotizadorWeb.App\bin\Ninject.dll
+C:\Users\Mscorp\Documents\GitHub\CotizadorWeb.App\CotizadorWeb.App\bin\FluentValidation.ValidatorAttribute.dll
+C:\Users\Mscorp\Documents\GitHub\CotizadorWeb.App\CotizadorWeb.App\bin\FluentValidation.dll
+C:\Users\Mscorp\Documents\GitHub\CotizadorWeb.App\CotizadorWeb.App\bin\CotizadorWeb.Infrastructure.pdb
+C:\Users\Mscorp\Documents\GitHub\CotizadorWeb.App\CotizadorWeb.App\bin\CotizadorWeb.Infrastructure.dll.config
+C:\Users\Mscorp\Documents\GitHub\CotizadorWeb.App\CotizadorWeb.App\bin\CotizadorWeb.Services.pdb
+C:\Users\Mscorp\Documents\GitHub\CotizadorWeb.App\CotizadorWeb.App\bin\CotizadorWeb.Services.dll.config
+C:\Users\Mscorp\Documents\GitHub\CotizadorWeb.App\CotizadorWeb.App\bin\EntityFramework.xml
+C:\Users\Mscorp\Documents\GitHub\CotizadorWeb.App\CotizadorWeb.App\bin\EntityFramework.SqlServer.xml
+C:\Users\Mscorp\Documents\GitHub\CotizadorWeb.App\CotizadorWeb.App\bin\Microsoft.AspNet.SignalR.Core.pdb
+C:\Users\Mscorp\Documents\GitHub\CotizadorWeb.App\CotizadorWeb.App\bin\Microsoft.AspNet.SignalR.Core.xml
+C:\Users\Mscorp\Documents\GitHub\CotizadorWeb.App\CotizadorWeb.App\bin\Microsoft.AspNet.SignalR.SystemWeb.pdb
+C:\Users\Mscorp\Documents\GitHub\CotizadorWeb.App\CotizadorWeb.App\bin\Microsoft.AspNet.SignalR.SystemWeb.xml
+C:\Users\Mscorp\Documents\GitHub\CotizadorWeb.App\CotizadorWeb.App\bin\Microsoft.Owin.xml
+C:\Users\Mscorp\Documents\GitHub\CotizadorWeb.App\CotizadorWeb.App\bin\Microsoft.Owin.Host.SystemWeb.xml
+C:\Users\Mscorp\Documents\GitHub\CotizadorWeb.App\CotizadorWeb.App\bin\Microsoft.Owin.Security.xml
+C:\Users\Mscorp\Documents\GitHub\CotizadorWeb.App\CotizadorWeb.App\bin\System.Web.Helpers.xml
+C:\Users\Mscorp\Documents\GitHub\CotizadorWeb.App\CotizadorWeb.App\bin\System.Web.Mvc.xml
+C:\Users\Mscorp\Documents\GitHub\CotizadorWeb.App\CotizadorWeb.App\bin\System.Web.Optimization.xml
+C:\Users\Mscorp\Documents\GitHub\CotizadorWeb.App\CotizadorWeb.App\bin\System.Web.Razor.xml
+C:\Users\Mscorp\Documents\GitHub\CotizadorWeb.App\CotizadorWeb.App\bin\System.Web.WebPages.xml
+C:\Users\Mscorp\Documents\GitHub\CotizadorWeb.App\CotizadorWeb.App\bin\System.Web.WebPages.Deployment.xml
+C:\Users\Mscorp\Documents\GitHub\CotizadorWeb.App\CotizadorWeb.App\bin\System.Web.WebPages.Razor.xml
+C:\Users\Mscorp\Documents\GitHub\CotizadorWeb.App\CotizadorWeb.App\bin\Newtonsoft.Json.xml
+C:\Users\Mscorp\Documents\GitHub\CotizadorWeb.App\CotizadorWeb.App\bin\Antlr3.Runtime.pdb
+C:\Users\Mscorp\Documents\GitHub\CotizadorWeb.App\CotizadorWeb.App\bin\Microsoft.CodeDom.Providers.DotNetCompilerPlatform.xml
+C:\Users\Mscorp\Documents\GitHub\CotizadorWeb.App\CotizadorWeb.App\bin\CotizadorWeb.Domain.pdb
+C:\Users\Mscorp\Documents\GitHub\CotizadorWeb.App\CotizadorWeb.App\bin\CotizadorWeb.Domain.dll.config
+C:\Users\Mscorp\Documents\GitHub\CotizadorWeb.App\CotizadorWeb.App\bin\Ninject.xml
+C:\Users\Mscorp\Documents\GitHub\CotizadorWeb.App\CotizadorWeb.App\bin\FluentValidation.xml
+C:\Users\Mscorp\Documents\GitHub\CotizadorWeb.App\CotizadorWeb.App\bin\es\System.Web.Helpers.resources.dll
+C:\Users\Mscorp\Documents\GitHub\CotizadorWeb.App\CotizadorWeb.App\bin\es\System.Web.Mvc.resources.dll
+C:\Users\Mscorp\Documents\GitHub\CotizadorWeb.App\CotizadorWeb.App\bin\es\System.Web.Optimization.resources.dll
+C:\Users\Mscorp\Documents\GitHub\CotizadorWeb.App\CotizadorWeb.App\bin\es\System.Web.Razor.resources.dll
+C:\Users\Mscorp\Documents\GitHub\CotizadorWeb.App\CotizadorWeb.App\bin\es\System.Web.WebPages.resources.dll
+C:\Users\Mscorp\Documents\GitHub\CotizadorWeb.App\CotizadorWeb.App\bin\es\System.Web.WebPages.Deployment.resources.dll
+C:\Users\Mscorp\Documents\GitHub\CotizadorWeb.App\CotizadorWeb.App\bin\es\System.Web.WebPages.Razor.resources.dll
+C:\Users\Mscorp\Documents\GitHub\CotizadorWeb.App\CotizadorWeb.App\obj\Debug\CotizadorWeb.App.csprojAssemblyReference.cache
+C:\Users\Mscorp\Documents\GitHub\CotizadorWeb.App\CotizadorWeb.App\obj\Debug\CotizadorWeb.App.csproj.CopyComplete
+C:\Users\Mscorp\Documents\GitHub\CotizadorWeb.App\CotizadorWeb.App\obj\Debug\CotizadorWeb.App.dll
+C:\Users\Mscorp\Documents\GitHub\CotizadorWeb.App\CotizadorWeb.App\obj\Debug\CotizadorWeb.App.pdb
+C:\Users\Mscorp\Documents\GitHub\SIG-PRO-COTIZADOR-WEB\CotizadorWeb.App\CotizadorWeb.App\bin\CotizadorWeb.App.dll.config
+C:\Users\Mscorp\Documents\GitHub\SIG-PRO-COTIZADOR-WEB\CotizadorWeb.App\CotizadorWeb.App\bin\CotizadorWeb.App.dll
+C:\Users\Mscorp\Documents\GitHub\SIG-PRO-COTIZADOR-WEB\CotizadorWeb.App\CotizadorWeb.App\bin\CotizadorWeb.App.pdb
+C:\Users\Mscorp\Documents\GitHub\SIG-PRO-COTIZADOR-WEB\CotizadorWeb.App\CotizadorWeb.App\bin\roslyn\csc.exe
+C:\Users\Mscorp\Documents\GitHub\SIG-PRO-COTIZADOR-WEB\CotizadorWeb.App\CotizadorWeb.App\bin\roslyn\csc.exe.config
+C:\Users\Mscorp\Documents\GitHub\SIG-PRO-COTIZADOR-WEB\CotizadorWeb.App\CotizadorWeb.App\bin\roslyn\csc.rsp
+C:\Users\Mscorp\Documents\GitHub\SIG-PRO-COTIZADOR-WEB\CotizadorWeb.App\CotizadorWeb.App\bin\roslyn\csi.exe
+C:\Users\Mscorp\Documents\GitHub\SIG-PRO-COTIZADOR-WEB\CotizadorWeb.App\CotizadorWeb.App\bin\roslyn\csi.exe.config
+C:\Users\Mscorp\Documents\GitHub\SIG-PRO-COTIZADOR-WEB\CotizadorWeb.App\CotizadorWeb.App\bin\roslyn\csi.rsp
+C:\Users\Mscorp\Documents\GitHub\SIG-PRO-COTIZADOR-WEB\CotizadorWeb.App\CotizadorWeb.App\bin\roslyn\Microsoft.Build.Tasks.CodeAnalysis.dll
+C:\Users\Mscorp\Documents\GitHub\SIG-PRO-COTIZADOR-WEB\CotizadorWeb.App\CotizadorWeb.App\bin\roslyn\Microsoft.CodeAnalysis.CSharp.dll
+C:\Users\Mscorp\Documents\GitHub\SIG-PRO-COTIZADOR-WEB\CotizadorWeb.App\CotizadorWeb.App\bin\roslyn\Microsoft.CodeAnalysis.CSharp.Scripting.dll
+C:\Users\Mscorp\Documents\GitHub\SIG-PRO-COTIZADOR-WEB\CotizadorWeb.App\CotizadorWeb.App\bin\roslyn\Microsoft.CodeAnalysis.dll
+C:\Users\Mscorp\Documents\GitHub\SIG-PRO-COTIZADOR-WEB\CotizadorWeb.App\CotizadorWeb.App\bin\roslyn\Microsoft.CodeAnalysis.Scripting.dll
+C:\Users\Mscorp\Documents\GitHub\SIG-PRO-COTIZADOR-WEB\CotizadorWeb.App\CotizadorWeb.App\bin\roslyn\Microsoft.CodeAnalysis.VisualBasic.dll
+C:\Users\Mscorp\Documents\GitHub\SIG-PRO-COTIZADOR-WEB\CotizadorWeb.App\CotizadorWeb.App\bin\roslyn\Microsoft.CSharp.Core.targets
+C:\Users\Mscorp\Documents\GitHub\SIG-PRO-COTIZADOR-WEB\CotizadorWeb.App\CotizadorWeb.App\bin\roslyn\Microsoft.DiaSymReader.Native.amd64.dll
+C:\Users\Mscorp\Documents\GitHub\SIG-PRO-COTIZADOR-WEB\CotizadorWeb.App\CotizadorWeb.App\bin\roslyn\Microsoft.DiaSymReader.Native.x86.dll
+C:\Users\Mscorp\Documents\GitHub\SIG-PRO-COTIZADOR-WEB\CotizadorWeb.App\CotizadorWeb.App\bin\roslyn\Microsoft.Managed.Core.targets
+C:\Users\Mscorp\Documents\GitHub\SIG-PRO-COTIZADOR-WEB\CotizadorWeb.App\CotizadorWeb.App\bin\roslyn\Microsoft.VisualBasic.Core.targets
+C:\Users\Mscorp\Documents\GitHub\SIG-PRO-COTIZADOR-WEB\CotizadorWeb.App\CotizadorWeb.App\bin\roslyn\Microsoft.Win32.Primitives.dll
+C:\Users\Mscorp\Documents\GitHub\SIG-PRO-COTIZADOR-WEB\CotizadorWeb.App\CotizadorWeb.App\bin\roslyn\System.AppContext.dll
+C:\Users\Mscorp\Documents\GitHub\SIG-PRO-COTIZADOR-WEB\CotizadorWeb.App\CotizadorWeb.App\bin\roslyn\System.Collections.Immutable.dll
+C:\Users\Mscorp\Documents\GitHub\SIG-PRO-COTIZADOR-WEB\CotizadorWeb.App\CotizadorWeb.App\bin\roslyn\System.Console.dll
+C:\Users\Mscorp\Documents\GitHub\SIG-PRO-COTIZADOR-WEB\CotizadorWeb.App\CotizadorWeb.App\bin\roslyn\System.Diagnostics.DiagnosticSource.dll
+C:\Users\Mscorp\Documents\GitHub\SIG-PRO-COTIZADOR-WEB\CotizadorWeb.App\CotizadorWeb.App\bin\roslyn\System.Diagnostics.FileVersionInfo.dll
+C:\Users\Mscorp\Documents\GitHub\SIG-PRO-COTIZADOR-WEB\CotizadorWeb.App\CotizadorWeb.App\bin\roslyn\System.Diagnostics.StackTrace.dll
+C:\Users\Mscorp\Documents\GitHub\SIG-PRO-COTIZADOR-WEB\CotizadorWeb.App\CotizadorWeb.App\bin\roslyn\System.Globalization.Calendars.dll
+C:\Users\Mscorp\Documents\GitHub\SIG-PRO-COTIZADOR-WEB\CotizadorWeb.App\CotizadorWeb.App\bin\roslyn\System.IO.Compression.dll
+C:\Users\Mscorp\Documents\GitHub\SIG-PRO-COTIZADOR-WEB\CotizadorWeb.App\CotizadorWeb.App\bin\roslyn\System.IO.Compression.ZipFile.dll
+C:\Users\Mscorp\Documents\GitHub\SIG-PRO-COTIZADOR-WEB\CotizadorWeb.App\CotizadorWeb.App\bin\roslyn\System.IO.FileSystem.dll
+C:\Users\Mscorp\Documents\GitHub\SIG-PRO-COTIZADOR-WEB\CotizadorWeb.App\CotizadorWeb.App\bin\roslyn\System.IO.FileSystem.Primitives.dll
+C:\Users\Mscorp\Documents\GitHub\SIG-PRO-COTIZADOR-WEB\CotizadorWeb.App\CotizadorWeb.App\bin\roslyn\System.Net.Http.dll
+C:\Users\Mscorp\Documents\GitHub\SIG-PRO-COTIZADOR-WEB\CotizadorWeb.App\CotizadorWeb.App\bin\roslyn\System.Net.Sockets.dll
+C:\Users\Mscorp\Documents\GitHub\SIG-PRO-COTIZADOR-WEB\CotizadorWeb.App\CotizadorWeb.App\bin\roslyn\System.Reflection.Metadata.dll
+C:\Users\Mscorp\Documents\GitHub\SIG-PRO-COTIZADOR-WEB\CotizadorWeb.App\CotizadorWeb.App\bin\roslyn\System.Runtime.InteropServices.RuntimeInformation.dll
+C:\Users\Mscorp\Documents\GitHub\SIG-PRO-COTIZADOR-WEB\CotizadorWeb.App\CotizadorWeb.App\bin\roslyn\System.Security.Cryptography.Algorithms.dll
+C:\Users\Mscorp\Documents\GitHub\SIG-PRO-COTIZADOR-WEB\CotizadorWeb.App\CotizadorWeb.App\bin\roslyn\System.Security.Cryptography.Encoding.dll
+C:\Users\Mscorp\Documents\GitHub\SIG-PRO-COTIZADOR-WEB\CotizadorWeb.App\CotizadorWeb.App\bin\roslyn\System.Security.Cryptography.Primitives.dll
+C:\Users\Mscorp\Documents\GitHub\SIG-PRO-COTIZADOR-WEB\CotizadorWeb.App\CotizadorWeb.App\bin\roslyn\System.Security.Cryptography.X509Certificates.dll
+C:\Users\Mscorp\Documents\GitHub\SIG-PRO-COTIZADOR-WEB\CotizadorWeb.App\CotizadorWeb.App\bin\roslyn\System.Text.Encoding.CodePages.dll
+C:\Users\Mscorp\Documents\GitHub\SIG-PRO-COTIZADOR-WEB\CotizadorWeb.App\CotizadorWeb.App\bin\roslyn\System.Threading.Tasks.Extensions.dll
+C:\Users\Mscorp\Documents\GitHub\SIG-PRO-COTIZADOR-WEB\CotizadorWeb.App\CotizadorWeb.App\bin\roslyn\System.ValueTuple.dll
+C:\Users\Mscorp\Documents\GitHub\SIG-PRO-COTIZADOR-WEB\CotizadorWeb.App\CotizadorWeb.App\bin\roslyn\System.Xml.ReaderWriter.dll
+C:\Users\Mscorp\Documents\GitHub\SIG-PRO-COTIZADOR-WEB\CotizadorWeb.App\CotizadorWeb.App\bin\roslyn\System.Xml.XmlDocument.dll
+C:\Users\Mscorp\Documents\GitHub\SIG-PRO-COTIZADOR-WEB\CotizadorWeb.App\CotizadorWeb.App\bin\roslyn\System.Xml.XPath.dll
+C:\Users\Mscorp\Documents\GitHub\SIG-PRO-COTIZADOR-WEB\CotizadorWeb.App\CotizadorWeb.App\bin\roslyn\System.Xml.XPath.XDocument.dll
+C:\Users\Mscorp\Documents\GitHub\SIG-PRO-COTIZADOR-WEB\CotizadorWeb.App\CotizadorWeb.App\bin\roslyn\vbc.exe
+C:\Users\Mscorp\Documents\GitHub\SIG-PRO-COTIZADOR-WEB\CotizadorWeb.App\CotizadorWeb.App\bin\roslyn\vbc.exe.config
+C:\Users\Mscorp\Documents\GitHub\SIG-PRO-COTIZADOR-WEB\CotizadorWeb.App\CotizadorWeb.App\bin\roslyn\vbc.rsp
+C:\Users\Mscorp\Documents\GitHub\SIG-PRO-COTIZADOR-WEB\CotizadorWeb.App\CotizadorWeb.App\bin\roslyn\VBCSCompiler.exe
+C:\Users\Mscorp\Documents\GitHub\SIG-PRO-COTIZADOR-WEB\CotizadorWeb.App\CotizadorWeb.App\bin\roslyn\VBCSCompiler.exe.config
+C:\Users\Mscorp\Documents\GitHub\SIG-PRO-COTIZADOR-WEB\CotizadorWeb.App\CotizadorWeb.App\bin\Antlr3.Runtime.dll
+C:\Users\Mscorp\Documents\GitHub\SIG-PRO-COTIZADOR-WEB\CotizadorWeb.App\CotizadorWeb.App\bin\CotizadorWeb.Infrastructure.dll
+C:\Users\Mscorp\Documents\GitHub\SIG-PRO-COTIZADOR-WEB\CotizadorWeb.App\CotizadorWeb.App\bin\CotizadorWeb.Services.dll
+C:\Users\Mscorp\Documents\GitHub\SIG-PRO-COTIZADOR-WEB\CotizadorWeb.App\CotizadorWeb.App\bin\EntityFramework.dll
+C:\Users\Mscorp\Documents\GitHub\SIG-PRO-COTIZADOR-WEB\CotizadorWeb.App\CotizadorWeb.App\bin\EntityFramework.SqlServer.dll
+C:\Users\Mscorp\Documents\GitHub\SIG-PRO-COTIZADOR-WEB\CotizadorWeb.App\CotizadorWeb.App\bin\Microsoft.AspNet.SignalR.Core.dll
+C:\Users\Mscorp\Documents\GitHub\SIG-PRO-COTIZADOR-WEB\CotizadorWeb.App\CotizadorWeb.App\bin\Microsoft.AspNet.SignalR.SystemWeb.dll
+C:\Users\Mscorp\Documents\GitHub\SIG-PRO-COTIZADOR-WEB\CotizadorWeb.App\CotizadorWeb.App\bin\Microsoft.CodeDom.Providers.DotNetCompilerPlatform.dll
+C:\Users\Mscorp\Documents\GitHub\SIG-PRO-COTIZADOR-WEB\CotizadorWeb.App\CotizadorWeb.App\bin\Microsoft.Owin.dll
+C:\Users\Mscorp\Documents\GitHub\SIG-PRO-COTIZADOR-WEB\CotizadorWeb.App\CotizadorWeb.App\bin\Microsoft.Owin.Host.SystemWeb.dll
+C:\Users\Mscorp\Documents\GitHub\SIG-PRO-COTIZADOR-WEB\CotizadorWeb.App\CotizadorWeb.App\bin\Microsoft.Owin.Security.dll
+C:\Users\Mscorp\Documents\GitHub\SIG-PRO-COTIZADOR-WEB\CotizadorWeb.App\CotizadorWeb.App\bin\Microsoft.Web.Infrastructure.dll
+C:\Users\Mscorp\Documents\GitHub\SIG-PRO-COTIZADOR-WEB\CotizadorWeb.App\CotizadorWeb.App\bin\Newtonsoft.Json.dll
+C:\Users\Mscorp\Documents\GitHub\SIG-PRO-COTIZADOR-WEB\CotizadorWeb.App\CotizadorWeb.App\bin\Owin.dll
+C:\Users\Mscorp\Documents\GitHub\SIG-PRO-COTIZADOR-WEB\CotizadorWeb.App\CotizadorWeb.App\bin\System.Web.Helpers.dll
+C:\Users\Mscorp\Documents\GitHub\SIG-PRO-COTIZADOR-WEB\CotizadorWeb.App\CotizadorWeb.App\bin\System.Web.Mvc.dll
+C:\Users\Mscorp\Documents\GitHub\SIG-PRO-COTIZADOR-WEB\CotizadorWeb.App\CotizadorWeb.App\bin\System.Web.Optimization.dll
+C:\Users\Mscorp\Documents\GitHub\SIG-PRO-COTIZADOR-WEB\CotizadorWeb.App\CotizadorWeb.App\bin\System.Web.Razor.dll
+C:\Users\Mscorp\Documents\GitHub\SIG-PRO-COTIZADOR-WEB\CotizadorWeb.App\CotizadorWeb.App\bin\System.Web.WebPages.Deployment.dll
+C:\Users\Mscorp\Documents\GitHub\SIG-PRO-COTIZADOR-WEB\CotizadorWeb.App\CotizadorWeb.App\bin\System.Web.WebPages.dll
+C:\Users\Mscorp\Documents\GitHub\SIG-PRO-COTIZADOR-WEB\CotizadorWeb.App\CotizadorWeb.App\bin\System.Web.WebPages.Razor.dll
+C:\Users\Mscorp\Documents\GitHub\SIG-PRO-COTIZADOR-WEB\CotizadorWeb.App\CotizadorWeb.App\bin\WebGrease.dll
+C:\Users\Mscorp\Documents\GitHub\SIG-PRO-COTIZADOR-WEB\CotizadorWeb.App\CotizadorWeb.App\bin\CotizadorWeb.Domain.dll
+C:\Users\Mscorp\Documents\GitHub\SIG-PRO-COTIZADOR-WEB\CotizadorWeb.App\CotizadorWeb.App\bin\Ninject.dll
+C:\Users\Mscorp\Documents\GitHub\SIG-PRO-COTIZADOR-WEB\CotizadorWeb.App\CotizadorWeb.App\bin\FluentValidation.ValidatorAttribute.dll
+C:\Users\Mscorp\Documents\GitHub\SIG-PRO-COTIZADOR-WEB\CotizadorWeb.App\CotizadorWeb.App\bin\FluentValidation.dll
+C:\Users\Mscorp\Documents\GitHub\SIG-PRO-COTIZADOR-WEB\CotizadorWeb.App\CotizadorWeb.App\bin\CotizadorWeb.Infrastructure.pdb
+C:\Users\Mscorp\Documents\GitHub\SIG-PRO-COTIZADOR-WEB\CotizadorWeb.App\CotizadorWeb.App\bin\CotizadorWeb.Infrastructure.dll.config
+C:\Users\Mscorp\Documents\GitHub\SIG-PRO-COTIZADOR-WEB\CotizadorWeb.App\CotizadorWeb.App\bin\CotizadorWeb.Services.pdb
+C:\Users\Mscorp\Documents\GitHub\SIG-PRO-COTIZADOR-WEB\CotizadorWeb.App\CotizadorWeb.App\bin\CotizadorWeb.Services.dll.config
+C:\Users\Mscorp\Documents\GitHub\SIG-PRO-COTIZADOR-WEB\CotizadorWeb.App\CotizadorWeb.App\bin\EntityFramework.xml
+C:\Users\Mscorp\Documents\GitHub\SIG-PRO-COTIZADOR-WEB\CotizadorWeb.App\CotizadorWeb.App\bin\EntityFramework.SqlServer.xml
+C:\Users\Mscorp\Documents\GitHub\SIG-PRO-COTIZADOR-WEB\CotizadorWeb.App\CotizadorWeb.App\bin\Microsoft.AspNet.SignalR.Core.pdb
+C:\Users\Mscorp\Documents\GitHub\SIG-PRO-COTIZADOR-WEB\CotizadorWeb.App\CotizadorWeb.App\bin\Microsoft.AspNet.SignalR.Core.xml
+C:\Users\Mscorp\Documents\GitHub\SIG-PRO-COTIZADOR-WEB\CotizadorWeb.App\CotizadorWeb.App\bin\Microsoft.AspNet.SignalR.SystemWeb.pdb
+C:\Users\Mscorp\Documents\GitHub\SIG-PRO-COTIZADOR-WEB\CotizadorWeb.App\CotizadorWeb.App\bin\Microsoft.AspNet.SignalR.SystemWeb.xml
+C:\Users\Mscorp\Documents\GitHub\SIG-PRO-COTIZADOR-WEB\CotizadorWeb.App\CotizadorWeb.App\bin\Microsoft.Owin.xml
+C:\Users\Mscorp\Documents\GitHub\SIG-PRO-COTIZADOR-WEB\CotizadorWeb.App\CotizadorWeb.App\bin\Microsoft.Owin.Host.SystemWeb.xml
+C:\Users\Mscorp\Documents\GitHub\SIG-PRO-COTIZADOR-WEB\CotizadorWeb.App\CotizadorWeb.App\bin\Microsoft.Owin.Security.xml
+C:\Users\Mscorp\Documents\GitHub\SIG-PRO-COTIZADOR-WEB\CotizadorWeb.App\CotizadorWeb.App\bin\System.Web.Helpers.xml
+C:\Users\Mscorp\Documents\GitHub\SIG-PRO-COTIZADOR-WEB\CotizadorWeb.App\CotizadorWeb.App\bin\System.Web.Mvc.xml
+C:\Users\Mscorp\Documents\GitHub\SIG-PRO-COTIZADOR-WEB\CotizadorWeb.App\CotizadorWeb.App\bin\System.Web.Optimization.xml
+C:\Users\Mscorp\Documents\GitHub\SIG-PRO-COTIZADOR-WEB\CotizadorWeb.App\CotizadorWeb.App\bin\System.Web.Razor.xml
+C:\Users\Mscorp\Documents\GitHub\SIG-PRO-COTIZADOR-WEB\CotizadorWeb.App\CotizadorWeb.App\bin\System.Web.WebPages.xml
+C:\Users\Mscorp\Documents\GitHub\SIG-PRO-COTIZADOR-WEB\CotizadorWeb.App\CotizadorWeb.App\bin\System.Web.WebPages.Deployment.xml
+C:\Users\Mscorp\Documents\GitHub\SIG-PRO-COTIZADOR-WEB\CotizadorWeb.App\CotizadorWeb.App\bin\System.Web.WebPages.Razor.xml
+C:\Users\Mscorp\Documents\GitHub\SIG-PRO-COTIZADOR-WEB\CotizadorWeb.App\CotizadorWeb.App\bin\Newtonsoft.Json.xml
+C:\Users\Mscorp\Documents\GitHub\SIG-PRO-COTIZADOR-WEB\CotizadorWeb.App\CotizadorWeb.App\bin\Antlr3.Runtime.pdb
+C:\Users\Mscorp\Documents\GitHub\SIG-PRO-COTIZADOR-WEB\CotizadorWeb.App\CotizadorWeb.App\bin\Microsoft.CodeDom.Providers.DotNetCompilerPlatform.xml
+C:\Users\Mscorp\Documents\GitHub\SIG-PRO-COTIZADOR-WEB\CotizadorWeb.App\CotizadorWeb.App\bin\CotizadorWeb.Domain.pdb
+C:\Users\Mscorp\Documents\GitHub\SIG-PRO-COTIZADOR-WEB\CotizadorWeb.App\CotizadorWeb.App\bin\CotizadorWeb.Domain.dll.config
+C:\Users\Mscorp\Documents\GitHub\SIG-PRO-COTIZADOR-WEB\CotizadorWeb.App\CotizadorWeb.App\bin\Ninject.xml
+C:\Users\Mscorp\Documents\GitHub\SIG-PRO-COTIZADOR-WEB\CotizadorWeb.App\CotizadorWeb.App\bin\FluentValidation.xml
+C:\Users\Mscorp\Documents\GitHub\SIG-PRO-COTIZADOR-WEB\CotizadorWeb.App\CotizadorWeb.App\bin\es\System.Web.Helpers.resources.dll
+C:\Users\Mscorp\Documents\GitHub\SIG-PRO-COTIZADOR-WEB\CotizadorWeb.App\CotizadorWeb.App\bin\es\System.Web.Mvc.resources.dll
+C:\Users\Mscorp\Documents\GitHub\SIG-PRO-COTIZADOR-WEB\CotizadorWeb.App\CotizadorWeb.App\bin\es\System.Web.Optimization.resources.dll
+C:\Users\Mscorp\Documents\GitHub\SIG-PRO-COTIZADOR-WEB\CotizadorWeb.App\CotizadorWeb.App\bin\es\System.Web.Razor.resources.dll
+C:\Users\Mscorp\Documents\GitHub\SIG-PRO-COTIZADOR-WEB\CotizadorWeb.App\CotizadorWeb.App\bin\es\System.Web.WebPages.resources.dll
+C:\Users\Mscorp\Documents\GitHub\SIG-PRO-COTIZADOR-WEB\CotizadorWeb.App\CotizadorWeb.App\bin\es\System.Web.WebPages.Deployment.resources.dll
+C:\Users\Mscorp\Documents\GitHub\SIG-PRO-COTIZADOR-WEB\CotizadorWeb.App\CotizadorWeb.App\bin\es\System.Web.WebPages.Razor.resources.dll
+C:\Users\Mscorp\Documents\GitHub\SIG-PRO-COTIZADOR-WEB\CotizadorWeb.App\CotizadorWeb.App\obj\Debug\CotizadorWeb.App.csprojAssemblyReference.cache
+C:\Users\Mscorp\Documents\GitHub\SIG-PRO-COTIZADOR-WEB\CotizadorWeb.App\CotizadorWeb.App\obj\Debug\CotizadorWeb.App.csproj.CopyComplete
+C:\Users\Mscorp\Documents\GitHub\SIG-PRO-COTIZADOR-WEB\CotizadorWeb.App\CotizadorWeb.App\obj\Debug\CotizadorWeb.App.dll
+C:\Users\Mscorp\Documents\GitHub\SIG-PRO-COTIZADOR-WEB\CotizadorWeb.App\CotizadorWeb.App\obj\Debug\CotizadorWeb.App.pdb
+C:\Users\Arminbash\Documents\GitHub\Proyectos Github\CotizadorWeb\Cotizador\CotizadorWeb.App\CotizadorWeb.App\bin\CotizadorWeb.App.dll.config
+C:\Users\Arminbash\Documents\GitHub\Proyectos Github\CotizadorWeb\Cotizador\CotizadorWeb.App\CotizadorWeb.App\bin\CotizadorWeb.App.dll
+C:\Users\Arminbash\Documents\GitHub\Proyectos Github\CotizadorWeb\Cotizador\CotizadorWeb.App\CotizadorWeb.App\bin\CotizadorWeb.App.pdb
+C:\Users\Arminbash\Documents\GitHub\Proyectos Github\CotizadorWeb\Cotizador\CotizadorWeb.App\CotizadorWeb.App\bin\roslyn\csc.exe
+C:\Users\Arminbash\Documents\GitHub\Proyectos Github\CotizadorWeb\Cotizador\CotizadorWeb.App\CotizadorWeb.App\bin\roslyn\csc.exe.config
+C:\Users\Arminbash\Documents\GitHub\Proyectos Github\CotizadorWeb\Cotizador\CotizadorWeb.App\CotizadorWeb.App\bin\roslyn\csc.rsp
+C:\Users\Arminbash\Documents\GitHub\Proyectos Github\CotizadorWeb\Cotizador\CotizadorWeb.App\CotizadorWeb.App\bin\roslyn\csi.exe
+C:\Users\Arminbash\Documents\GitHub\Proyectos Github\CotizadorWeb\Cotizador\CotizadorWeb.App\CotizadorWeb.App\bin\roslyn\csi.exe.config
+C:\Users\Arminbash\Documents\GitHub\Proyectos Github\CotizadorWeb\Cotizador\CotizadorWeb.App\CotizadorWeb.App\bin\roslyn\csi.rsp
+C:\Users\Arminbash\Documents\GitHub\Proyectos Github\CotizadorWeb\Cotizador\CotizadorWeb.App\CotizadorWeb.App\bin\roslyn\Microsoft.Build.Tasks.CodeAnalysis.dll
+C:\Users\Arminbash\Documents\GitHub\Proyectos Github\CotizadorWeb\Cotizador\CotizadorWeb.App\CotizadorWeb.App\bin\roslyn\Microsoft.CodeAnalysis.CSharp.dll
+C:\Users\Arminbash\Documents\GitHub\Proyectos Github\CotizadorWeb\Cotizador\CotizadorWeb.App\CotizadorWeb.App\bin\roslyn\Microsoft.CodeAnalysis.CSharp.Scripting.dll
+C:\Users\Arminbash\Documents\GitHub\Proyectos Github\CotizadorWeb\Cotizador\CotizadorWeb.App\CotizadorWeb.App\bin\roslyn\Microsoft.CodeAnalysis.dll
+C:\Users\Arminbash\Documents\GitHub\Proyectos Github\CotizadorWeb\Cotizador\CotizadorWeb.App\CotizadorWeb.App\bin\roslyn\Microsoft.CodeAnalysis.Scripting.dll
+C:\Users\Arminbash\Documents\GitHub\Proyectos Github\CotizadorWeb\Cotizador\CotizadorWeb.App\CotizadorWeb.App\bin\roslyn\Microsoft.CodeAnalysis.VisualBasic.dll
+C:\Users\Arminbash\Documents\GitHub\Proyectos Github\CotizadorWeb\Cotizador\CotizadorWeb.App\CotizadorWeb.App\bin\roslyn\Microsoft.CSharp.Core.targets
+C:\Users\Arminbash\Documents\GitHub\Proyectos Github\CotizadorWeb\Cotizador\CotizadorWeb.App\CotizadorWeb.App\bin\roslyn\Microsoft.DiaSymReader.Native.amd64.dll
+C:\Users\Arminbash\Documents\GitHub\Proyectos Github\CotizadorWeb\Cotizador\CotizadorWeb.App\CotizadorWeb.App\bin\roslyn\Microsoft.DiaSymReader.Native.x86.dll
+C:\Users\Arminbash\Documents\GitHub\Proyectos Github\CotizadorWeb\Cotizador\CotizadorWeb.App\CotizadorWeb.App\bin\roslyn\Microsoft.Managed.Core.targets
+C:\Users\Arminbash\Documents\GitHub\Proyectos Github\CotizadorWeb\Cotizador\CotizadorWeb.App\CotizadorWeb.App\bin\roslyn\Microsoft.VisualBasic.Core.targets
+C:\Users\Arminbash\Documents\GitHub\Proyectos Github\CotizadorWeb\Cotizador\CotizadorWeb.App\CotizadorWeb.App\bin\roslyn\Microsoft.Win32.Primitives.dll
+C:\Users\Arminbash\Documents\GitHub\Proyectos Github\CotizadorWeb\Cotizador\CotizadorWeb.App\CotizadorWeb.App\bin\roslyn\System.AppContext.dll
+C:\Users\Arminbash\Documents\GitHub\Proyectos Github\CotizadorWeb\Cotizador\CotizadorWeb.App\CotizadorWeb.App\bin\roslyn\System.Collections.Immutable.dll
+C:\Users\Arminbash\Documents\GitHub\Proyectos Github\CotizadorWeb\Cotizador\CotizadorWeb.App\CotizadorWeb.App\bin\roslyn\System.Console.dll
+C:\Users\Arminbash\Documents\GitHub\Proyectos Github\CotizadorWeb\Cotizador\CotizadorWeb.App\CotizadorWeb.App\bin\roslyn\System.Diagnostics.DiagnosticSource.dll
+C:\Users\Arminbash\Documents\GitHub\Proyectos Github\CotizadorWeb\Cotizador\CotizadorWeb.App\CotizadorWeb.App\bin\roslyn\System.Diagnostics.FileVersionInfo.dll
+C:\Users\Arminbash\Documents\GitHub\Proyectos Github\CotizadorWeb\Cotizador\CotizadorWeb.App\CotizadorWeb.App\bin\roslyn\System.Diagnostics.StackTrace.dll
+C:\Users\Arminbash\Documents\GitHub\Proyectos Github\CotizadorWeb\Cotizador\CotizadorWeb.App\CotizadorWeb.App\bin\roslyn\System.Globalization.Calendars.dll
+C:\Users\Arminbash\Documents\GitHub\Proyectos Github\CotizadorWeb\Cotizador\CotizadorWeb.App\CotizadorWeb.App\bin\roslyn\System.IO.Compression.dll
+C:\Users\Arminbash\Documents\GitHub\Proyectos Github\CotizadorWeb\Cotizador\CotizadorWeb.App\CotizadorWeb.App\bin\roslyn\System.IO.Compression.ZipFile.dll
+C:\Users\Arminbash\Documents\GitHub\Proyectos Github\CotizadorWeb\Cotizador\CotizadorWeb.App\CotizadorWeb.App\bin\roslyn\System.IO.FileSystem.dll
+C:\Users\Arminbash\Documents\GitHub\Proyectos Github\CotizadorWeb\Cotizador\CotizadorWeb.App\CotizadorWeb.App\bin\roslyn\System.IO.FileSystem.Primitives.dll
+C:\Users\Arminbash\Documents\GitHub\Proyectos Github\CotizadorWeb\Cotizador\CotizadorWeb.App\CotizadorWeb.App\bin\roslyn\System.Net.Http.dll
+C:\Users\Arminbash\Documents\GitHub\Proyectos Github\CotizadorWeb\Cotizador\CotizadorWeb.App\CotizadorWeb.App\bin\roslyn\System.Net.Sockets.dll
+C:\Users\Arminbash\Documents\GitHub\Proyectos Github\CotizadorWeb\Cotizador\CotizadorWeb.App\CotizadorWeb.App\bin\roslyn\System.Reflection.Metadata.dll
+C:\Users\Arminbash\Documents\GitHub\Proyectos Github\CotizadorWeb\Cotizador\CotizadorWeb.App\CotizadorWeb.App\bin\roslyn\System.Runtime.InteropServices.RuntimeInformation.dll
+C:\Users\Arminbash\Documents\GitHub\Proyectos Github\CotizadorWeb\Cotizador\CotizadorWeb.App\CotizadorWeb.App\bin\roslyn\System.Security.Cryptography.Algorithms.dll
+C:\Users\Arminbash\Documents\GitHub\Proyectos Github\CotizadorWeb\Cotizador\CotizadorWeb.App\CotizadorWeb.App\bin\roslyn\System.Security.Cryptography.Encoding.dll
+C:\Users\Arminbash\Documents\GitHub\Proyectos Github\CotizadorWeb\Cotizador\CotizadorWeb.App\CotizadorWeb.App\bin\roslyn\System.Security.Cryptography.Primitives.dll
+C:\Users\Arminbash\Documents\GitHub\Proyectos Github\CotizadorWeb\Cotizador\CotizadorWeb.App\CotizadorWeb.App\bin\roslyn\System.Security.Cryptography.X509Certificates.dll
+C:\Users\Arminbash\Documents\GitHub\Proyectos Github\CotizadorWeb\Cotizador\CotizadorWeb.App\CotizadorWeb.App\bin\roslyn\System.Text.Encoding.CodePages.dll
+C:\Users\Arminbash\Documents\GitHub\Proyectos Github\CotizadorWeb\Cotizador\CotizadorWeb.App\CotizadorWeb.App\bin\roslyn\System.Threading.Tasks.Extensions.dll
+C:\Users\Arminbash\Documents\GitHub\Proyectos Github\CotizadorWeb\Cotizador\CotizadorWeb.App\CotizadorWeb.App\bin\roslyn\System.ValueTuple.dll
+C:\Users\Arminbash\Documents\GitHub\Proyectos Github\CotizadorWeb\Cotizador\CotizadorWeb.App\CotizadorWeb.App\bin\roslyn\System.Xml.ReaderWriter.dll
+C:\Users\Arminbash\Documents\GitHub\Proyectos Github\CotizadorWeb\Cotizador\CotizadorWeb.App\CotizadorWeb.App\bin\roslyn\System.Xml.XmlDocument.dll
+C:\Users\Arminbash\Documents\GitHub\Proyectos Github\CotizadorWeb\Cotizador\CotizadorWeb.App\CotizadorWeb.App\bin\roslyn\System.Xml.XPath.dll
+C:\Users\Arminbash\Documents\GitHub\Proyectos Github\CotizadorWeb\Cotizador\CotizadorWeb.App\CotizadorWeb.App\bin\roslyn\System.Xml.XPath.XDocument.dll
+C:\Users\Arminbash\Documents\GitHub\Proyectos Github\CotizadorWeb\Cotizador\CotizadorWeb.App\CotizadorWeb.App\bin\roslyn\vbc.exe
+C:\Users\Arminbash\Documents\GitHub\Proyectos Github\CotizadorWeb\Cotizador\CotizadorWeb.App\CotizadorWeb.App\bin\roslyn\vbc.exe.config
+C:\Users\Arminbash\Documents\GitHub\Proyectos Github\CotizadorWeb\Cotizador\CotizadorWeb.App\CotizadorWeb.App\bin\roslyn\vbc.rsp
+C:\Users\Arminbash\Documents\GitHub\Proyectos Github\CotizadorWeb\Cotizador\CotizadorWeb.App\CotizadorWeb.App\bin\roslyn\VBCSCompiler.exe
+C:\Users\Arminbash\Documents\GitHub\Proyectos Github\CotizadorWeb\Cotizador\CotizadorWeb.App\CotizadorWeb.App\bin\roslyn\VBCSCompiler.exe.config
+C:\Users\Arminbash\Documents\GitHub\Proyectos Github\CotizadorWeb\Cotizador\CotizadorWeb.App\CotizadorWeb.App\bin\Antlr3.Runtime.dll
+C:\Users\Arminbash\Documents\GitHub\Proyectos Github\CotizadorWeb\Cotizador\CotizadorWeb.App\CotizadorWeb.App\bin\CotizadorWeb.Infrastructure.dll
+C:\Users\Arminbash\Documents\GitHub\Proyectos Github\CotizadorWeb\Cotizador\CotizadorWeb.App\CotizadorWeb.App\bin\CotizadorWeb.Services.dll
+C:\Users\Arminbash\Documents\GitHub\Proyectos Github\CotizadorWeb\Cotizador\CotizadorWeb.App\CotizadorWeb.App\bin\EntityFramework.dll
+C:\Users\Arminbash\Documents\GitHub\Proyectos Github\CotizadorWeb\Cotizador\CotizadorWeb.App\CotizadorWeb.App\bin\EntityFramework.SqlServer.dll
+C:\Users\Arminbash\Documents\GitHub\Proyectos Github\CotizadorWeb\Cotizador\CotizadorWeb.App\CotizadorWeb.App\bin\Microsoft.AspNet.SignalR.Core.dll
+C:\Users\Arminbash\Documents\GitHub\Proyectos Github\CotizadorWeb\Cotizador\CotizadorWeb.App\CotizadorWeb.App\bin\Microsoft.AspNet.SignalR.SystemWeb.dll
+C:\Users\Arminbash\Documents\GitHub\Proyectos Github\CotizadorWeb\Cotizador\CotizadorWeb.App\CotizadorWeb.App\bin\Microsoft.CodeDom.Providers.DotNetCompilerPlatform.dll
+C:\Users\Arminbash\Documents\GitHub\Proyectos Github\CotizadorWeb\Cotizador\CotizadorWeb.App\CotizadorWeb.App\bin\Microsoft.Owin.dll
+C:\Users\Arminbash\Documents\GitHub\Proyectos Github\CotizadorWeb\Cotizador\CotizadorWeb.App\CotizadorWeb.App\bin\Microsoft.Owin.Host.SystemWeb.dll
+C:\Users\Arminbash\Documents\GitHub\Proyectos Github\CotizadorWeb\Cotizador\CotizadorWeb.App\CotizadorWeb.App\bin\Microsoft.Owin.Security.dll
+C:\Users\Arminbash\Documents\GitHub\Proyectos Github\CotizadorWeb\Cotizador\CotizadorWeb.App\CotizadorWeb.App\bin\Microsoft.Web.Infrastructure.dll
+C:\Users\Arminbash\Documents\GitHub\Proyectos Github\CotizadorWeb\Cotizador\CotizadorWeb.App\CotizadorWeb.App\bin\Newtonsoft.Json.dll
+C:\Users\Arminbash\Documents\GitHub\Proyectos Github\CotizadorWeb\Cotizador\CotizadorWeb.App\CotizadorWeb.App\bin\Owin.dll
+C:\Users\Arminbash\Documents\GitHub\Proyectos Github\CotizadorWeb\Cotizador\CotizadorWeb.App\CotizadorWeb.App\bin\System.Web.Helpers.dll
+C:\Users\Arminbash\Documents\GitHub\Proyectos Github\CotizadorWeb\Cotizador\CotizadorWeb.App\CotizadorWeb.App\bin\System.Web.Mvc.dll
+C:\Users\Arminbash\Documents\GitHub\Proyectos Github\CotizadorWeb\Cotizador\CotizadorWeb.App\CotizadorWeb.App\bin\System.Web.Optimization.dll
+C:\Users\Arminbash\Documents\GitHub\Proyectos Github\CotizadorWeb\Cotizador\CotizadorWeb.App\CotizadorWeb.App\bin\System.Web.Razor.dll
+C:\Users\Arminbash\Documents\GitHub\Proyectos Github\CotizadorWeb\Cotizador\CotizadorWeb.App\CotizadorWeb.App\bin\System.Web.WebPages.Deployment.dll
+C:\Users\Arminbash\Documents\GitHub\Proyectos Github\CotizadorWeb\Cotizador\CotizadorWeb.App\CotizadorWeb.App\bin\System.Web.WebPages.dll
+C:\Users\Arminbash\Documents\GitHub\Proyectos Github\CotizadorWeb\Cotizador\CotizadorWeb.App\CotizadorWeb.App\bin\System.Web.WebPages.Razor.dll
+C:\Users\Arminbash\Documents\GitHub\Proyectos Github\CotizadorWeb\Cotizador\CotizadorWeb.App\CotizadorWeb.App\bin\WebGrease.dll
+C:\Users\Arminbash\Documents\GitHub\Proyectos Github\CotizadorWeb\Cotizador\CotizadorWeb.App\CotizadorWeb.App\bin\CotizadorWeb.Domain.dll
+C:\Users\Arminbash\Documents\GitHub\Proyectos Github\CotizadorWeb\Cotizador\CotizadorWeb.App\CotizadorWeb.App\bin\Ninject.dll
+C:\Users\Arminbash\Documents\GitHub\Proyectos Github\CotizadorWeb\Cotizador\CotizadorWeb.App\CotizadorWeb.App\bin\FluentValidation.ValidatorAttribute.dll
+C:\Users\Arminbash\Documents\GitHub\Proyectos Github\CotizadorWeb\Cotizador\CotizadorWeb.App\CotizadorWeb.App\bin\FluentValidation.dll
+C:\Users\Arminbash\Documents\GitHub\Proyectos Github\CotizadorWeb\Cotizador\CotizadorWeb.App\CotizadorWeb.App\bin\CotizadorWeb.Infrastructure.pdb
+C:\Users\Arminbash\Documents\GitHub\Proyectos Github\CotizadorWeb\Cotizador\CotizadorWeb.App\CotizadorWeb.App\bin\CotizadorWeb.Infrastructure.dll.config
+C:\Users\Arminbash\Documents\GitHub\Proyectos Github\CotizadorWeb\Cotizador\CotizadorWeb.App\CotizadorWeb.App\bin\CotizadorWeb.Services.pdb
+C:\Users\Arminbash\Documents\GitHub\Proyectos Github\CotizadorWeb\Cotizador\CotizadorWeb.App\CotizadorWeb.App\bin\CotizadorWeb.Services.dll.config
+C:\Users\Arminbash\Documents\GitHub\Proyectos Github\CotizadorWeb\Cotizador\CotizadorWeb.App\CotizadorWeb.App\bin\EntityFramework.xml
+C:\Users\Arminbash\Documents\GitHub\Proyectos Github\CotizadorWeb\Cotizador\CotizadorWeb.App\CotizadorWeb.App\bin\EntityFramework.SqlServer.xml
+C:\Users\Arminbash\Documents\GitHub\Proyectos Github\CotizadorWeb\Cotizador\CotizadorWeb.App\CotizadorWeb.App\bin\Microsoft.AspNet.SignalR.Core.pdb
+C:\Users\Arminbash\Documents\GitHub\Proyectos Github\CotizadorWeb\Cotizador\CotizadorWeb.App\CotizadorWeb.App\bin\Microsoft.AspNet.SignalR.Core.xml
+C:\Users\Arminbash\Documents\GitHub\Proyectos Github\CotizadorWeb\Cotizador\CotizadorWeb.App\CotizadorWeb.App\bin\Microsoft.AspNet.SignalR.SystemWeb.pdb
+C:\Users\Arminbash\Documents\GitHub\Proyectos Github\CotizadorWeb\Cotizador\CotizadorWeb.App\CotizadorWeb.App\bin\Microsoft.AspNet.SignalR.SystemWeb.xml
+C:\Users\Arminbash\Documents\GitHub\Proyectos Github\CotizadorWeb\Cotizador\CotizadorWeb.App\CotizadorWeb.App\bin\Microsoft.Owin.xml
+C:\Users\Arminbash\Documents\GitHub\Proyectos Github\CotizadorWeb\Cotizador\CotizadorWeb.App\CotizadorWeb.App\bin\Microsoft.Owin.Host.SystemWeb.xml
+C:\Users\Arminbash\Documents\GitHub\Proyectos Github\CotizadorWeb\Cotizador\CotizadorWeb.App\CotizadorWeb.App\bin\Microsoft.Owin.Security.xml
+C:\Users\Arminbash\Documents\GitHub\Proyectos Github\CotizadorWeb\Cotizador\CotizadorWeb.App\CotizadorWeb.App\bin\System.Web.Helpers.xml
+C:\Users\Arminbash\Documents\GitHub\Proyectos Github\CotizadorWeb\Cotizador\CotizadorWeb.App\CotizadorWeb.App\bin\System.Web.Mvc.xml
+C:\Users\Arminbash\Documents\GitHub\Proyectos Github\CotizadorWeb\Cotizador\CotizadorWeb.App\CotizadorWeb.App\bin\System.Web.Optimization.xml
+C:\Users\Arminbash\Documents\GitHub\Proyectos Github\CotizadorWeb\Cotizador\CotizadorWeb.App\CotizadorWeb.App\bin\System.Web.Razor.xml
+C:\Users\Arminbash\Documents\GitHub\Proyectos Github\CotizadorWeb\Cotizador\CotizadorWeb.App\CotizadorWeb.App\bin\System.Web.WebPages.xml
+C:\Users\Arminbash\Documents\GitHub\Proyectos Github\CotizadorWeb\Cotizador\CotizadorWeb.App\CotizadorWeb.App\bin\System.Web.WebPages.Deployment.xml
+C:\Users\Arminbash\Documents\GitHub\Proyectos Github\CotizadorWeb\Cotizador\CotizadorWeb.App\CotizadorWeb.App\bin\System.Web.WebPages.Razor.xml
+C:\Users\Arminbash\Documents\GitHub\Proyectos Github\CotizadorWeb\Cotizador\CotizadorWeb.App\CotizadorWeb.App\bin\Newtonsoft.Json.xml
+C:\Users\Arminbash\Documents\GitHub\Proyectos Github\CotizadorWeb\Cotizador\CotizadorWeb.App\CotizadorWeb.App\bin\Antlr3.Runtime.pdb
+C:\Users\Arminbash\Documents\GitHub\Proyectos Github\CotizadorWeb\Cotizador\CotizadorWeb.App\CotizadorWeb.App\bin\Microsoft.CodeDom.Providers.DotNetCompilerPlatform.xml
+C:\Users\Arminbash\Documents\GitHub\Proyectos Github\CotizadorWeb\Cotizador\CotizadorWeb.App\CotizadorWeb.App\bin\CotizadorWeb.Domain.pdb
+C:\Users\Arminbash\Documents\GitHub\Proyectos Github\CotizadorWeb\Cotizador\CotizadorWeb.App\CotizadorWeb.App\bin\CotizadorWeb.Domain.dll.config
+C:\Users\Arminbash\Documents\GitHub\Proyectos Github\CotizadorWeb\Cotizador\CotizadorWeb.App\CotizadorWeb.App\bin\Ninject.xml
+C:\Users\Arminbash\Documents\GitHub\Proyectos Github\CotizadorWeb\Cotizador\CotizadorWeb.App\CotizadorWeb.App\bin\FluentValidation.xml
+C:\Users\Arminbash\Documents\GitHub\Proyectos Github\CotizadorWeb\Cotizador\CotizadorWeb.App\CotizadorWeb.App\bin\es\System.Web.Helpers.resources.dll
+C:\Users\Arminbash\Documents\GitHub\Proyectos Github\CotizadorWeb\Cotizador\CotizadorWeb.App\CotizadorWeb.App\bin\es\System.Web.Mvc.resources.dll
+C:\Users\Arminbash\Documents\GitHub\Proyectos Github\CotizadorWeb\Cotizador\CotizadorWeb.App\CotizadorWeb.App\bin\es\System.Web.Optimization.resources.dll
+C:\Users\Arminbash\Documents\GitHub\Proyectos Github\CotizadorWeb\Cotizador\CotizadorWeb.App\CotizadorWeb.App\bin\es\System.Web.Razor.resources.dll
+C:\Users\Arminbash\Documents\GitHub\Proyectos Github\CotizadorWeb\Cotizador\CotizadorWeb.App\CotizadorWeb.App\bin\es\System.Web.WebPages.resources.dll
+C:\Users\Arminbash\Documents\GitHub\Proyectos Github\CotizadorWeb\Cotizador\CotizadorWeb.App\CotizadorWeb.App\bin\es\System.Web.WebPages.Deployment.resources.dll
+C:\Users\Arminbash\Documents\GitHub\Proyectos Github\CotizadorWeb\Cotizador\CotizadorWeb.App\CotizadorWeb.App\bin\es\System.Web.WebPages.Razor.resources.dll
+C:\Users\Arminbash\Documents\GitHub\Proyectos Github\CotizadorWeb\Cotizador\CotizadorWeb.App\CotizadorWeb.App\obj\Debug\CotizadorWeb.App.csprojAssemblyReference.cache
+C:\Users\Arminbash\Documents\GitHub\Proyectos Github\CotizadorWeb\Cotizador\CotizadorWeb.App\CotizadorWeb.App\obj\Debug\CotizadorWeb.App.csproj.CopyComplete
+C:\Users\Arminbash\Documents\GitHub\Proyectos Github\CotizadorWeb\Cotizador\CotizadorWeb.App\CotizadorWeb.App\obj\Debug\CotizadorWeb.App.dll
+C:\Users\Arminbash\Documents\GitHub\Proyectos Github\CotizadorWeb\Cotizador\CotizadorWeb.App\CotizadorWeb.App\obj\Debug\CotizadorWeb.App.pdb

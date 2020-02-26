@@ -1,0 +1,806 @@
+﻿@using CotizadorWeb.Infrastructure.ViewModel;
+@{
+    ViewBag.Title = "Cotizador Vendedores";
+    Layout = "~/Views/Shared/_LayoutVendedor.cshtml";
+}
+<ul id="dropdown1" class="dropdown-content">
+    <li><a onclick="modalCerrarSesion()">Cerrar Sesion</a></li>
+</ul>
+<nav>
+    <div class="nav-wrapper">
+        <!--Sidenav en caso de tener pantallas pequeñas-->
+        <ul id="slide-out" class="sidenav">
+
+            <li>
+                <div class="row" style="margin-top:10px;width:90%;">
+                    <div class="col-12 center-align">
+                        <img src="../Content/Images/SIGPRO.png" class="circle responsive-img" id="icon" alt="Empresa" style="height:60%; width:60%;" />
+                    </div>
+                </div>
+            </li>
+
+            <li>
+                <div class="row" style="margin-top:-30px;width:90%;">
+                    @{VendedorViewModel vended = (VendedorViewModel)ViewData["vendedor"];
+                        <div class="col-12 center-align">
+                            <div class="chip blue darken-3 white-text">
+                                @vended.Usuario
+                            </div>
+                        </div>
+                        <div class="col-12 left-align">
+                            <div class="chip black-text">
+                                <img src="../Content/Images/user.png" alt="Usuario">
+                                @vended.nombreVendedor
+                            </div>
+                        </div>
+                        <div class="col-12 left-align">
+                            <div class="chip black-text">
+                                <img src="../Content/Images/segmento.png" alt="Segmento">
+                                Segmento: @vended.segmento
+                            </div>
+                        </div>
+                    }
+                </div>
+            </li>
+
+            <li>
+                <a class="waves-effect waves-light btn red darken-3" onclick="modalCerrarSesion()">
+                    <i class="material-icons right white-text">
+                        power_settings_new
+                    </i> Cerrar Sesion
+                </a>
+            </li>
+
+        </ul>
+        <a href="#" data-target="slide-out" class="sidenav-trigger"><i class="material-icons">menu</i></a>
+        <!----------------------------------------------------------------------------------------------------->
+
+        <a href="#!" class="brand-logo">SIG-PRO</a>
+        <ul class="right hide-on-med-and-down">
+            @{VendedorViewModel vend = (VendedorViewModel)ViewData["vendedor"];
+                <li><a class="dropdown-trigger" href="#!" data-target="dropdown1">@vend.nombreVendedor<i class="material-icons right">arrow_drop_down</i></a></li>
+            }
+        </ul>
+    </div>
+</nav>
+
+<!-- Modal Cerrar sesion-->
+<div id="modalCerrarSesion" class="modal">
+    <div class="modal-content">
+        <h4>¿Desea cerrar sesion?</h4>
+    </div>
+    <div class="modal-footer">
+        <a class="modal-close waves-effect waves-light btn-small">Cancelar</a> &nbsp;
+        <a class="waves-effect waves-light btn-small red darken-3" onclick="cerrarSesion('@Url.Action("CerrarSesion", "CotizadorVendedor")')">Aceptar</a>
+    </div>
+</div>
+<!--------------------------->
+<ul class="stepper linear horizontal" id="stepper">
+
+    <li class="step active">
+        <div class="step-title waves-effect">Moneda</div>
+
+        <div class="step-content">
+            <!-- Your step content goes here (like inputs or so) -->
+
+            <div class="row">
+                <div class="col s12 m5 offset-m3">
+                    <div class="card-panel">
+
+                        <h7 class="center-align"><strong>Tipo de Moneda</strong></h7>
+                        <step hidden>1</step>
+                        <form action="#">
+                            <div class="row">
+                                <div class="col s6">
+                                    <p>
+                                        <label class="text-Strong">
+                                            <input id="radioCordoba" name="groupMoneda" type="radio" checked onchange="limpiarCampos()" />
+                                            <span class="text-Strong">Córdoba</span>
+                                        </label>
+                                    </p>
+                                </div>
+                                <div class="col s6">
+                                    <p>
+                                        <label class="text-Strong">
+                                            <input id="radioDolar" name="groupMoneda" type="radio" onchange="limpiarCampos()" />
+                                            <span class="text-Strong">Dólar</span>
+                                        </label>
+                                    </p>
+                                </div>
+                            </div>
+                        </form>
+
+                        <div class="row">
+                            <div class="col s12">
+                                <div class="col s4"><label class="text-Strong" style="font-size:small;">Tasa Oficial</label> </div>
+                                <div class="col s4"><item id="TasaOficial">@ViewBag.TasaOficial</item></div>
+                                <div class="col s4"><label class="text-Strong" style="font-size:small;">C$</label></div>
+                            </div>
+                        </div>
+
+                        <div class="row">
+                            <div class="col s12">
+                                <div class="col s4"><label class="text-Strong" style="font-size:small;">Tasa Paralela</label> </div>
+                                <div class="col s4"><item id="TasaParalela">@ViewBag.TasaParalela</item></div>
+                                <div class="col s4"><label class="text-Strong" style="font-size:small;">C$</label></div>
+                            </div>
+                        </div>
+
+                        <div class="step-actions">
+                            <!-- Here goes your actions buttons -->
+                            <button class="waves-effect waves-dark btn next-step" data-feedback="someFunction">Siguiente</button>
+                        </div>
+
+                    </div>
+                </div>
+            </div>
+        </div>
+    </li>
+
+    <li class="step">
+        <div class="step-title waves-effect">Cliente</div>
+        <div class="step-content">
+            <step hidden>2</step>
+            <div class="row">
+                <div class="col s12 m5 offset-m3">
+                    <div class="card-panel">
+                        <!-- Your step content goes here (like inputs or so) -->
+                        <button data-target="modalCliente" class="btn modal-trigger blue darken-4" onclick="displayWindowSize();">Buscar</button>
+
+                        <!-- Modal Structure -->
+                        <div id="modalCliente" class="modal">
+                            <!-- Modal Structure -->
+                            <div class="modal-content">
+                                <h6 class="text-Strong">Seleccione un Cliente</h6>
+
+                                <div class="row">
+                                    <div class="col s12">
+                                        <div class="row">
+                                            <div class="input-field col s12">
+                                                <i class="material-icons prefix">textsms</i>
+                                                <input type="text" id="buscarCliente" class="validate"
+                                                       onkeyup="buscarFiltrar('@Url.Action("ModalClientesBuscar", "CotizadorVendedor", new { pagina = 1 })')">
+                                                <label for="buscarCliente">Buscar</label>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+
+                                <div id="modalClienteTable">
+                                </div>
+
+                            </div>
+
+                            <div class="modal-footer">
+                                <button type="button" class="btn modal-close waves-effect waves-green red darken-4">Cancelar</button>
+                                <button type="button" id="SeleccionarCliente" class="btn blue darken-4" onclick="seleccionarCliente('@Url.Action("ObtenerClienteXId", "CotizadorVendedor")')">Seleccionar</button>
+                            </div>
+                        </div>
+
+                        <input id="idCliente" data-id="" type="number" hidden disabled value="0" />
+                        <div class="row">
+                            <form class="col s12">
+
+                                <div class="row">
+                                    <div class="input-field col s12">
+                                        <i class="material-icons prefix" id="nombreClienteIcon">account_circle</i>
+                                        <input id="nombreCliente" type="text" class="validate" value="" disabled>
+                                        <label for="nombreCliente" id="nombreClienteLabel">Nombre del Cliente</label>
+                                    </div>
+                                </div>
+
+                                <div class="row">
+                                    <div class="input-field col s12">
+                                        <i class="material-icons prefix" id="cedulaClienteIcon">card_membership</i>
+                                        <input id="cedulaCliente" type="text" class="validate" value="" disabled>
+                                        <label for="cedulaCliente" id="cedulaClienteLabel">Ruc / Cedula</label>
+                                    </div>
+                                </div>
+
+                                <div class="row">
+                                    <div class="input-field col s12">
+                                        <i class="material-icons prefix" id="segmentoClienteIcon">directions_bus</i>
+                                        <input id="segmentoCliente" type="text" class="validate" value="" disabled>
+                                        <label for="segmentoCliente" id="segmentoClienteLabel">Segmento</label>
+                                    </div>
+                                </div>
+
+                            </form>
+                        </div>
+
+                        <div class="step-actions">
+                            <!-- Here goes your actions buttons -->
+                            <button class="waves-effect waves-dark btn next-step" data-feedback="someFunction">Siguiente</button>
+                        </div>
+
+                    </div>
+                </div>
+            </div>
+
+        </div>
+    </li>
+
+    <li class="step">
+        <div class="step-title waves-effect">Detalles</div>
+        <div class="step-content">
+            <step hidden>3</step>
+
+            <div class="row">
+                <div class="col s12 m8 offset-m2">
+                    <div class="card-panel">
+                        <div class="center-align">
+                            <button type="button" id="btnModalProducto" data-target="modalProductos" class="btn-small modal-trigger blue darken-4"><i class="material-icons left">business_center</i>Productos</button>
+                            <button type="button" id="btnModalServicio" data-target="" class="btn-small modal-trigger blue darken-4"><i class="material-icons left">room_service</i>Servicios</button>
+                            <button type="button" id="btnModalCombo" data-target="" class="btn-small modal-trigger blue darken-4"><i class="fas fa-object-group"></i>Combos</button>
+                        </div>
+
+                        <!-- Modal Productos -->
+                        <!-- Modal Structure -->
+                        <div id="modalProductos" class="modal">
+                            <!-- Modal Structure -->
+                            <div class="modal-content">
+                                <h6 class="text-Strong">Lista de Productos</h6>
+
+                                <div class="row">
+                                    <div class="input-field col s12 m6">
+                                        <input id="filtrarCodigoAlternoProducto" type="text" class="validate">
+                                        <label for="filtrarCodigoAlternoProducto">Codigo Alterno</label>
+                                    </div>
+                                    <div class="input-field col s12 m6">
+                                        <input id="filtrarCodigoOriginalProducto" type="text" class="validate">
+                                        <label for="filtrarCodigoOriginalProducto">Codigo Original</label>
+                                    </div>
+                                    <div class="input-field col s12 m6">
+                                        <input id="filtrarNombreProducto" type="text" class="validate">
+                                        <label for="filtrarNombreProducto">Nombre</label>
+                                    </div>
+                                    <div class="input-field col s12 m6">
+                                        <input id="filtrarMarcaProducto" type="text" class="validate">
+                                        <label for="filtrarMarcaProducto">Marca</label>
+                                    </div>
+                                    <div class="input-field col s12 m6">
+                                        <input id="filtrarLineaProducto" type="text" class="validate">
+                                        <label for="filtrarLineaProducto">Linea</label>
+                                    </div>
+                                    <div class="input-field col s12 m6">
+                                        <input id="filtrarRubroProducto" type="text" class="validate">
+                                        <label for="filtrarRubroProducto">Rubro</label>
+                                    </div>
+                                    <button id="btnFiltrarProductos" class="btn waves-effect waves-light  blue darken-3" type="button" name="action"
+                                            onclick="filtrarProductos('@Url.Action("ModalProductos", "CotizadorVendedor")')">
+                                        Buscar
+                                        <i class="material-icons right">send</i>
+                                    </button>
+
+                                </div>
+
+                                <div id="modalProductosTable">
+                                </div>
+
+                            </div>
+                        </div>
+                        <!--Grid Detalles -->
+                        <ul class="collapsible" id="itemGrd">
+                        </ul>
+                        <!--End Grid Detalles-->
+                        <!-- End Modal Productos-->
+                        <!-- Your step content goes here (like inputs or so) -->
+                        <div class="step-actions">
+                            <!-- Here goes your actions buttons -->
+                            <button class="waves-effect waves-dark btn next-step" data-feedback="someFunction">Siguiente</button>
+                        </div>
+
+                    </div>
+                </div>
+            </div>
+
+        </div>
+    </li>
+
+    <li class="step">
+        <div class="step-title waves-effect">Revisión</div>
+        <div class="step-content">
+            <step hidden>4</step>
+            <!--Detalles de toda la cotizacion y de exportar a pdf-->
+
+            <div class="row">
+                <div class="col s12 m5 offset-m3">
+                    <div class="card-panel">
+                        <div class="row">
+                            <div class="col s12">
+                                <div class="col s4"><label class="text-Strong" style="font-size:small;">Nombre cliente: </label> </div>
+                                <div class="col s8"><item id="TasaOficial">Juan Perez</item></div>
+                            </div>
+                        </div>
+                        <div class="row">
+                            <div class="col s12">
+                                <div class="col s4"><label class="text-Strong" style="font-size:small;">Cedula ó RUC: </label> </div>
+                                <div class="col s8"><item id="TasaOficial">RJ45 ÑSasdasdas</item></div>
+                            </div>
+                        </div>
+                        <div class="row">
+                            <div class="col s12">
+                                <div class="col s4"><label class="text-Strong" style="font-size:small;">Segmento: </label> </div>
+                                <div class="col s8"><item id="TasaOficial">Mercadeo</item></div>
+                            </div>
+                        </div>
+                        <br />
+                        <!-------------- Detalles --------------------->
+                        <div class="row">
+                            <ul class="collection with-header">
+                                <li class="collection-header"><h6 class="text-Strong">Lista de items:</h6></li>
+                                <li><a class="collection-item blue-text tooltipped" data-position="top" data-tooltip="Cantidad: 5, Precio: 56246 C$">RJASADADDASDAS<span class="badge">Cantidad: 5, Precio: 56246 C$</span></a></li>
+                            </ul>
+                        </div>
+                        <!---------------------------------------------->
+                        <div class="row">
+                            <div class="col s12 right-align">
+                                <div class="chip blue white-text">
+                                    Subtotal: 3000 C$
+                                </div>
+                            </div>
+                            <div class="col s12 right-align">
+                                <div class="chip blue white-text">
+                                    IVA: 2300 C$
+                                </div>
+                            </div>
+                            <div class="col s12 right-align">
+                                <div class="chip green white-text">
+                                    Total: 568448 C$
+                                </div>
+                            </div>
+                        </div>
+                        <div class="step-actions">
+                            <!-- Here goes your actions buttons -->
+                            <button class="waves-effect waves-dark btn next-step" data-feedback="someFunction">Generar</button>
+                        </div>
+
+                    </div>
+                </div>
+            </div>
+            <!---*********----------------------------------------------->
+        </div>
+    </li>
+
+</ul>
+
+@{VendedorViewModel vendedor = (VendedorViewModel)ViewData["vendedor"];
+    <input id="idSegmento" value="@vendedor.idSegmento" hidden disabled />
+}
+<input id="idSegmentoCliente" hidden disabled />
+
+@section Scripts
+{
+    @Scripts.Render("~/bundles/jqueryval")
+
+    <script>
+        function buscarFiltrar(dir) {
+            //Evento que se dispara al escribir en el input buscar.
+            var buscar = $("#buscarCliente").val();
+            loadModalCliente(dir + "&buscar=" + buscar);
+        };
+
+        function modalCerrarSesion() {
+            var modal = $("#modalCerrarSesion");
+            var instance = M.Modal.getInstance(modal);
+            instance.open();
+        };
+
+        function cerrarSesion(dir) {
+            $.get(dir).done(function () {
+                location.reload();
+            })
+                .fail(function (s1, s2, error) {
+                    if (s1.status === 0) {
+                        alert('No coneccion: Verificar la Network');
+                    }
+                    if (s1.status === 404) {
+                        alert('Requested page not found [404]');
+                    }
+                });
+        };
+
+        function seleccionarCliente(dir) {
+            //Se busca el cliente seleccionado dentro de la tabla.
+            $("#modalClienteTable").find(".Selected-item").each(function () {
+                //Se obtiene el id del cliente.
+                var trCliente = $(this).attr('id');
+                var idCliente = trCliente.substring(7, trCliente.length);
+                //Se crea la direccion Get para consultar el cliente.
+                var url = dir + "?idCliente=" + idCliente;
+
+                //Se consulta la direccion para obtener los datos del cliente
+                $.get(url).done(function (data) {
+                    //Se modifican los valores del cliente
+                    $("#idCliente").attr('data-id', "" + data.idCliente);
+                    $("#idCliente").val(data.idCliente);
+                    $("#idCliente").addClass("valid");
+
+                    $("#nombreCliente").val(data.Nombre);
+                    $("#nombreClienteIcon").addClass("active");
+                    $("#nombreClienteLabel").addClass("active");
+
+                    $("#cedulaCliente").val(data.Ruc);
+                    $("#cedulaClienteIcon").addClass("active");
+                    $("#cedulaClienteLabel").addClass("active");
+
+
+                    $("#segmentoCliente").val(data.Segmento);
+                    $("#segmentoClienteIcon").addClass("active");
+                    $("#segmentoClienteLabel").addClass("active");
+
+                    $("#idSegmentoCliente").val(data.idSegmento);
+
+                    limpiarCampos();
+                    //Se cierra el modal.
+                    var instance = M.Modal.getInstance($("#modalCliente"));
+                    instance.close();
+                    //-----------------------------
+                })
+                    .fail(function (s1, s2, error) {
+                        if (s1.status === 0) {
+                            alert('No coneccion: Verificar la Network');
+                        }
+                        if (s1.status === 404) {
+                            alert('Requested page not found [404]');
+                        }
+                    });
+            });
+        }
+
+        function limpiarCampos() {
+            $("#itemGrd").empty();
+        }
+
+        function calcularTotalItems(idItem, TipoItem) {
+
+            var descuentoMaximo = Number($("#" + TipoItem + 'DescuentoMaximo' + idItem).val());
+            var descuentoActual = Number($("#" + TipoItem + 'Descuento' + idItem).val());
+
+            if (descuentoMaximo < descuentoActual) {
+                M.toast({ html: 'Sobrepaso el descuento máximo, se sobreescribira el descuento!', classes: 'rounded' });
+                //alert('Sobrepaso el descuento máximo, se sobreescribira el descuento.');
+                $("#" + TipoItem + 'Descuento' + idItem).val(descuentoMaximo);
+            }
+
+            var precioVenta = $("#" + TipoItem + 'Precio' + idItem).val();
+            var cantidad = $("#" + TipoItem + 'Cantidad' + idItem).val();
+            var descuento = $("#" + TipoItem + 'Descuento' + idItem).val();
+            var iva = $("#" + TipoItem + 'IVA' + idItem).val();
+
+            var subtotal = (precioVenta * cantidad) * (1 - (descuento / 100));
+            var total = subtotal * (1 + (iva / 100));
+            var totalMostrar = parseFloat((total).toFixed(2));
+            $("#" + TipoItem + 'Total' + idItem).val(totalMostrar);
+
+            var simnbolo = '$';
+            if ($("#radioCordoba").prop('checked')) {
+                simnbolo = 'C$';
+            }
+
+            $("#" + TipoItem + 'Titulo' + idItem).text((simnbolo + totalMostrar));
+        }
+    </script>
+    <script>
+        $(document).ready(function () {
+            $('.sidenav').sidenav();
+            $(".dropdown-trigger").dropdown();
+            $('.modal').modal();
+            $('.collapsible').collapsible();
+            $('.chips').chips();
+            $('.tooltipped').tooltip();
+        });
+    </script>
+    <script>
+        var stepper = document.querySelector('.stepper');
+        var stepperInstace = new MStepper(stepper, {
+            // Default active step.
+            firstActive: 0,
+            // Allow navigation by clicking on the next and previous steps on linear steppers.
+            linearStepsNavigation: true,
+            // Auto focus on first input of each step.
+            autoFocusInput: true,
+            // Set if a loading screen will appear while feedbacks functions are running.
+            showFeedbackPreloader: true,
+            // Auto generation of a form around the stepper.
+            autoFormCreation: true,
+            // Function to be called everytime a nextstep occurs. It receives 2 arguments, in this sequece: stepperForm, activeStepContent.
+            validationFunction: defaultValidationFunction, // more about this default functions below
+            // Enable or disable navigation by clicking on step-titles
+            stepTitleNavigation: true
+        })
+
+        function defaultValidationFunction(stepperForm, activeStepContent) {
+            //Se obtiene el Step activo.
+            var step = activeStepContent.querySelectorAll('step');
+
+            if (step[0].textContent === '1') {
+
+                //Se valida que las tasas no sean 0.
+                var Tasas = activeStepContent.querySelectorAll('item#TasaOficial,item#TasaParalela');
+                for (let i = 0; i < Tasas.length; i++)if (Number(Tasas[i].textContent) <= 0) {
+                    M.toast({ html: 'Las tasas no pueden ser menores o iguales a 0.', classes: 'rounded' });
+                    return false;
+                }
+
+                actualizarIconoError();
+                return true;
+            } else if (step[0].textContent === '2') {
+
+                //Se valida que se seleccione un cliente.
+                var idCliente = activeStepContent.querySelectorAll('input#idCliente');
+                if (Number(idCliente[0].value) <= 0) {
+                    M.toast({ html: 'Debe seleccionar un cliente para continuar.', classes: 'rounded' });
+                    return false;
+                }
+
+                actualizarIconoError();
+                return true;
+            } else if (step[0].textContent === '3') {
+                var grd = activeStepContent.querySelectorAll('#itemGrd');
+                var items = $(grd).find('li');
+                if (items.length <= 0) {
+                    M.toast({ html: 'La lista detalles no puede estar vacio.', classes: 'rounded' });
+                    return false;
+                }
+
+                actualizarIconoError();
+                return true;
+            }
+
+        }
+        function actualizarIconoError() {
+            var active = $(document).find('.step.active');
+            var index = $(document).find('.step').index($(active));
+            //Si existe el step con icono de error se elimina.
+            $(document).find('.step').each(function (i) {
+                if (i >= index) {
+                    $(this).removeClass('wrong');
+                }
+            });
+        }
+
+
+        //$('#modalProductosTable').bind("DOMSubtreeModified", function () {
+        //    resizeStepper();
+        //});
+
+        //function resizeStepper() {
+        //    var w = document.documentElement.clientWidth;
+        //    if (w > 870) {
+        //        newHeight = 0;
+        //        padding = 200;
+
+        //        $('#stepper.horizontal').find('.step.active').find('.step-content > div').each(function () {
+        //            newHeight += parseInt($(this).css('height'));
+        //        });
+
+        //        newHeight += padding;
+
+        //        $('#stepper').animate({
+        //            height: newHeight
+        //        },
+        //            300);
+        //    } else() {
+
+        //    }
+        //}
+        //$('#stepper.horizontal').on('stepchange', function () {
+        //    resizeStepper();
+        //});
+    </script>
+    <script>
+        function someFunction(destroyFeedback) {
+
+            setTimeout(() => {
+                destroyFeedback(true);
+            }, 500);
+        }
+        function validationFunction(stepperForm, activeStepContent) {
+            // You can use the 'stepperForm' to valide the whole form around the stepper:
+            someValidationPlugin(stepperForm);
+            // Or you can do something with just the activeStepContent
+            someValidationPlugin(activeStepContent);
+            // Return true or false to proceed or show an error
+            return true;
+        }
+
+    </script>
+    <script>
+        loadModalCliente('@Url.Action("ModalClientes","CotizadorVendedor",new { pagina = 1 })');
+        loadModalProductos('@Url.Action("ModalProductos","CotizadorVendedor")');
+    </script>
+    <script>
+        function displayWindowSize() {
+
+            var w = document.documentElement.clientWidth;
+            var h = document.documentElement.clientHeight;
+
+            //resizeStepper();
+            if (w <= 870) {
+                $("#btnModalProducto").removeClass("btn-small");
+                $("#btnModalProducto").addClass("btn-floating");
+
+                $("#btnModalServicio").removeClass("btn-small");
+                $("#btnModalServicio").addClass("btn-floating");
+
+                $("#btnModalCombo").removeClass("btn-small");
+                $("#btnModalCombo").addClass("btn-floating");
+            } else {
+                $("#btnModalProducto").removeClass("btn-floating");
+                $("#btnModalProducto").addClass("btn-small");
+
+                $("#btnModalServicio").removeClass("btn-floating");
+                $("#btnModalServicio").addClass("btn-small");
+
+                $("#btnModalCombo").removeClass("btn-floating");
+                $("#btnModalCombo").addClass("btn-small");
+            }
+
+            if (w <= 370) {
+                $(".tipoModalCliente").hide();
+            } else {
+                $(".tipoModalCliente").show();
+            }
+
+        }
+
+        window.addEventListener("resize", displayWindowSize);
+
+        displayWindowSize();
+
+    </script>
+    <script>
+        function filtrarProductos(dir) {
+            var codAlterno = $("#filtrarCodigoAlternoProducto").val();
+            var codOriginal = $("#filtrarCodigoOriginalProducto").val();
+            var nombre = $("#filtrarNombreProducto").val();
+            var marca = $("#filtrarMarcaProducto").val();
+            var linea = $("#filtrarLineaProducto").val();
+            var rubro = $("#filtrarRubroProducto").val();
+            var idSegmento = $("#idSegmentoCliente").val();
+
+            var url = dir + '?pagina=' + 1 + '&idSegmento=' + idSegmento + '&codAlterno=' + codAlterno + '&codOriginal=' +
+                codOriginal + '&nombre=' + nombre + '&marca=' + marca + '&linea=' + linea + '&rubro=' + rubro;
+
+            loadModalProductos(url);
+        }
+    </script>
+    <script>
+        function ver(dir, tipoPag) {
+            if (tipoPag == "Clientes") {
+                loadModalCliente(dir);
+            }
+            if (tipoPag == "Productos") {
+                var codAlterno = $("#filtrarCodigoAlternoProducto").val();
+                var codOriginal = $("#filtrarCodigoOriginalProducto").val();
+                var nombre = $("#filtrarNombreProducto").val();
+                var marca = $("#filtrarMarcaProducto").val();
+                var linea = $("#filtrarLineaProducto").val();
+                var rubro = $("#filtrarRubroProducto").val();
+                var idSegmento = $("#idSegmentoCliente").val();
+
+                var url = dir + '&idSegmento=' + idSegmento + '&codAlterno=' + codAlterno + '&codOriginal=' +
+                    codOriginal + '&nombre=' + nombre + '&marca=' + marca + '&linea=' + linea + '&rubro=' + rubro;
+                loadModalProductos(url);
+            }
+        }
+    </script>
+    <script>
+        function AgregarProductoGrd(idProducto, idSegmento) {
+            $(function () {
+                var url = '@Url.Action("ObtenerProducto","CotizadorVendedor")';
+
+                var moneda = 'Dólar';
+                var simnbolo = '$';
+                if ($("#radioCordoba").prop('checked')){
+                    moneda = 'Córdoba';
+                    simnbolo = 'C$';
+                }
+
+                url = url + '?idProducto=' + idProducto + '&idSegmento=' + idSegmento + '&moneda=' + moneda;
+
+                var existItem = $("#prodItem" + idProducto);
+
+                if ($(existItem).length > 0) {
+                    M.toast({ html: 'Este producto ya esta en la vista', classes: 'rounded' });
+                    return
+                }
+
+
+                $.get(url).done(function (data) {
+
+                    var codigo = '<li id="prodItem' + data.idProducto + '" >' +
+                        //'<div class="collapsible-header"><i class="material-icons blue-text">create</i>' + data.CodigoAlterno + '&nbsp;'+
+                        //'<item id="prodTitulo' + data.idProducto + '"  class="text-Strong">' + simnbolo + data.Total + '</item> &nbsp;' +
+                        '<div class="collapsible-header"><i class="material-icons blue-text">create</i>' + data.CodigoAlterno +
+                        '<span class="badge"> <item id="prodTitulo' + data.idProducto + '"  class="text-Strong">' + simnbolo +' ' + data.Total + '</item>' +
+
+                        '<i id="prodDelete' + data.idProducto + '" onclick="modalBorrarProducto(' + data.idProducto + ' ,\'prod\')" class="material-icons red-text">delete</i>' +
+                        '</span>'+
+                        '<div id="prodModalDelete'+data.idProducto+'" class="modal">'+
+                            '<div class="modal-content">'+
+                                '<h4>¿Desea Eliminar?</h4>'+
+                                '<p>Eliminar el producto codigo: '+data.CodigoAlterno+'</p>'+
+                            '</div>'+
+                            '<div class="modal-footer">'+
+                                '<a class="modal-close waves-effect waves-light btn-small">Cancelar</a> &nbsp;'+
+                                '<a class="waves-effect waves-light btn-small red darken-3" onclick="borrarProducto('+data.idProducto+' ,\'prod\')">Aceptar</a>'+
+                            '</div>'+
+                        '</div>'+
+
+                        ' </div>' +
+                        '<div class="collapsible-body">' +
+                        '<div class="row">' +
+
+                        '<input id="prodId' + data.idProducto + '" type="number" hidden disabled value="' + data.idProducto + '">' +
+                        '<input id="prodDescuentoMaximo' + data.idProducto + '" type="number" hidden disabled value="' + data.DescuentoMaximo + '">' +
+
+                        '<div class="input-field col s12 m4">' +
+                        '<input id="prodCodigoAlterno'+data.idProducto+'" type="text" class="validate active black-text" disabled value="'+data.CodigoAlterno+'"> ' +
+                        '<label for="prodCodigoAlterno'+data.idProducto+'" class="active black-text">Codigo Alterno</label>' +
+                        '</div>' +
+                        '<div class="input-field col s12 m4">' +
+                        '<input id="prodCodigoOriginal'+data.idProducto+'" type="text" class="validate active black-text" disabled value="'+data.CodigoOriginal+'">' +
+                        '<label for="prodCodigoOriginal'+data.idProducto+'" class="active black-text">Codigo Original</label>' +
+                        '</div>' +
+                        '<div class="input-field col s12 m4">' +
+                        '<input id="prodNombre'+data.idProducto+'" type="text" class="validate active black-text" disabled value="'+data.Nombre+'">' +
+                        '<label for="prodNombre'+data.idProducto+'" class="active black-text">Nombre</label>' +
+                        '</div>' +
+                        '<div class="input-field col s12 m4">' +
+                        '<input id="prodMarca'+data.idProducto+'" type="text" class="validate active black-text" disabled value="'+data.Marca+'">' +
+                        '<label for="prodMarca'+data.idProducto+'" class="active black-text">Marca</label>' +
+                        '</div>' +
+                        '<div class="input-field col s12 m4">' +
+                        '<input id="prodCantidad'+data.idProducto+'" type="number" class="validate active black-text" onkeypress="return event.charCode >= 48" min="1" value="1" onchange="calcularTotalItems('+data.idProducto+' ,\'prod\')" >' +
+                        '<label for="prodCantidad'+data.idProducto+'" class="active black-text">Cantidad</label>' +
+                        '</div>' +
+                        '<div class="input-field col s12 m4">' +
+                        '<input id="prodPrecio'+data.idProducto+'" type="number" class="validate active black-text" onkeypress="return event.charCode >= 48" min="0" disabled value="'+data.Precio+'">' +
+                        '<label for="prodPrecio'+data.idProducto+'" class="active black-text">Precio de Venta</label>' +
+                        '</div>' +
+                        '<div class="input-field col s12 m4">' +
+                        '<input id="prodDescuento'+data.idProducto+'" type="number" class="validate active black-text" onkeypress="return event.charCode >= 48" min="0" max="100" value="0" onchange="calcularTotalItems('+data.idProducto+' ,\'prod\')"  >' +
+                        '<label for="prodDescuento'+data.idProducto+'" class="active black-text">Descuento</label>' +
+                        '</div>' +
+                        '<div class="input-field col s12 m4">' +
+                        '<input id="prodIVA'+data.idProducto+'" type="number" class="validate active black-text" onkeypress="return event.charCode >= 48" min="0" max="100" disabled value="'+data.Iva+'">' +
+                        '<label for="prodIVA'+data.idProducto+'" class="active black-text">IVA</label>' +
+                        '</div>' +
+                        '<div class="input-field col s12 m4">' +
+                        '<input id="prodTotal'+data.idProducto+'" type="number" class="validate active black-text" onkeypress="return event.charCode >= 48" min="0" disabled value="'+data.Total+'">' +
+                        '<label for="prodTotal'+data.idProducto+'" class="active black-text">Total</label>' +
+                        '</div>' +
+
+                        '</div>' +
+                        '</div>' +
+                        '</li>';
+
+                    $("#itemGrd").append(codigo);
+                }).fail(function (s1, s2, error) {
+                    if (s1.status === 0) {
+                        alert('No coneccion: Verificar la Network');
+                    }
+                    if (s1.status === 404) {
+                        alert('Requested page not found [404]');
+                    }
+                });
+            });
+        }
+
+        function borrarProducto(idItem, TipoItem) {
+            var item = $("#" + TipoItem + 'Item' + idItem);
+            $(item).fadeOut("normal", function() {
+                $(this).remove();
+            });
+        }
+
+        function modalBorrarProducto(idItem, TipoItem) {
+            var modal = $("#" + TipoItem + 'ModalDelete' + idItem);
+            $('.modal').modal();
+            var instance = M.Modal.getInstance(modal);
+            instance.open();
+        }
+    </script>
+}

@@ -1,0 +1,40 @@
+﻿@using CotizadorWeb.Infrastructure.ViewModel;
+
+@model CotizadorWeb.Infrastructure.ViewModel.ListUsuarioViewModel
+
+<table>
+    <thead>
+        <tr>
+            <th>Nombre</th>
+            <th>Ruc</th>
+            <th class="tipoModalCliente">Tipo Cliente</th>
+        </tr>
+    </thead>
+    <tbody>
+        @{List<ClienteViewModel> listClientes = Model.clienteViewModels;
+            foreach (var item in listClientes)
+            {
+                string idName = "cliente" + item.idCliente;
+                <tr id="@idName" class="itemCliente " onclick="clienteSeleccionado('@idName')">
+                    <td>@item.Nombre</td>
+                    <td>@item.Ruc</td>
+                    <td class="tipoModalCliente">@item.TipoCliente</td>
+                </tr>
+            }
+        }
+    </tbody>
+</table>
+
+<div>
+    @{ Html.RenderPartial("~/Views/Shared/Modals/_Paginador.cshtml", Model);}
+</div>
+
+<script>
+    function clienteSeleccionado(idCliente) {
+        $(".itemCliente").each(function (index, element) {
+            $(element).removeClass("Selected-item");
+        });
+
+        $("#" + idCliente).addClass("Selected-item");
+    }
+</script>

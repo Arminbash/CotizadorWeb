@@ -1,0 +1,37 @@
+﻿@using CotizadorWeb.Infrastructure.ViewModel;
+
+@model CotizadorWeb.Infrastructure.ViewModel.ListProductoViewModel
+
+   
+<table>
+    <thead>
+        <tr>
+            <th>Nombre</th>
+            <th>CodigoAlterno</th>
+            <th class="tipoModalCliente">Marca</th>
+            <th>Agregar</th>
+        </tr>
+    </thead>
+    <tbody>
+        @{
+            List<ProductoViewModel> listProductos = Model.productoViewModels;
+            foreach (var item in listProductos)
+            {
+                string idName = "producto" + item.idProducto;
+                <tr id="@idName" class="itemProducto">
+                    <td>@item.Nombre</td>
+                    <td>@item.CodigoAlterno</td>
+                    <td class="tipoModalCliente">@item.Marca</td>
+                    <td>
+                        <a class="btn-floating btn-small waves-effect waves-light green" onclick="AgregarProductoGrd('@item.idProducto','@item.idSegmento')"><i class="material-icons">add</i></a>
+                    </td>
+                </tr>
+            }
+        }
+    </tbody>
+</table>
+
+<div>
+    @{ Html.RenderPartial("~/Views/Shared/Modals/_Paginador.cshtml", Model);}
+</div>
+
